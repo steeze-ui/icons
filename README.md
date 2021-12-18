@@ -36,8 +36,8 @@ Effortless Icons
 | Package                                                                 | Themes                  | Source                                                              |
 | ----------------------------------------------------------------------- | ----------------------- | ------------------------------------------------------------------- |
 | [@steeze-ui/heroicons](packages/builders/heroicons-builder)             | default(outline), solid | [tailwindlabs/heroicons](https://github.com/tailwindlabs/heroicons) |
-| [@steeze-ui/iconic-free](packages/builders/radix-icons-builder) soon    | default                 | [iconic.app](https://iconic.app/)                                   |
-| [@steeze-ui/radix-icons](packages/builders/radix-icons-builder) soon    | default                 | [radix-ui/icons](https://github.com/radix-ui/icons)                 |
+| [@steeze-ui/iconic-free](packages/builders/radix-icons-builder)         | default                 | [iconic.app](https://iconic.app/)                                   |
+| [@steeze-ui/radix-icons](packages/builders/radix-icons-builder)         | default                 | [radix-ui/icons](https://github.com/radix-ui/icons)                 |
 | [@steeze-ui/octicons](packages/builders/octicons-builder) soon          | default                 | [primer/octicons](https://github.com/primer/octicons)               |
 | [@steeze-ui/feathericons](packages/builders/feather-icons-builder) soon | default                 | [feathericons/feather](https://github.com/feathericons/feather)     |
 
