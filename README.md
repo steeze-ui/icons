@@ -9,7 +9,7 @@ Effortless Icons
 - Icon components (for now it's svelte first)
 - Popular Icon Packs
 - Icon Pack Themes (different versions of the same icon)
-- Templates to Create your own Icon Packs
+- Templates to Create your own Icon Packs (coming)
 
 ```svelte
 <script>
