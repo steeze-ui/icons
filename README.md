@@ -41,6 +41,12 @@ Effortless Icons
 | @steeze-ui/octicons (soon)                                      | default                 | [primer/octicons](https://github.com/primer/octicons)               |
 | @steeze-ui/feathericons (soon)                                  | default                 | [feathericons/feather](https://github.com/feathericons/feather)     |
 
+### Utilities
+
+| Package                           | Version                                                                                                                                 |
+| --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| [@steeze-ui/icons](packages/core) | <a href="https://www.npmjs.com/package/@steeze-ui/icons"><img src="https://img.shields.io/npm/v/@steeze-ui/icons.svg?style=flat" /></a> |
+
 ## Development
 
 This monorepo uses pnpm. To build a new version of the packages just run:
