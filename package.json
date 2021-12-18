@@ -1,0 +1,32 @@
+{
+  "name": "icons",
+  "version": "0.0.1",
+  "description": "monorepo for @steeze-ui and friends",
+  "scripts": {
+    "package": "pnpm package --filter=\"@steeze-ui/*\"",
+    "release": "pnpm release --filter=\"@steeze-ui/*\"",
+    "changeset:version": "changeset version && pnpm i --lockfile-only"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steeze-ui/icons.git"
+  },
+  "keywords": [
+    "icons",
+    "svelte",
+    "source",
+    "builder",
+    "component"
+  ],
+  "author": "Justin Voitel <mail@justinv.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/steeze-ui/icons/issues"
+  },
+  "homepage": "https://github.com/steeze-ui/icons#readme",
+  "devDependencies": {
+    "@changesets/cli": "^2.18.1",
+    "@changesets/get-github-info": "^0.5.0"
+  },
+  "type": "module"
+}

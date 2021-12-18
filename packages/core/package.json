@@ -1,0 +1,46 @@
+{
+  "name": "@steeze-ui/icons",
+  "version": "1.0.1",
+  "description": "Utilities for @steeze-ui/icons",
+  "main": "dist/index.js",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "esbuild --bundle src/index.ts --outdir=dist --platform=node --format=esm --external:html-parse-stringify --external:pascalcase --minify",
+    "publish": "pnpm build && pnpm publish",
+    "publish:next": "pnpm release -- --tag=next"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.0",
+    "esbuild": "^0.14.5",
+    "ts-node": "^10.2.1",
+    "tslib": "^2.0.0",
+    "typescript": "^4.4.2"
+  },
+  "dependencies": {
+    "html-parse-stringify": "^3.0.1",
+    "pascalcase": "^1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steeze-ui/icons.git"
+  },
+  "keywords": [
+    "utilities",
+    "icons",
+    "steeze"
+  ],
+  "author": "Justin Voitel <mail@justinv.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/steeze-ui/icons/issues"
+  },
+  "homepage": "https://github.com/steeze-ui/icons#readme",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
