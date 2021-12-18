@@ -33,13 +33,13 @@ Effortless Icons
 
 ### Icon Packs
 
-| Package                                                         | Themes                  | Source                                                              |
-| --------------------------------------------------------------- | ----------------------- | ------------------------------------------------------------------- |
-| [@steeze-ui/heroicons](packages/builders/heroicons-builder)     | default(outline), solid | [tailwindlabs/heroicons](https://github.com/tailwindlabs/heroicons) |
-| [@steeze-ui/iconic-free](packages/builders/radix-icons-builder) | default                 | [iconic.app](https://iconic.app/)                                   |
-| [@steeze-ui/radix-icons](packages/builders/radix-icons-builder) | default                 | [radix-ui/icons](https://github.com/radix-ui/icons)                 |
-| @steeze-ui/octicons (soon)                                      | default                 | [primer/octicons](https://github.com/primer/octicons)               |
-| @steeze-ui/feathericons (soon)                                  | default                 | [feathericons/feather](https://github.com/feathericons/feather)     |
+| Package                                                         | Themes                  | Source                                                              | Version                                                                                                                                             |
+| --------------------------------------------------------------- | ----------------------- | ------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [@steeze-ui/heroicons](packages/builders/heroicons-builder)     | default(outline), solid | [tailwindlabs/heroicons](https://github.com/tailwindlabs/heroicons) | <a href="https://www.npmjs.com/package/@steeze-ui/heroicons"><img src="https://img.shields.io/npm/v/@steeze-ui/heroicons.svg?style=flat" /></a>     |
+| [@steeze-ui/iconic-free](packages/builders/iconic-free-builder) | default                 | [iconic.app](https://iconic.app/)                                   | <a href="https://www.npmjs.com/package/@steeze-ui/iconic-free"><img src="https://img.shields.io/npm/v/@steeze-ui/iconic-free.svg?style=flat" /></a> |
+| [@steeze-ui/radix-icons](packages/builders/radix-icons-builder) | default                 | [radix-ui/icons](https://github.com/radix-ui/icons)                 | <a href="https://www.npmjs.com/package/@steeze-ui/radix-icons"><img src="https://img.shields.io/npm/v/@steeze-ui/radix-icons.svg?style=flat" /></a> |
+| @steeze-ui/octicons (soon)                                      | default                 | [primer/octicons](https://github.com/primer/octicons)               |                                                                                                                                                     |
+| @steeze-ui/feathericons (soon)                                  | default                 | [feathericons/feather](https://github.com/feathericons/feather)     |                                                                                                                                                     |
 
 ### Utilities
 
