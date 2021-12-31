@@ -1,6 +1,6 @@
 {
   "name": "@steeze-ui/svelte-icon",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",

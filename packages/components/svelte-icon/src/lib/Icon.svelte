@@ -1,25 +1,6 @@
-<script context="module" lang="ts">
-	export interface GenericIcon {
-		default: {
-			a: {
-				[key: string]: string
-			}
-			p: {
-				[key: string]: string
-			}[]
-		}
-		[key: string]: {
-			a: {
-				[key: string]: string
-			}
-			p: {
-				[key: string]: string
-			}[]
-		}
-	}
-</script>
-
 <script lang="ts">
+	import type { GenericIcon } from './types/index'
+
 	export let src: GenericIcon
 	export let size = '100%'
 	export let theme = 'default'
