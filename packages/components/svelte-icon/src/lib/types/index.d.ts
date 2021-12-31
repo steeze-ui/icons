@@ -1,4 +1,4 @@
-export interface GenericIcon {
+export interface IconSource {
 	default: {
 		a: {
 			[key: string]: string

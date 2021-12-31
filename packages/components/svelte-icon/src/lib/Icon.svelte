@@ -1,7 +1,7 @@
 <script lang="ts">
-	import type { GenericIcon } from './types/index'
+	import type { IconSource } from './types/index'
 
-	export let src: GenericIcon
+	export let src: IconSource
 	export let size = '100%'
 	export let theme = 'default'
 	let customClass = ''
