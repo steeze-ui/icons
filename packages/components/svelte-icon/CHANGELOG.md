@@ -1,5 +1,11 @@
 # @steeze-ui/svelte-icon
 
+## 1.1.3
+
+### Patch Changes
+
+- fix types export
+
 ## 1.1.2
 
 ### Patch Changes
