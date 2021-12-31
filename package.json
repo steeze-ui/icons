@@ -5,7 +5,7 @@
   "scripts": {
     "package": "pnpm package --filter=\"@steeze-ui/*\"",
     "release": "pnpm release --filter=\"@steeze-ui/*\"",
-    "changeset:version": "changeset version && pnpm i --lockfile-only"
+    "changeset:version": "changeset version"
   },
   "repository": {
     "type": "git",

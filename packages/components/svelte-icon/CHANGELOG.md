@@ -1,5 +1,11 @@
 # @steeze-ui/svelte-icon
 
+## 1.1.2
+
+### Patch Changes
+
+- export index.js
+
 ## 1.1.1
 
 ### Patch Changes
