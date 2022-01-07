@@ -15,11 +15,11 @@
     "build": "tsc && vite build"
   },
   "dependencies": {
-    "@steeze-ui/iconic-free": "workspace:^1.0.0",
-    "@steeze-ui/radix-icons": "workspace:^1.0.1",
     "lit": "^2.1.1"
   },
   "devDependencies": {
+    "@steeze-ui/iconic-free": "workspace:^1.0.0",
+    "@steeze-ui/radix-icons": "workspace:^1.0.1",
     "@steeze-ui/heroicons": "workspace:^1.0.0",
     "typescript": "^4.4.4",
     "vite": "^2.7.10"
