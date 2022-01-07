@@ -52,6 +52,8 @@ export function createIcons(inputIconThemes, outputIcons) {
 }
 
 export function getIconsFromTheme(outputExports: string, theme: string) {
+	let allChildTags = 0
+	let usedChildTags = 0
 	readdirSync(join(outputExports, theme)).forEach((fileName) => {
 		const key = pascalcase(fileName.replace('.svg', ''))
 		const data = readFileSync(join(outputExports, theme, fileName)).toString()
@@ -63,8 +65,23 @@ export function getIconsFromTheme(outputExports: string, theme: string) {
 
 		svgDict[key][theme] = { a: svgAst.attrs }
 
-		svgDict[key][theme].p = svgAst.children.filter((e) => e.type != 'text').map((e) => e.attrs)
+		const childTags = svgAst.children.filter((e) => {
+			return e.type != 'text'
+		})
+		allChildTags += childTags.length
+
+		const pathAttrs = childTags.filter((e) => e.name === 'path').map((e) => e.attrs)
+		usedChildTags += pathAttrs.length
+		const rectAttrs = childTags.filter((e) => e.name === 'rect').map((e) => e.attrs)
+		usedChildTags += rectAttrs.length
+		const circleAttrs = childTags.filter((e) => e.name === 'circle').map((e) => e.attrs)
+		usedChildTags += circleAttrs.length
+
+		svgDict[key][theme].path = pathAttrs
+		svgDict[key][theme].rect = rectAttrs
+		svgDict[key][theme].circle = circleAttrs
 	})
+	console.log(`${theme}: ${usedChildTags}/${allChildTags} child tags collected`)
 }
 
 export async function writeSvgDict(outputIcons: string) {
