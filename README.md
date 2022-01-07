@@ -27,9 +27,10 @@ Effortless Icons
 | Package                                                   | Version                                                                                                                                             |
 | --------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [@steeze-ui/svelte-icon](packages/components/svelte-icon) | <a href="https://www.npmjs.com/package/@steeze-ui/svelte-icon"><img src="https://img.shields.io/npm/v/@steeze-ui/svelte-icon.svg?style=flat" /></a> |
-| @steeze-ui/lit-icon                                       | soon                                                                                                                                                |
-| @steeze-ui/react-icon                                     | soon                                                                                                                                                |
-| @steeze-ui/vue-icon                                       | soon                                                                                                                                                |
+| [@steeze-ui/lit-icon](packages/components/lit-icon)       | <a href="https://www.npmjs.com/package/@steeze-ui/lit-icon"><img src="https://img.shields.io/npm/v/@steeze-ui/lit-icon.svg?style=flat" /></a>       |
+| @steeze-ui/solid-icon                                     | coming                                                                                                                                              |
+| @steeze-ui/react-icon                                     | coming                                                                                                                                              |
+| @steeze-ui/vue-icon                                       | coming                                                                                                                                              |
 
 ### Icon Packs
 
@@ -38,8 +39,8 @@ Effortless Icons
 | [@steeze-ui/heroicons](packages/builders/heroicons-builder)     | default(outline), solid | [tailwindlabs/heroicons](https://github.com/tailwindlabs/heroicons) | <a href="https://www.npmjs.com/package/@steeze-ui/heroicons"><img src="https://img.shields.io/npm/v/@steeze-ui/heroicons.svg?style=flat" /></a>     |
 | [@steeze-ui/iconic-free](packages/builders/iconic-free-builder) | default                 | [iconic.app](https://iconic.app/)                                   | <a href="https://www.npmjs.com/package/@steeze-ui/iconic-free"><img src="https://img.shields.io/npm/v/@steeze-ui/iconic-free.svg?style=flat" /></a> |
 | [@steeze-ui/radix-icons](packages/builders/radix-icons-builder) | default                 | [radix-ui/icons](https://github.com/radix-ui/icons)                 | <a href="https://www.npmjs.com/package/@steeze-ui/radix-icons"><img src="https://img.shields.io/npm/v/@steeze-ui/radix-icons.svg?style=flat" /></a> |
-| @steeze-ui/octicons (soon)                                      | default                 | [primer/octicons](https://github.com/primer/octicons)               |                                                                                                                                                     |
-| @steeze-ui/feathericons (soon)                                  | default                 | [feathericons/feather](https://github.com/feathericons/feather)     |                                                                                                                                                     |
+| @steeze-ui/octicons (coming)                                    | default                 | [primer/octicons](https://github.com/primer/octicons)               |                                                                                                                                                     |
+| @steeze-ui/feathericons (coming)                                | default                 | [feathericons/feather](https://github.com/feathericons/feather)     |                                                                                                                                                     |
 
 ### Utilities
 
