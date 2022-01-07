@@ -1,7 +1,7 @@
 {
   "name": "@steeze-ui/radix-icons",
   "description": "Icon Sources (based on radix-icons) built for @steeze-ui/icons",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "main": "index.js",
   "scripts": {
