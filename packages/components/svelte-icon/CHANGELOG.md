@@ -1,10 +1,10 @@
 # @steeze-ui/svelte-icon
 
-## 1.1.3
+## 1.1.4
 
 ### Patch Changes
 
-- 0896c0f: add missing tags and attributes
+- add missing tags and attributes
 
 ## 1.1.3
 
