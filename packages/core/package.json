@@ -10,8 +10,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "esbuild --bundle src/index.ts --outdir=dist --platform=node --format=esm --external:html-parse-stringify --external:pascalcase --minify",
-    "publish": "pnpm build && pnpm publish",
-    "publish:next": "pnpm release -- --tag=next"
+    "release": "pnpm build && pnpm publish",
+    "release:next": "pnpm release -- --tag=next"
   },
   "devDependencies": {
     "@types/node": "^17.0.0",
