@@ -4,6 +4,12 @@
 
 ### Patch Changes
 
+- 0896c0f: add missing tags and attributes
+
+## 1.1.3
+
+### Patch Changes
+
 - fix types export
 
 ## 1.1.2
