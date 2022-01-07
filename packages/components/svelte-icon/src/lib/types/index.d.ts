@@ -1,18 +1,19 @@
 export interface IconSource {
-	default: {
-		a: {
-			[key: string]: string
-		}
-		p: {
-			[key: string]: string
-		}[]
+	default: IconSourceThemeAttrs
+	[key: string]: IconSourceThemeAttrs
+}
+
+interface IconSourceThemeAttrs {
+	a: {
+		[key: string]: string
 	}
-	[key: string]: {
-		a: {
-			[key: string]: string
-		}
-		p: {
-			[key: string]: string
-		}[]
-	}
+	path?: {
+		[key: string]: string
+	}[]
+	rect?: {
+		[key: string]: string
+	}[]
+	circle?: {
+		[key: string]: string
+	}[]
 }

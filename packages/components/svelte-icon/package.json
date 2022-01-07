@@ -14,6 +14,9 @@
     "release": "pnpm package && cd package && pnpm publish"
   },
   "devDependencies": {
+    "@steeze-ui/heroicons": "workspace:^1.0.1",
+    "@steeze-ui/iconic-free": "workspace:^1.0.1",
+    "@steeze-ui/radix-icons": "workspace:^1.0.3",
     "@sveltejs/adapter-auto": "next",
     "@sveltejs/kit": "next",
     "prettier": "^2.4.1",
@@ -21,9 +24,9 @@
     "svelte": "^3.44.0",
     "svelte-check": "^2.2.6",
     "svelte-preprocess": "^4.9.4",
+    "svelte2tsx": "^0.4.11",
     "tslib": "^2.3.1",
-    "typescript": "^4.4.3",
-    "svelte2tsx": "^0.4.11"
+    "typescript": "^4.4.3"
   },
   "type": "module",
   "repository": {
@@ -53,5 +56,6 @@
       "types": "./types/index.d.ts",
       "import": "./index.js"
     }
-  }
+  },
+  "main": "./index.js"
 }

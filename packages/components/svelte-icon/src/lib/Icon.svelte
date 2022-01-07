@@ -4,8 +4,6 @@
 	export let src: IconSource
 	export let size = '100%'
 	export let theme = 'default'
-	let customClass = ''
-	export { customClass as class }
 
 	$: icon = src?.[theme] ?? src?.['default']
 
@@ -20,8 +18,14 @@
 	}
 </script>
 
-<svg {...icon.a} class={customClass} width={size} height={size} {...$$restProps}>
-	{#each icon.p ?? [] as att}
+<svg {...icon.a} width={size} height={size} {...$$restProps}>
+	{#each icon?.path ?? [] as att}
 		<path {...att} />
+	{/each}
+	{#each icon?.rect ?? [] as att}
+		<rect {...att} />
+	{/each}
+	{#each icon?.circle ?? [] as att}
+		<circle {...att} />
 	{/each}
 </svg>
