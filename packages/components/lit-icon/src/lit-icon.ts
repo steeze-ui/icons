@@ -21,7 +21,10 @@ export class LitIcon extends LitElement {
 	classProp = ''
 
 	@property({ attribute: 'aria-hidden', type: Boolean })
-	ariaHiddenProp = false
+	ariaHiddenProp = true
+
+	@property({ attribute: 'aria-label' })
+	ariaLabelProp = ''
 
 	render() {
 		return html`
@@ -29,6 +32,7 @@ export class LitIcon extends LitElement {
 				width="${this.size}"
 				height="${this.size}"
 				aria-hidden=${this.ariaHiddenProp}
+				aria-label=${ifDefined(this.ariaLabelProp ? this.ariaLabelProp : undefined)}
 				style=${ifDefined(this.styleProp ? this.styleProp : undefined)}
 				class=${ifDefined(this.classProp ? this.classProp : undefined)}
 				fill=${ifDefined(this.src?.[this.theme]?.a?.['fill'] ?? undefined)}
@@ -37,18 +41,59 @@ export class LitIcon extends LitElement {
 				xmlns=${ifDefined(this.src?.[this.theme]?.a?.['xmlns'] ?? undefined)}
 			>
 				${unsafeSVG(
-					this.src[this.theme]?.p
-						.map(
+					this.src[this.theme]?.path
+						?.map(
 							(e: any) =>
-								`<path ${e['fill'] ? 'fill=' + e['fill'] : ''} ${
-									e['clip-rule'] ? 'clip-rule=' + e['clip-rule'] : ''
-								} ${e['fill-rule'] ? 'fill-rule=' + e['fill-rule'] : ''} ${
-									e['stroke-linecap'] ? 'stroke-linecap=' + e['stroke-linecap'] : ''
-								} ${e['stroke-linejoin'] ? 'stroke-linejoin=' + e['stroke-linejoin'] : ''} ${
-									e['stroke-width'] ? 'stroke-width=' + e['stroke-width'] : ''
-								} d="${e.d}"></path>`
+								`<path 
+                d="${e.d}"
+                ${e['fill'] ? 'fill=' + e['fill'] : ''} 
+                ${e['fill-rule'] ? 'fill-rule=' + e['fill-rule'] : ''} 
+                ${e['clip-rule'] ? 'clip-rule=' + e['clip-rule'] : ''} 
+                ${e['stroke'] ? 'stroke=' + e['stroke'] : ''} 
+                ${e['stroke-linecap'] ? 'stroke-linecap=' + e['stroke-linecap'] : ''}
+                ${e['stroke-linejoin'] ? 'stroke-linejoin=' + e['stroke-linejoin'] : ''} 
+                ${e['stroke-width'] ? 'stroke-width=' + e['stroke-width'] : ''} 
+                ${e['opacity'] ? 'opacity=' + e['opacity'] : ''} 
+              ></path>`
 						)
-						.join('') ?? [].join('')
+						.join('') ?? ''
+				)}
+				${unsafeSVG(
+					this.src[this.theme]?.rect
+						?.map(
+							(e: any) =>
+								`<rect 
+                  ${e['x'] ? 'x=' + e['x'] : ''}
+                  ${e['y'] ? 'y=' + e['y'] : ''}
+                  ${e['width'] ? 'width=' + e['width'] : ''}
+                  ${e['height'] ? 'height=' + e['height'] : ''}
+                  ${e['rx'] ? 'rx=' + e['rx'] : ''}
+                  ${e['fill'] ? 'fill=' + e['fill'] : ''}
+                  ${e['transform'] ? 'transform="' + e['transform'] + '"' : ''}
+                  ${e['stroke'] ? 'stroke=' + e['stroke'] : ''} 
+                  ${e['stroke-linecap'] ? 'stroke-linecap=' + e['stroke-linecap'] : ''}
+                  ${e['stroke-linejoin'] ? 'stroke-linejoin=' + e['stroke-linejoin'] : ''} 
+                  ${e['stroke-width'] ? 'stroke-width=' + e['stroke-width'] : ''} 
+                ></rect>`
+						)
+						.join('') ?? ''
+				)}
+				${unsafeSVG(
+					this.src[this.theme]?.circle
+						?.map(
+							(e: any) =>
+								`<circle 
+                  ${e['cx'] ? 'cx=' + e['cx'] : ''}
+                  ${e['cy'] ? 'cy=' + e['cy'] : ''}
+                  ${e['r'] ? 'r=' + e['r'] : ''}
+                  ${e['fill'] ? 'fill=' + e['fill'] : ''}
+                  ${e['stroke'] ? 'stroke=' + e['stroke'] : ''} 
+                  ${e['stroke-linecap'] ? 'stroke-linecap=' + e['stroke-linecap'] : ''}
+                  ${e['stroke-linejoin'] ? 'stroke-linejoin=' + e['stroke-linejoin'] : ''} 
+                  ${e['stroke-width'] ? 'stroke-width=' + e['stroke-width'] : ''} 
+                ></circle>`
+						)
+						.join('') ?? ''
 				)}
 			</svg>
 		`

@@ -10,6 +10,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "esbuild --bundle src/index.ts --outdir=dist --platform=node --format=esm --external:html-parse-stringify --external:pascalcase --minify",
+    "build:watch": "pnpm run build -- --watch",
     "release": "pnpm build && pnpm publish",
     "release:next": "pnpm release -- --tag=next"
   },

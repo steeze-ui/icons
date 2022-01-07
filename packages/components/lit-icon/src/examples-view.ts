@@ -19,11 +19,27 @@ export class IconsTest extends LitElement {
 	@property()
 	iconStyle = 'color:rgb(237, 237, 238)'
 
+	@property({ type: Boolean })
+	isSolid = false
+
 	render() {
 		return html`
 			<div style="display:flex; flex-direction:column; gap:1rem">
 				<div>
-					<h1 style="color:white">Heroicons</h1>
+					<div style="display:flex; gap:2rem; align-items:center">
+						<h1 style="color:white">Heroicons</h1>
+
+						<div>
+							<input
+								type="checkbox"
+								?checked=${this.isSolid}
+								@change=${(e: any) => {
+									this.isSolid = e.target.checked
+								}}
+							/>
+							<label style="color:white" for="toggle">solid</label>
+						</div>
+					</div>
 					<div style="display:flex;gap:2rem; flex-wrap:wrap">
 						${repeat(
 							Object.keys(HeroIconsMap),
@@ -31,6 +47,7 @@ export class IconsTest extends LitElement {
 							(key: string) => html`
 								<lit-icon
 									.src=${HeroIconsMap[key]}
+									theme="${this.isSolid ? 'solid' : 'default'}"
 									size="${this.iconSize}"
 									style="${this.iconStyle}"
 								></lit-icon>
@@ -54,47 +71,6 @@ export class IconsTest extends LitElement {
 								></lit-icon>
 							`
 						)}
-						<svg
-							width="15"
-							height="15"
-							viewBox="0 0 15 15"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<rect x="7" y="5.025" width="1" height="1" rx=".5" fill="currentColor"></rect>
-							<rect x="13" y="5.025" width="1" height="1" rx=".5" fill="currentColor"></rect>
-							<rect x="7" y="3.025" width="1" height="1" rx=".5" fill="currentColor"></rect>
-							<rect x="13" y="3.025" width="1" height="1" rx=".5" fill="currentColor"></rect>
-							<rect x="7" y="7.025" width="1" height="1" rx=".5" fill="currentColor"></rect>
-							<rect x="7" y="13.025" width="1" height="1" rx=".5" fill="currentColor"></rect>
-							<rect x="7" y="1.025" width="1" height="1" rx=".5" fill="currentColor"></rect>
-							<rect x="13" y="7.025" width="1" height="1" rx=".5" fill="currentColor"></rect>
-							<rect x="13" y="13.025" width="1" height="1" rx=".5" fill="currentColor"></rect>
-							<rect x="13" y="1.025" width="1" height="1" rx=".5" fill="currentColor"></rect>
-							<rect x="5" y="7.025" width="1" height="1" rx=".5" fill="currentColor"></rect>
-							<rect x="5" y="13.025" width="1" height="1" rx=".5" fill="currentColor"></rect>
-							<rect x="5" y="1.025" width="1" height="1" rx=".5" fill="currentColor"></rect>
-							<rect x="3" y="7.025" width="1" height="1" rx=".5" fill="currentColor"></rect>
-							<rect x="3" y="13.025" width="1" height="1" rx=".5" fill="currentColor"></rect>
-							<rect x="3" y="1.025" width="1" height="1" rx=".5" fill="currentColor"></rect>
-							<rect x="9" y="7.025" width="1" height="1" rx=".5" fill="currentColor"></rect>
-							<rect x="9" y="13.025" width="1" height="1" rx=".5" fill="currentColor"></rect>
-							<rect x="9" y="1.025" width="1" height="1" rx=".5" fill="currentColor"></rect>
-							<rect x="11" y="7.025" width="1" height="1" rx=".5" fill="currentColor"></rect>
-							<rect x="11" y="13.025" width="1" height="1" rx=".5" fill="currentColor"></rect>
-							<rect x="11" y="1.025" width="1" height="1" rx=".5" fill="currentColor"></rect>
-							<rect x="7" y="9.025" width="1" height="1" rx=".5" fill="currentColor"></rect>
-							<rect x="13" y="9.025" width="1" height="1" rx=".5" fill="currentColor"></rect>
-							<rect x="7" y="11.025" width="1" height="1" rx=".5" fill="currentColor"></rect>
-							<rect x="13" y="11.025" width="1" height="1" rx=".5" fill="currentColor"></rect>
-							<rect x="1" y="5.025" width="1" height="1" rx=".5" fill="currentColor"></rect>
-							<rect x="1" y="3.025" width="1" height="1" rx=".5" fill="currentColor"></rect>
-							<rect x="1" y="7.025" width="1" height="1" rx=".5" fill="currentColor"></rect>
-							<rect x="1" y="13.025" width="1" height="1" rx=".5" fill="currentColor"></rect>
-							<rect x="1" y="1.025" width="1" height="1" rx=".5" fill="currentColor"></rect>
-							<rect x="1" y="9.025" width="1" height="1" rx=".5" fill="currentColor"></rect>
-							<rect x="1" y="11.025" width="1" height="1" rx=".5" fill="currentColor"></rect>
-						</svg>
 					</div>
 				</div>
 				<div>

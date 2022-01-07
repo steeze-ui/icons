@@ -54,6 +54,9 @@ export function createIcons(inputIconThemes, outputIcons) {
 export function getIconsFromTheme(outputExports: string, theme: string) {
 	let allChildTags = 0
 	let usedChildTags = 0
+	let usedPathAttrs = []
+	let usedRectAttrs = []
+	let usedCircleAttrs = []
 	readdirSync(join(outputExports, theme)).forEach((fileName) => {
 		const key = pascalcase(fileName.replace('.svg', ''))
 		const data = readFileSync(join(outputExports, theme, fileName)).toString()
@@ -72,16 +75,42 @@ export function getIconsFromTheme(outputExports: string, theme: string) {
 
 		const pathAttrs = childTags.filter((e) => e.name === 'path').map((e) => e.attrs)
 		usedChildTags += pathAttrs.length
+		pathAttrs.forEach((path) => {
+			for (let key of Object.keys(path)) {
+				if (!usedPathAttrs.includes(key)) {
+					usedPathAttrs.push(key)
+				}
+			}
+		})
+
 		const rectAttrs = childTags.filter((e) => e.name === 'rect').map((e) => e.attrs)
 		usedChildTags += rectAttrs.length
+		rectAttrs.forEach((rect) => {
+			for (let key of Object.keys(rect)) {
+				if (!usedRectAttrs.includes(key)) {
+					usedRectAttrs.push(key)
+				}
+			}
+		})
+
 		const circleAttrs = childTags.filter((e) => e.name === 'circle').map((e) => e.attrs)
 		usedChildTags += circleAttrs.length
+		circleAttrs.forEach((circle) => {
+			for (let key of Object.keys(circle)) {
+				if (!usedCircleAttrs.includes(key)) {
+					usedCircleAttrs.push(key)
+				}
+			}
+		})
 
 		svgDict[key][theme].path = pathAttrs
 		svgDict[key][theme].rect = rectAttrs
 		svgDict[key][theme].circle = circleAttrs
 	})
 	console.log(`${theme}: ${usedChildTags}/${allChildTags} child tags collected`)
+	console.log('usedPathAttrs', usedPathAttrs)
+	console.log('usedRectAttrs', usedRectAttrs)
+	console.log('usedCircleAttrs', usedCircleAttrs)
 }
 
 export async function writeSvgDict(outputIcons: string) {
