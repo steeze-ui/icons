@@ -48,5 +48,10 @@
     "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
-  "exports": {}
+  "exports": {
+    ".": {
+      "types": "./types/index.d.ts",
+      "import": "./index.js"
+    }
+  }
 }
