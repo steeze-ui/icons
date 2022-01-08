@@ -29,7 +29,7 @@ Effortless Icons
 | [@steeze-ui/svelte-icon](packages/components/svelte-icon) | <a href="https://www.npmjs.com/package/@steeze-ui/svelte-icon"><img src="https://img.shields.io/npm/v/@steeze-ui/svelte-icon.svg?style=flat" /></a> |
 | [@steeze-ui/lit-icon](packages/components/lit-icon)       | <a href="https://www.npmjs.com/package/@steeze-ui/lit-icon"><img src="https://img.shields.io/npm/v/@steeze-ui/lit-icon.svg?style=flat" /></a>       |
 | [@steeze-ui/solid-icon](packages/components/solid-icon)   | <a href="https://www.npmjs.com/package/@steeze-ui/solid-icon"><img src="https://img.shields.io/npm/v/@steeze-ui/solid-icon.svg?style=flat" /></a>   |
-| @steeze-ui/react-icon                                     | coming                                                                                                                                              |
+| [@steeze-ui/react-icon](packages/components/react-icon)   | <a href="https://www.npmjs.com/package/@steeze-ui/react-icon"><img src="https://img.shields.io/npm/v/@steeze-ui/react-icon.svg?style=flat" /></a>   |
 | @steeze-ui/vue-icon                                       | coming                                                                                                                                              |
 
 ### Icon Packs

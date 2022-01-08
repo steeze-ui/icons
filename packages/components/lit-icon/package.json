@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "@steeze-ui/feather-icons": "workspace:^1.0.0",
-    "@steeze-ui/heroicons": "workspace:^1.0.1",
+    "@steeze-ui/heroicons": "workspace:^1.0.2",
     "@steeze-ui/iconic-free": "workspace:^1.0.1",
     "@steeze-ui/octicons": "workspace:^1.0.0",
     "@steeze-ui/radix-icons": "workspace:^1.0.2",

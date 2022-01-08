@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "ESNext",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "types": ["vite/client"],
+    "lib": ["ESNext", "dom", "dom.iterable"],
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "outDir": "./types",
+    "rootDir": "./src",
+  },
+  "include": ["src/**/react-icon.tsx", "src/react-icon.tsx"],
+  "exclude": ["src/**/*example*"]
+}
