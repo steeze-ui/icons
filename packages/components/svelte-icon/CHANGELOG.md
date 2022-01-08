@@ -1,5 +1,11 @@
 # @steeze-ui/svelte-icon
 
+## 1.2.0
+
+### Minor Changes
+
+- dont render Icon if theme does not exist
+
 ## 1.1.5
 
 ### Patch Changes
