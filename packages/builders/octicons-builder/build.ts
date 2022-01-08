@@ -2,7 +2,7 @@ import { createLibIcons, createThemesFromSuffix } from '@steeze-ui/icons'
 
 const rawIconsDir = './node_modules/@primer/octicons/build/svg'
 const themesDir = './themes'
-const libOutputIcons = 'icons'
+const libIconsOutput = 'icons'
 
 createThemesFromSuffix(rawIconsDir, themesDir, {
 	'-16': 'default',
@@ -10,7 +10,7 @@ createThemesFromSuffix(rawIconsDir, themesDir, {
 	'-12': '12'
 })
 
-createLibIcons(themesDir, libOutputIcons, {
+createLibIcons(themesDir, libIconsOutput, {
 	extendSvgAttributes: { fill: 'currentColor' },
 	excludeSvgAttributes: ['width', 'height', 'xmlns']
 })
