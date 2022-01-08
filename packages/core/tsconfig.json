@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "module": "esnext",
-    "lib": ["ESNext", "dom", "dom.iterable"],
+    "lib": ["es2017", "dom", "dom.iterable"],
     "declaration": true,
     "emitDeclarationOnly": true,
     "outDir": "./types",
@@ -13,8 +13,8 @@
     "noFallthroughCasesInSwitch": true,
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
-    "forceConsistentCasingInFileNames": true,
     "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
     "useDefineForClassFields": false
   },
   "include": ["src/**/*.ts"],

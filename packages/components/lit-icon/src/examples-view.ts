@@ -6,10 +6,12 @@ import './lit-icon'
 import * as HeroIcons from '@steeze-ui/heroicons'
 import * as RadixIcons from '@steeze-ui/radix-icons'
 import * as IconicFreeIcons from '@steeze-ui/iconic-free'
+import * as OcticonsIcons from '@steeze-ui/octicons'
 
 const HeroIconsMap = HeroIcons as any
 const RadixIconsMap = RadixIcons as any
 const IconicFreeIconsMap = IconicFreeIcons as any
+const OcticonsIconsMap = OcticonsIcons as any
 
 @customElement('icons-test')
 export class IconsTest extends LitElement {
@@ -83,6 +85,23 @@ export class IconsTest extends LitElement {
 								<lit-icon
 									id="${key}"
 									.src=${IconicFreeIconsMap[key]}
+									.size="${this.iconSize}"
+									.style="${this.iconStyle}"
+								></lit-icon>
+							`
+						)}
+					</div>
+				</div>
+				<div>
+					<h1 style="color:white">Octicons</h1>
+					<div style="display:flex;gap:2rem; flex-wrap:wrap">
+						${repeat(
+							Object.keys(OcticonsIconsMap),
+							(key: string) => key,
+							(key: string) => html`
+								<lit-icon
+									id="${key}"
+									.src=${OcticonsIconsMap[key]}
 									.size="${this.iconSize}"
 									.style="${this.iconStyle}"
 								></lit-icon>

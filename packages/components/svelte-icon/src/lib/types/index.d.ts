@@ -4,7 +4,7 @@ export interface IconSource {
 }
 
 interface IconSourceThemeAttrs {
-	a: {
+	a?: {
 		[key: string]: string
 	}
 	path?: {

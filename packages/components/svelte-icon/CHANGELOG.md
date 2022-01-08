@@ -1,5 +1,11 @@
 # @steeze-ui/svelte-icon
 
+## 1.1.5
+
+### Patch Changes
+
+- add xmlns attribute explicitly
+
 ## 1.1.4
 
 ### Patch Changes

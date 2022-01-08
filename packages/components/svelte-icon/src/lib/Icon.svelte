@@ -18,7 +18,7 @@
 	}
 </script>
 
-<svg {...icon.a} width={size} height={size} {...$$restProps}>
+<svg {...icon.a} xmlns="http://www.w3.org/2000/svg" width={size} height={size} {...$$restProps}>
 	{#each icon?.path ?? [] as att}
 		<path {...att} />
 	{/each}

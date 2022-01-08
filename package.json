@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/steeze-ui/icons#readme",
   "devDependencies": {
-    "@changesets/cli": "^2.18.1",
+    "@changesets/cli": "^2.19.0",
     "@changesets/get-github-info": "^0.5.0"
   },
   "type": "module"

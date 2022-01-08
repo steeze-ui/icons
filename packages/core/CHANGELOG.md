@@ -1,6 +1,22 @@
 # @steeze-ui/icons
 
+## 1.0.5
+
+### Patch Changes
+
+- [Types] make Options fields optional
+
+## 1.0.4
+
+### Patch Changes
+
+- add types
+- add `createThemesFromSuffix` method to create themes from packages
+- improve `getIconsFromTheme` method
+- add Options to `createLibIcons` method
+
 ## 1.0.3
+
 ### Patch Changes
 
 - fc07d6d: collect rect & circle tags

@@ -29,6 +29,7 @@ export class LitIcon extends LitElement {
 	render() {
 		return html`
 			<svg
+				xmlns="http://www.w3.org/2000/svg"
 				width="${this.size}"
 				height="${this.size}"
 				aria-hidden=${this.ariaHiddenProp}
@@ -38,7 +39,6 @@ export class LitIcon extends LitElement {
 				fill=${ifDefined(this.src?.[this.theme]?.a?.['fill'] ?? undefined)}
 				stroke=${ifDefined(this.src?.[this.theme]?.a?.['stroke'] ?? undefined)}
 				viewBox=${ifDefined(this.src?.[this.theme]?.a?.['viewBox'] ?? undefined)}
-				xmlns=${ifDefined(this.src?.[this.theme]?.a?.['xmlns'] ?? undefined)}
 			>
 				${unsafeSVG(
 					this.src[this.theme]?.path
