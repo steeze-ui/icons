@@ -4,31 +4,31 @@ This project is still in experimental development. Expect bugs and breaking chan
 
 ## Overview
 
-Effortless Svelte Icon Component
+Effortless [Solid](https://www.solidjs.com/) Icon Component
 
-- Made for SvelteKit & Vite environments
+- Made and tested for Vite environments
 - Usable with all official [Icon Packs](https://github.com/steeze-ui/icons/)
 - Dynamically change theme on runtime
 
 ## Installation
 
 ```bash
-npm i -D @steeze-ui/svelte-icon
+npm i -D @steeze-ui/solid-icon
 ```
 
 ## Usage
 
-```svelte
-<script>
-  //import icon component
-  import {Icon} from '@steeze-ui/svelte-icon'
+```jsx
+//import icon component
+import {Icon} from '@steeze-ui/solid-icon'
 
-  //import as many icons from a Icon Pack
-  import {LightningBolt} from '@steeze-ui/heroicons'
-</script>
+//import as many icons from any Icon Pack
+import {LightningBolt} from '@steeze-ui/heroicons'
 
-<!-- Set Icon Theme via the attribute -->
-<Icon src={LightningBolt} theme='solid' class='color-gray-900'>
+//Use the Icon in your App
+const MyApp = () => {
+  return <Icon src={LightningBolt} theme='solid' class='color-gray-900'>
+}
 ```
 
 ## Documentation
