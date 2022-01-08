@@ -1,5 +1,11 @@
 # @steeze-ui/icons
 
+## 1.1.0
+
+### Patch Changes
+
+- add `createThemesFromDir` method
+
 ## 1.0.5
 
 ### Patch Changes

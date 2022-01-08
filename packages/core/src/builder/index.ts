@@ -26,42 +26,42 @@ interface Options {
 	excludeSvgAttributes?: string[]
 }
 
-export function createLibIcons(inputIconThemes: string, outputIcons: string, options: Options) {
+export function createLibIcons(inputThemesDir: string, outputLibDir: string, options: Options) {
 	// check if input dir exists
-	if (!existsSync(inputIconThemes)) {
+	if (!existsSync(inputThemesDir)) {
 		console.log('No themes directory found')
 		return
 	}
 	// check if default theme dir exists
-	if (!existsSync(join(inputIconThemes, 'default'))) {
+	if (!existsSync(join(inputThemesDir, 'default'))) {
 		console.log('No default theme found')
 		return
 	}
 
 	// clear output dir if exists
-	if (existsSync(join(libDir, outputIcons))) {
-		rmSync(join(libDir, outputIcons), { recursive: true })
+	if (existsSync(join(libDir, outputLibDir))) {
+		rmSync(join(libDir, outputLibDir), { recursive: true })
 	}
 	if (existsSync(join(libDir, exportsFile))) {
 		rmSync(join(libDir, exportsFile), { recursive: true })
 	}
 
 	// create output dir
-	mkdirSync(join(libDir, outputIcons))
+	mkdirSync(join(libDir, outputLibDir))
 
 	//collect svg in dict
-	readdirSync(inputIconThemes).forEach((theme) => {
-		getIconsFromTheme(inputIconThemes, theme, options)
+	readdirSync(inputThemesDir).forEach((theme) => {
+		getIconsFromTheme(inputThemesDir, theme, options)
 	})
 
 	//write svg dict to files
-	writeSvgDict(outputIcons)
+	writeSvgDict(outputLibDir)
 
 	// write module exports
-	writeExportsModule(outputIcons)
+	writeExportsModule(outputLibDir)
 }
 
-export function getIconsFromTheme(outputExports: string, theme: string, options: Options) {
+function getIconsFromTheme(outputExports: string, theme: string, options: Options) {
 	let usedAttrsDict: { [key: string]: string[] } = {}
 	readdirSync(join(outputExports, theme)).forEach((fileName) => {
 		const key = pascalcase(fileName.replace('.svg', ''))
@@ -146,7 +146,7 @@ export function getIconsFromTheme(outputExports: string, theme: string, options:
 	console.log('')
 }
 
-export async function writeSvgDict(outputIcons: string) {
+async function writeSvgDict(outputIcons: string) {
 	Object.keys(svgDict).forEach((name) => {
 		writeFile(
 			join(join(libDir, outputIcons), `${name}.js`),
@@ -156,7 +156,7 @@ export async function writeSvgDict(outputIcons: string) {
 	})
 }
 
-export function writeExportsModule(outputIcons: string) {
+function writeExportsModule(outputIcons: string) {
 	const logger = createWriteStream(join(libDir, exportsFile), {
 		flags: 'a'
 	})
@@ -203,4 +203,35 @@ export function createThemesFromSuffix(
 	if (unrecognizedFiles.length > 0) {
 		console.log('Unrecognized files:', unrecognizedFiles.join(', '))
 	}
+}
+
+export function createThemesFromDir(
+	inputDir: string,
+	outputDir: string,
+	dirToThemesMap: { [key: string]: string }
+) {
+	if (!existsSync(join(inputDir))) {
+		console.log('No input directory found')
+		return
+	}
+	if (existsSync(join(outputDir))) {
+		rmSync(join(outputDir), { recursive: true })
+	}
+	mkdirSync(join(outputDir))
+
+	Object.keys(dirToThemesMap).forEach((themeDir) => {
+		if (!existsSync(join(inputDir, themeDir))) {
+			console.log(`No input directory for theme ${themeDir} found`)
+			return
+		}
+		const outputThemeDir = dirToThemesMap[themeDir]
+
+		readdirSync(join(inputDir, themeDir)).forEach((fileName) => {
+			const data = readFileSync(join(inputDir, themeDir, fileName)).toString()
+			if (!existsSync(join(outputDir, outputThemeDir))) {
+				mkdirSync(join(outputDir, outputThemeDir))
+			}
+			writeFileSync(join(outputDir, outputThemeDir, fileName), data)
+		})
+	})
 }
