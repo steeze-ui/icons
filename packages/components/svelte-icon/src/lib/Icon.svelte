@@ -20,14 +20,23 @@
 
 {#if icon}
 	<svg {...icon?.a} xmlns="http://www.w3.org/2000/svg" width={size} height={size} {...$$restProps}>
-		{#each icon?.path ?? [] as att}
-			<path {...att} />
+		{#each icon?.path ?? [] as a}
+			<path {...a} />
 		{/each}
-		{#each icon?.rect ?? [] as att}
-			<rect {...att} />
+		{#each icon?.rect ?? [] as a}
+			<rect {...a} />
 		{/each}
-		{#each icon?.circle ?? [] as att}
-			<circle {...att} />
+		{#each icon?.circle ?? [] as a}
+			<circle {...a} />
+		{/each}
+		{#each icon?.polygon ?? [] as a}
+			<polygon {...a} />
+		{/each}
+		{#each icon?.polyline ?? [] as a}
+			<polyline {...a} />
+		{/each}
+		{#each icon?.line ?? [] as a}
+			<line {...a} />
 		{/each}
 	</svg>
 {/if}

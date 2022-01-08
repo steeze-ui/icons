@@ -7,13 +7,7 @@ interface IconSourceThemeAttrs {
 	a?: {
 		[key: string]: string
 	}
-	path?: {
-		[key: string]: string
-	}[]
-	rect?: {
-		[key: string]: string
-	}[]
-	circle?: {
+	[key: string]: {
 		[key: string]: string
 	}[]
 }

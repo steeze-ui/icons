@@ -4,6 +4,7 @@
 	import * as RadixIcons from '@steeze-ui/radix-icons'
 	import * as IconicFreeIcons from '@steeze-ui/iconic-free'
 	import * as Octicons from '@steeze-ui/octicons'
+	import * as FeatherIcons from '@steeze-ui/feather-icons'
 
 	let isSolid = false
 
@@ -48,6 +49,7 @@
 			{/each}
 		</div>
 	</div>
+
 	<div>
 		<div style="display:flex;gap:2rem; align-items:center">
 			<h1 style="color:white">Octicons</h1>
@@ -81,6 +83,15 @@
 					size="1rem"
 					style="color:rgb(237, 237, 238)"
 				/>
+			{/each}
+		</div>
+	</div>
+
+	<div>
+		<h1 style="color:white">Feather Icons</h1>
+		<div style="display:flex;gap:2rem; flex-wrap:wrap">
+			{#each Object.keys(FeatherIcons) as key}
+				<Icon src={FeatherIcons[key]} size="1rem" style="color:rgb(237, 237, 238)" />
 			{/each}
 		</div>
 	</div>

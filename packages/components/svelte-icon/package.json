@@ -1,6 +1,6 @@
 {
   "name": "@steeze-ui/svelte-icon",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
@@ -14,6 +14,7 @@
     "release": "pnpm package && cd package && pnpm publish"
   },
   "devDependencies": {
+    "@steeze-ui/feather-icons": "workspace:^1.0.0-next.0",
     "@steeze-ui/heroicons": "workspace:^1.0.1",
     "@steeze-ui/iconic-free": "workspace:^1.0.1",
     "@steeze-ui/octicons": "workspace:^1.0.0-beta.1",

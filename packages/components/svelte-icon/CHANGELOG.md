@@ -1,5 +1,11 @@
 # @steeze-ui/svelte-icon
 
+## 1.2.1
+
+### Patch Changes
+
+- render polygon, polyline & line elements in component
+
 ## 1.2.0
 
 ### Minor Changes
