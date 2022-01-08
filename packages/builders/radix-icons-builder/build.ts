@@ -1,6 +1,6 @@
 import { createLibIcons } from '@steeze-ui/icons'
 
-const inputIconThemes = './themes'
-const outputIcons = 'icons'
+const themesDir = './themes'
+const libIconsDir = 'icons'
 
-createLibIcons(inputIconThemes, outputIcons)
+createLibIcons(themesDir, libIconsDir, { excludeSvgAttributes: ['xmlns', 'width', 'height'] })
