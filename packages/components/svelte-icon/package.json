@@ -16,6 +16,7 @@
   "devDependencies": {
     "@steeze-ui/heroicons": "workspace:^1.0.1",
     "@steeze-ui/iconic-free": "workspace:^1.0.1",
+    "@steeze-ui/octicons": "workspace:^1.0.0-beta.1",
     "@steeze-ui/radix-icons": "workspace:^1.0.2",
     "@sveltejs/adapter-auto": "next",
     "@sveltejs/kit": "next",

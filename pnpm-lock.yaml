@@ -51,7 +51,7 @@ importers:
       '@sveltejs/adapter-auto': next
       '@sveltejs/kit': next
       '@types/node': ^17.0.0
-      heroicons: ^1.0.4
+      heroicons: ^1.0.5
       prettier: ^2.4.1
       prettier-plugin-svelte: ^2.4.0
       svelte: ^3.44.0
@@ -153,7 +153,6 @@ importers:
       '@sveltejs/adapter-auto': next
       '@sveltejs/kit': next
       '@types/node': ^17.0.0
-      heroicons: ^1.0.4
       prettier: ^2.4.1
       prettier-plugin-svelte: ^2.4.0
       svelte: ^3.44.0
@@ -169,7 +168,6 @@ importers:
       '@sveltejs/adapter-auto': 1.0.0-next.10
       '@sveltejs/kit': 1.0.0-next.218_svelte@3.44.3
       '@types/node': 17.0.0
-      heroicons: 1.0.5
       prettier: 2.5.1
       prettier-plugin-svelte: 2.5.1_prettier@2.5.1+svelte@3.44.3
       svelte: 3.44.3
@@ -305,6 +303,7 @@ importers:
     specifiers:
       '@steeze-ui/heroicons': workspace:^1.0.1
       '@steeze-ui/iconic-free': workspace:^1.0.1
+      '@steeze-ui/octicons': workspace:^1.0.0-beta.1
       '@steeze-ui/radix-icons': workspace:^1.0.2
       '@sveltejs/adapter-auto': next
       '@sveltejs/kit': next
@@ -319,6 +318,7 @@ importers:
     devDependencies:
       '@steeze-ui/heroicons': link:../../builders/heroicons-builder/package
       '@steeze-ui/iconic-free': link:../../builders/iconic-free-builder/package
+      '@steeze-ui/octicons': link:../../builders/octicons-builder/package
       '@steeze-ui/radix-icons': link:../../builders/radix-icons-builder/package
       '@sveltejs/adapter-auto': 1.0.0-next.10
       '@sveltejs/kit': 1.0.0-next.218_svelte@3.44.3
