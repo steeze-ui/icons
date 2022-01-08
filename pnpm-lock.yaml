@@ -348,6 +348,7 @@ importers:
 
   packages/components/lit-icon:
     specifiers:
+      '@steeze-ui/feather-icons': workspace:^1.0.0
       '@steeze-ui/heroicons': workspace:^1.0.1
       '@steeze-ui/iconic-free': workspace:^1.0.1
       '@steeze-ui/octicons': workspace:^1.0.0-beta.1
@@ -358,6 +359,7 @@ importers:
     dependencies:
       lit: 2.1.1
     devDependencies:
+      '@steeze-ui/feather-icons': link:../../builders/feather-icons-builder/package
       '@steeze-ui/heroicons': link:../../builders/heroicons-builder/package
       '@steeze-ui/iconic-free': link:../../builders/iconic-free-builder/package
       '@steeze-ui/octicons': link:../../builders/octicons-builder/package

@@ -12,6 +12,12 @@ export default defineConfig({
 		}
 	},
 	optimizeDeps: {
-		include: ['@steeze-ui/heroicons', '@steeze-ui/radix-icons', '@steeze-ui/iconic-free']
+		include: [
+			'@steeze-ui/heroicons',
+			'@steeze-ui/radix-icons',
+			'@steeze-ui/iconic-free',
+			'@steeze-ui/octicons',
+			'@steeze-ui/feather-icons'
+		]
 	}
 })

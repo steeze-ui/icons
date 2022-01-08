@@ -1,6 +1,6 @@
 {
   "name": "@steeze-ui/lit-icon",
-  "version": "1.0.0-next.1",
+  "version": "1.0.0",
   "main": "dist/lit-icon.es.js",
   "exports": {
     ".": "./dist/lit-icon.es.js"
@@ -20,6 +20,7 @@
     "lit": "^2.1.1"
   },
   "devDependencies": {
+    "@steeze-ui/feather-icons": "workspace:^1.0.0",
     "@steeze-ui/heroicons": "workspace:^1.0.1",
     "@steeze-ui/iconic-free": "workspace:^1.0.1",
     "@steeze-ui/octicons": "workspace:^1.0.0-beta.1",
