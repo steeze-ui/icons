@@ -1,6 +1,6 @@
 {
-  "name": "@steeze-ui/octicons",
-  "description": "Icon Sources (based on Octicons) built for @steeze-ui/icons",
+  "name": "@steeze-ui/feather-icons",
+  "description": "Icon Sources (based on Feather Icons) built for @steeze-ui/icons",
   "version": "1.0.0",
   "type": "module",
   "main": "index.js",
@@ -18,11 +18,12 @@
     "build:icons": "node --loader ts-node/esm build.ts"
   },
   "devDependencies": {
-    "@primer/octicons": "^16.2.0",
     "@steeze-ui/icons": "*",
+    "@steeze-ui/svelte-icon": "*",
     "@sveltejs/adapter-auto": "next",
     "@sveltejs/kit": "next",
     "@types/node": "^17.0.0",
+    "feather-icons": "^4.28.0",
     "prettier": "^2.4.1",
     "prettier-plugin-svelte": "^2.4.0",
     "svelte": "^3.44.0",
@@ -36,14 +37,14 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/steeze-ui/icons.git",
-    "directory": "packages/builders/octicons-builder"
+    "directory": "packages/builders/feather-icons-builder"
   },
   "keywords": [
     "raw",
     "icons",
-    "heroicons",
+    "feather",
+    "feather-icons",
     "outline",
-    "solid",
     "steeze"
   ],
   "author": "Justin Voitel <mail@justinv.me>",

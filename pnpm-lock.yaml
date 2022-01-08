@@ -10,6 +10,74 @@ importers:
       '@changesets/cli': 2.19.0
       '@changesets/get-github-info': 0.5.0
 
+  packages/builders/feather-icons-builder:
+    specifiers:
+      '@steeze-ui/icons': '*'
+      '@steeze-ui/svelte-icon': '*'
+      '@sveltejs/adapter-auto': next
+      '@sveltejs/kit': next
+      '@types/node': ^17.0.0
+      feather-icons: ^4.28.0
+      prettier: ^2.4.1
+      prettier-plugin-svelte: ^2.4.0
+      svelte: ^3.44.0
+      svelte-check: ^2.2.6
+      svelte-preprocess: ^4.9.4
+      svelte2tsx: ^0.4.11
+      ts-node: ^10.4.0
+      tslib: ^2.3.1
+      typescript: ^4.4.3
+    devDependencies:
+      '@steeze-ui/icons': link:../../core
+      '@steeze-ui/svelte-icon': link:../../components/svelte-icon/package
+      '@sveltejs/adapter-auto': 1.0.0-next.10
+      '@sveltejs/kit': 1.0.0-next.218_svelte@3.44.3
+      '@types/node': 17.0.0
+      feather-icons: 4.28.0
+      prettier: 2.5.1
+      prettier-plugin-svelte: 2.5.1_prettier@2.5.1+svelte@3.44.3
+      svelte: 3.44.3
+      svelte-check: 2.2.10_svelte@3.44.3
+      svelte-preprocess: 4.10.0_svelte@3.44.3+typescript@4.5.4
+      svelte2tsx: 0.4.11_svelte@3.44.3+typescript@4.5.4
+      ts-node: 10.4.0_cb9fa2b677905e47db2aeff929cdeb55
+      tslib: 2.3.1
+      typescript: 4.5.4
+
+  packages/builders/feather-icons-builder/package:
+    specifiers:
+      '@steeze-ui/icons': '*'
+      '@steeze-ui/svelte-icon': '*'
+      '@sveltejs/adapter-auto': next
+      '@sveltejs/kit': next
+      '@types/node': ^17.0.0
+      feather-icons: ^4.28.0
+      prettier: ^2.4.1
+      prettier-plugin-svelte: ^2.4.0
+      svelte: ^3.44.0
+      svelte-check: ^2.2.6
+      svelte-preprocess: ^4.9.4
+      svelte2tsx: ^0.4.11
+      ts-node: ^10.4.0
+      tslib: ^2.3.1
+      typescript: ^4.4.3
+    devDependencies:
+      '@steeze-ui/icons': link:../../../core
+      '@steeze-ui/svelte-icon': link:../../../components/svelte-icon/package
+      '@sveltejs/adapter-auto': 1.0.0-next.10
+      '@sveltejs/kit': 1.0.0-next.218_svelte@3.44.3
+      '@types/node': 17.0.0
+      feather-icons: 4.28.0
+      prettier: 2.5.1
+      prettier-plugin-svelte: 2.5.1_prettier@2.5.1+svelte@3.44.3
+      svelte: 3.44.3
+      svelte-check: 2.2.10_svelte@3.44.3
+      svelte-preprocess: 4.10.0_svelte@3.44.3+typescript@4.5.4
+      svelte2tsx: 0.4.11_svelte@3.44.3+typescript@4.5.4
+      ts-node: 10.4.0_cb9fa2b677905e47db2aeff929cdeb55
+      tslib: 2.3.1
+      typescript: 4.5.4
+
   packages/builders/heroicons-builder:
     specifiers:
       '@steeze-ui/icons': '*'
@@ -185,7 +253,6 @@ importers:
       '@sveltejs/adapter-auto': next
       '@sveltejs/kit': next
       '@types/node': ^17.0.0
-      heroicons: ^1.0.4
       prettier: ^2.4.1
       prettier-plugin-svelte: ^2.4.0
       svelte: ^3.44.0
@@ -201,7 +268,6 @@ importers:
       '@sveltejs/adapter-auto': 1.0.0-next.10
       '@sveltejs/kit': 1.0.0-next.218_svelte@3.44.3
       '@types/node': 17.0.0
-      heroicons: 1.0.5
       prettier: 2.5.1
       prettier-plugin-svelte: 2.5.1_prettier@2.5.1+svelte@3.44.3
       svelte: 3.44.3
@@ -301,6 +367,7 @@ importers:
 
   packages/components/svelte-icon:
     specifiers:
+      '@steeze-ui/feather-icons': workspace:^1.0.0-next.0
       '@steeze-ui/heroicons': workspace:^1.0.1
       '@steeze-ui/iconic-free': workspace:^1.0.1
       '@steeze-ui/octicons': workspace:^1.0.0-beta.1
@@ -316,6 +383,7 @@ importers:
       tslib: ^2.3.1
       typescript: ^4.4.3
     devDependencies:
+      '@steeze-ui/feather-icons': link:../../builders/feather-icons-builder/package
       '@steeze-ui/heroicons': link:../../builders/heroicons-builder/package
       '@steeze-ui/iconic-free': link:../../builders/iconic-free-builder/package
       '@steeze-ui/octicons': link:../../builders/octicons-builder/package
@@ -335,6 +403,7 @@ importers:
     specifiers:
       '@steeze-ui/heroicons': workspace:^1.0.1
       '@steeze-ui/iconic-free': workspace:^1.0.1
+      '@steeze-ui/octicons': workspace:^1.0.0-beta.1
       '@steeze-ui/radix-icons': workspace:^1.0.2
       '@sveltejs/adapter-auto': next
       '@sveltejs/kit': next
@@ -349,6 +418,7 @@ importers:
     devDependencies:
       '@steeze-ui/heroicons': link:../../../builders/heroicons-builder/package
       '@steeze-ui/iconic-free': link:../../../builders/iconic-free-builder/package
+      '@steeze-ui/octicons': link:../../../builders/octicons-builder/package
       '@steeze-ui/radix-icons': link:../../../builders/radix-icons-builder/package
       '@sveltejs/adapter-auto': 1.0.0-next.10
       '@sveltejs/kit': 1.0.0-next.218_svelte@3.44.3
@@ -840,7 +910,7 @@ packages:
     engines: {node: '>= 8'}
     dependencies:
       normalize-path: 3.0.0
-      picomatch: 2.3.0
+      picomatch: 2.3.1
     dev: true
 
   /arg/4.1.3:
@@ -988,6 +1058,10 @@ packages:
     resolution: {integrity: sha512-riT/3vI5YpVH6/qomlDnJow6TBee2PBKSEpx3O32EGPYbWGIRsIlGRms3Sm74wYE1JMo8RnO04Hb12+v1J5ICw==}
     dev: true
 
+  /classnames/2.3.1:
+    resolution: {integrity: sha512-OlQdbZ7gLfGarSqxesMesDa5uz7KFbID8Kpq/SxIoNGDqY8lSYs0D+hhtBXhcdB3rcbXArFr7vlHheLk1voeNA==}
+    dev: true
+
   /cli-boxes/1.0.0:
     resolution: {integrity: sha1-T6kXw+WclKAEzWH47lCdplFocUM=}
     engines: {node: '>=0.10.0'}
@@ -1029,6 +1103,11 @@ packages:
 
   /concat-map/0.0.1:
     resolution: {integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=}
+    dev: true
+
+  /core-js/3.20.2:
+    resolution: {integrity: sha512-nuqhq11DcOAbFBV4zCbKeGbKQsUDRqTX0oqx7AttUBuqe3h20ixsE039QHelbL6P4h+9kytVqyEtyZ6gsiwEYw==}
+    requiresBuild: true
     dev: true
 
   /create-require/1.1.1:
@@ -1503,17 +1582,6 @@ packages:
       tmp: 0.0.33
     dev: true
 
-  /fast-glob/3.2.7:
-    resolution: {integrity: sha512-rYGMRwip6lUMvYD3BTScMwT1HtAs2d71SMv66Vrxs0IekGZEjhM0pcMfjQPnknBt2zeCwQMEupiN02ZP4DiT1Q==}
-    engines: {node: '>=8'}
-    dependencies:
-      '@nodelib/fs.stat': 2.0.5
-      '@nodelib/fs.walk': 1.2.8
-      glob-parent: 5.1.2
-      merge2: 1.4.1
-      micromatch: 4.0.4
-    dev: true
-
   /fast-glob/3.2.9:
     resolution: {integrity: sha512-MBwILhhD92sziIrMQwpqcuGERF+BH99ei2a3XsGJuqEKcSycAL+w0HWokFenZXona+kjFr82Lf71eTxNRC06XQ==}
     engines: {node: '>=8.6.0'}
@@ -1529,6 +1597,13 @@ packages:
     resolution: {integrity: sha512-YpkpUnK8od0o1hmeSc7UUs/eB/vIPWJYjKck2QKIzAf71Vm1AAQ3EbuZB3g2JIy+pg+ERD0vqI79KyZiB2e2Nw==}
     dependencies:
       reusify: 1.0.4
+    dev: true
+
+  /feather-icons/4.28.0:
+    resolution: {integrity: sha512-gRdqKESXRBUZn6Nl0VBq2wPHKRJgZz7yblrrc2lYsS6odkNFDnA4bqvrlEVRUPjE1tFax+0TdbJKZ31ziJuzjg==}
+    dependencies:
+      classnames: 2.3.1
+      core-js: 3.20.2
     dev: true
 
   /fill-range/7.0.1:
@@ -1641,10 +1716,6 @@ packages:
 
   /globrex/0.1.2:
     resolution: {integrity: sha512-uHJgbwAMwNFf5mLst7IWLNg14x1CkeqglJb/K3doi4dw6q2IvAAmM/Y81kevy83wP+Sst+nutFTYOGg3d1lsxg==}
-    dev: true
-
-  /graceful-fs/4.2.8:
-    resolution: {integrity: sha512-qkIilPUYcNhJpd33n0GBXTB1MMPp14TxEsEs0pTrsSVucApsYzW5V+Q8Qxhik6KU3evy+qkAAowTByymK0avdg==}
     dev: true
 
   /graceful-fs/4.2.9:
@@ -2169,11 +2240,6 @@ packages:
     resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
     dev: true
 
-  /picomatch/2.3.0:
-    resolution: {integrity: sha512-lY1Q/PiJGC2zOv/z391WOTD+Z02bCgsFfvxoXXf6h7kv9o+WmsmzYqrAwY63sNgOxE4xEdq0WyUnXfKeBrSvYw==}
-    engines: {node: '>=8.6'}
-    dev: true
-
   /picomatch/2.3.1:
     resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==}
     engines: {node: '>=8.6'}
@@ -2278,7 +2344,7 @@ packages:
     resolution: {integrity: sha512-hOS089on8RduqdbhvQ5Z37A0ESjsqz6qnRcffsMU3495FuTdqSm+7bhJ29JvIOsBDEEnan5DPu9t3To9VRlMzA==}
     engines: {node: '>=8.10.0'}
     dependencies:
-      picomatch: 2.3.0
+      picomatch: 2.3.1
     dev: true
 
   /redent/3.0.0:
@@ -2366,7 +2432,7 @@ packages:
     resolution: {integrity: sha1-dB4kXiMfB8r7b98PEzrfohalAq0=}
     dependencies:
       es6-promise: 3.3.1
-      graceful-fs: 4.2.8
+      graceful-fs: 4.2.9
       mkdirp: 0.5.5
       rimraf: 2.7.1
     dev: true
@@ -2551,7 +2617,7 @@ packages:
     dependencies:
       chalk: 4.1.2
       chokidar: 3.5.2
-      fast-glob: 3.2.7
+      fast-glob: 3.2.9
       import-fresh: 3.3.0
       minimist: 1.2.5
       sade: 1.7.4

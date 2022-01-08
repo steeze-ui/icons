@@ -37,7 +37,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/steeze-ui/icons.git",
-    "directory": "packages/builders/radix-icons-builder"
+    "directory": "packages/builders/iconic-free-builder"
   },
   "keywords": [
     "raw",
