@@ -41,7 +41,9 @@ Effortless Icons
 | [@steeze-ui/iconic-free](packages/builders/iconic-free-builder)     | default                                            | [iconic.app](https://iconic.app/)                                               | <a href="https://www.npmjs.com/package/@steeze-ui/iconic-free"><img src="https://img.shields.io/npm/v/@steeze-ui/iconic-free.svg?style=flat" /></a>     |
 | [@steeze-ui/feather-icons](packages/builders/feather-icons-builder) | default                                            | [feathericons/feather](https://github.com/feathericons/feather)                 | <a href="https://www.npmjs.com/package/@steeze-ui/feather-icons"><img src="https://img.shields.io/npm/v/@steeze-ui/feather-icons.svg?style=flat" /></a> |
 | [@steeze-ui/octicons](packages/builders/octicons-builder)           | default(16), 24, 12                                | [primer/octicons](https://github.com/primer/octicons)                           | <a href="https://www.npmjs.com/package/@steeze-ui/octicons"><img src="https://img.shields.io/npm/v/@steeze-ui/octicons.svg?style=flat" /></a>           |
-| steeze-ui/material-design-icons (coming)                            | default(outlined), filled, rounded, sharp, twotone | [google/material-design-icons](https://github.com/google/material-design-icons) |                                                                                                                                                         |
+| @steeze-ui/material-design-icons (coming)                            | default(outlined), filled, rounded, sharp, twotone | [google/material-design-icons](https://github.com/google/material-design-icons) |  |
+| @steeze-ui/carbon-icons (coming)                            | default | [carbon-design-system/carbon](https://github.com/carbon-design-system/carbon/tree/main/packages/icons) |     |                                                                                                                                                    
+
 
 ### Utilities
 
