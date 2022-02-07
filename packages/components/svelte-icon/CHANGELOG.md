@@ -1,5 +1,11 @@
 # @steeze-ui/svelte-icon
 
+## 1.3.0
+
+### Minor Changes
+
+- fallback to defaut theme if provided theme is non-existent
+
 ## 1.2.3
 
 ### Patch Changes
