@@ -17,7 +17,7 @@ Effortless Icons
   import {LightningBolt} from '@steeze-ui/heroicons'
 </script>
 
-<Icon src={LightningBolt} theme='solid' class='color-gray-900'>
+<Icon src={LightningBolt} theme='solid' class='color-gray-900'/>
 ```
 
 ## Packages
