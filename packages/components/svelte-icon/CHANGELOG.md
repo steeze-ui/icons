@@ -1,5 +1,11 @@
 # @steeze-ui/svelte-icon
 
+## 1.2.3
+
+### Patch Changes
+
+- add module field to package.json
+
 ## 1.2.2
 
 ### Patch Changes
