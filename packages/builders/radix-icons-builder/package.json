@@ -15,7 +15,7 @@
     "package": "pnpm build:icons && svelte-kit package",
     "release:next": "pnpm release -- --tag=next",
     "release": "pnpm package && cd package && pnpm publish",
-    "build:icons": "node --loader ts-node/esm build.ts"
+    "build:icons": "esmo build.ts"
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "next",
@@ -30,7 +30,7 @@
     "@steeze-ui/icons": "workspace:^1.0.1",
     "@steeze-ui/svelte-icon": "*",
     "heroicons": "^1.0.4",
-    "ts-node": "^10.4.0",
+    "esmo": "^0.14.1",
     "@types/node": "^17.0.0",
     "svelte2tsx": "^0.4.11"
   },
