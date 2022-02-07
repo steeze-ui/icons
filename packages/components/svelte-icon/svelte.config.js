@@ -16,9 +16,8 @@ const config = {
 			}
 			// exports: (file) => file === 'index.js'
 			// files: (file) => !file.startsWith("internal"), //exclude internal Components
-		},
+		}
 		// hydrate the <div id="svelte"> element in src/app.html
-		target: '#svelte'
 	}
 }
 

@@ -11,7 +11,7 @@
     "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. .",
     "package": "svelte-kit package",
     "release:next": "pnpm release -- --tag=next",
-    "release": "pnpm package && cd package && pnpm publish"
+    "release": "pnpm package && cd package && pnpm publish --no-git-checks"
   },
   "devDependencies": {
     "@steeze-ui/feather-icons": "workspace:^1.0.0",
