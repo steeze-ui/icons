@@ -1,32 +1,32 @@
 import {
-	writeFile,
 	createWriteStream,
+	existsSync,
+	lstatSync,
+	mkdirSync,
 	readdirSync,
 	readFileSync,
-	existsSync,
 	rmSync,
-	mkdirSync,
-	writeFileSync,
-	lstatSync
+	writeFileSync
 } from 'fs'
-import { join, extname } from 'path'
-import { EOL } from 'os'
-import { pascalcase } from './utils/pascalcase'
-import { kebabcase } from './utils/kebabcase'
 import { parse } from 'html-parse-stringify'
+import { EOL } from 'os'
+import { extname, join } from 'path'
+import { kebabcase } from './utils/kebabcase'
+import { pascalcase } from './utils/pascalcase'
 
 interface ThemeBuilderProperties {
 	sources: {
 		inputRaw: string
-		outputThemes: string
+		outputThemes?: string
 		suffixMap?: { [key: string]: string }
 		themesMap?: { [key: string]: string }
 		fallbackTheme?: string
 	}
 	lib: {
-		output: string
-		// iconsFolderName?: string
+		output?: string
 		exportsFileName?: string
+		typesInputFile?: string
+		typesOutputFile?: string
 		extendSvgAttributes?: { [attribute: string]: string }
 		excludeSvgAttributes?: string[]
 	}
@@ -49,44 +49,53 @@ interface ElementTagDict {
 	[elementTag: string]: ASTNode['attrs'][]
 }
 
+const defaultProps: {
+	sources: Partial<ThemeBuilderProperties['sources']>
+	lib: Partial<ThemeBuilderProperties['lib']>
+} = {
+	sources: {
+		outputThemes: './themes'
+	},
+	lib: {
+		output: './src/lib',
+		exportsFileName: 'index.ts',
+		typesInputFile: './../shared/types/types.d.ts',
+		typesOutputFile: 'types.d.ts'
+	}
+}
+
 export class ThemeBuilder {
 	private props: ThemeBuilderProperties
-	// private iconsDirPath: string
 	private exportsFilePath: string
 	private unrecognizedSuffixes: string[] = []
 	private sourceDict: SourceDict = {}
-	private typesInputFile = './../shared/types/types.d.ts'
-	private typesOutputFile = 'types.d.ts'
 
 	constructor(props: ThemeBuilderProperties) {
-		// if (props.lib.iconsFolderName == null) {
-		// 	props.lib.iconsFolderName = 'icons'
-		// }
-		if (props.lib.exportsFileName == null) {
-			props.lib.exportsFileName = 'index.js'
-		}
+		props.lib = Object.assign(defaultProps.lib, props.lib)
+		props.sources = Object.assign(defaultProps.sources, props.sources)
+
 		this.props = props
-		// this.iconsDirPath = join(props.lib.output, props.lib.iconsFolderName)
-		this.exportsFilePath = join(props.lib.output, props.lib.exportsFileName)
+
+		this.exportsFilePath = join(props.lib.output!, props.lib.exportsFileName!)
 	}
 
 	build() {
 		const { outputThemes } = this.props.sources
 
 		// check if input dir exists
-		if (!existsSync(outputThemes)) {
+		if (!existsSync(outputThemes!)) {
 			console.log('No themes directory found')
 			return
 		}
 		// check if default theme dir exists
-		if (!existsSync(join(outputThemes, 'default'))) {
+		if (!existsSync(join(outputThemes!, 'default'))) {
 			console.log('No default theme found')
 			return
 		}
 
 		// // clear output dir if exists
-		if (!existsSync(this.props.lib.output)) {
-			mkdirSync(this.props.lib.output, { recursive: true })
+		if (!existsSync(this.props.lib.output!)) {
+			mkdirSync(this.props.lib.output!, { recursive: true })
 		}
 		// clear output exports file (index.js) if exists
 		if (existsSync(this.exportsFilePath)) {
@@ -94,7 +103,7 @@ export class ThemeBuilder {
 		}
 
 		//collect svg in dict
-		readdirSync(outputThemes).forEach((theme) => {
+		readdirSync(outputThemes!).forEach((theme) => {
 			this.getIconsFromTheme(theme)
 		})
 
@@ -105,9 +114,9 @@ export class ThemeBuilder {
 	}
 
 	private copyTypesFile() {
-		const typesOutputPath = join(this.props.lib.output, this.typesOutputFile)
+		const typesOutputPath = join(this.props.lib.output!, this.props.lib.typesOutputFile!)
 
-		if (!existsSync(this.typesInputFile)) {
+		if (!existsSync(this.props.lib.typesInputFile!)) {
 			console.log('No types file found')
 			return
 		}
@@ -116,7 +125,7 @@ export class ThemeBuilder {
 			rmSync(typesOutputPath, { recursive: true })
 		}
 
-		const data = readFileSync(join(this.typesInputFile)).toString()
+		const data = readFileSync(join(this.props.lib.typesInputFile!)).toString()
 		const logger = createWriteStream(typesOutputPath, {
 			flags: 'a'
 		})
@@ -127,9 +136,9 @@ export class ThemeBuilder {
 
 	private getIconsFromTheme(theme: string) {
 		let usedAttrsDict: { [key: string]: string[] } = {}
-		readdirSync(join(this.props.sources.outputThemes, theme)).forEach((fileName) => {
+		readdirSync(join(this.props.sources.outputThemes!, theme)).forEach((fileName) => {
 			const key = fileName.replace('.svg', '')
-			const data = readFileSync(join(this.props.sources.outputThemes, theme, fileName)).toString()
+			const data = readFileSync(join(this.props.sources.outputThemes!, theme, fileName)).toString()
 			const svgAst: any = parse(data)[0] as any
 
 			if (!this.sourceDict[key]) {
@@ -224,7 +233,7 @@ export class ThemeBuilder {
 	}
 
 	collectFromDir() {
-		const outputPath = join(this.props.sources.outputThemes)
+		const outputPath = join(this.props.sources.outputThemes!)
 		const { inputRaw } = this.props.sources
 		let { themesMap } = this.props.sources
 		if (!themesMap) {
@@ -273,10 +282,10 @@ export class ThemeBuilder {
 			console.log('No input directory found')
 			return
 		}
-		if (existsSync(join(outputThemes))) {
-			rmSync(join(outputThemes), { recursive: true })
+		if (existsSync(join(outputThemes!))) {
+			rmSync(join(outputThemes!), { recursive: true })
 		}
-		mkdirSync(join(outputThemes))
+		mkdirSync(join(outputThemes!))
 
 		this.unrecognizedSuffixes = []
 		this.traverse(inputRaw)
@@ -310,14 +319,14 @@ export class ThemeBuilder {
 						const theme = suffixMap?.[detectedSuffix] || fallbackTheme
 						if (theme) {
 							const data = readFileSync(join(traversedPath)).toString()
-							if (!existsSync(join(outputThemes, theme))) {
-								mkdirSync(join(outputThemes, theme))
+							if (!existsSync(join(outputThemes!, theme))) {
+								mkdirSync(join(outputThemes!, theme))
 							}
 
 							if (detectedSuffix) {
 								fileName = fileName.replace(detectedSuffix, '')
 							}
-							writeFileSync(join(outputThemes, theme, this.normalizeSourceName(fileName)), data)
+							writeFileSync(join(outputThemes!, theme, this.normalizeSourceName(fileName)), data)
 						} else {
 							console.log(path, traversedPath)
 						}
