@@ -3,7 +3,7 @@ import { ThemeBuilder } from '@steeze-ui/icons'
 const builder = new ThemeBuilder({
 	sources: {
 		inputRaw: './node_modules/@primer/octicons/build/svg',
-		suffixMap: {
+		collectFromSuffix: {
 			'-16': 'default',
 			'-24': '24',
 			'-12': '12'
@@ -16,4 +16,4 @@ const builder = new ThemeBuilder({
 	}
 })
 
-builder.collectFromSuffix().build()
+builder.build()

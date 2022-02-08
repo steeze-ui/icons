@@ -3,7 +3,7 @@ import { ThemeBuilder } from '@steeze-ui/icons'
 const builder = new ThemeBuilder({
 	sources: {
 		inputRaw: './node_modules/remixicon/icons',
-		suffixMap: {
+		collectFromSuffix: {
 			'-line': 'default',
 			'-fill': 'solid'
 		},
@@ -15,4 +15,4 @@ const builder = new ThemeBuilder({
 	}
 })
 
-builder.collectFromSuffix().build()
+builder.build()
