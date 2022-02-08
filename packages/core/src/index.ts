@@ -223,7 +223,9 @@ export class ThemeBuilder {
 		let exports = Object.keys(this.sourceDict)
 			.map((key) => {
 				return `export const ${this.normalizeLibName(key)}=${JSON.stringify(
-					this.sourceDict[key]
+					this.sourceDict[key],
+					null,
+					0
 				)} as IconSource`
 			})
 			.join('\n')
