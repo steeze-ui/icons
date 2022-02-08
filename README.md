@@ -1,14 +1,12 @@
-# READ THIS FIRST
-
-This project is still in experimental development. Expect bugs and breaking changes!
+> Need Accessible components for your next SvelteKit project ? Check out [@steeze-ui/components](https://github.com/steeze-ui/components)!
 
 ## Overview
 
 Effortless Icons
 
-- Icon components (for now it's svelte first)
-- Popular Icon Packs
-- Icon Pack Themes (different versions of the same icon)
+- Icon components for different frameworks/libraries
+- Popular Icon Packs (Heroicons, Feather Icons, etc.)
+- Icon Themes (different versions of the same icon)
 - Templates to Create your own Icon Packs (coming)
 
 ```svelte
