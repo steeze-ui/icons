@@ -13,8 +13,12 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "release": "pnpm run build && pnpm publish",
-    "release:next": "pnpm run release -- --tag=next"
+    "release:next": "pnpm run publish:npm -- --tag=next",
+    "publish:npm": "pnpm run build && pnpm publish --no-git-checks",
+    "release:patch": "pnpm version patch --force && pnpm publish:npm",
+    "release:minor": "pnpm version minor --force && pnpm publish:npm",
+    "release:major": "pnpm version major --force && pnpm publish:npm",
+    "release": "pnpm release:patch"
   },
   "dependencies": {
     "lit": "^2.1.1"

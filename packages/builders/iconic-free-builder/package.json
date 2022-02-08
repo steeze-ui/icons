@@ -13,9 +13,13 @@
     "lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. .",
     "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. .",
     "package": "pnpm build:icons && svelte-kit package",
-    "release:next": "pnpm release -- --tag=next",
-    "release": "pnpm package && cd package && pnpm publish",
-    "build:icons": "esmo build.ts"
+    "build:icons": "esmo build.ts",
+    "release:next": "pnpm publish:npm -- --tag=next",
+    "release:patch": "pnpm version patch --force && pnpm publish:npm",
+    "release:minor": "pnpm version minor --force && pnpm publish:npm",
+    "release:major": "pnpm version major --force && pnpm publish:npm",
+    "release": "pnpm release:patch",
+    "publish:npm": "pnpm package && cd package && pnpm publish --no-git-checks"
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "next",
