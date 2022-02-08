@@ -25,7 +25,7 @@ interface ThemeBuilderProperties {
 	}
 	lib: {
 		output: string
-		iconsFolderName?: string
+		// iconsFolderName?: string
 		exportsFileName?: string
 		extendSvgAttributes?: { [attribute: string]: string }
 		excludeSvgAttributes?: string[]
@@ -51,20 +51,22 @@ interface ElementTagDict {
 
 export class ThemeBuilder {
 	private props: ThemeBuilderProperties
-	private iconsDirPath: string
+	// private iconsDirPath: string
 	private exportsFilePath: string
 	private unrecognizedSuffixes: string[] = []
 	private sourceDict: SourceDict = {}
+	private typesInputFile = './../shared/types/types.d.ts'
+	private typesOutputFile = 'types.d.ts'
 
 	constructor(props: ThemeBuilderProperties) {
-		if (props.lib.iconsFolderName == null) {
-			props.lib.iconsFolderName = 'icons'
-		}
+		// if (props.lib.iconsFolderName == null) {
+		// 	props.lib.iconsFolderName = 'icons'
+		// }
 		if (props.lib.exportsFileName == null) {
 			props.lib.exportsFileName = 'index.js'
 		}
 		this.props = props
-		this.iconsDirPath = join(props.lib.output, props.lib.iconsFolderName)
+		// this.iconsDirPath = join(props.lib.output, props.lib.iconsFolderName)
 		this.exportsFilePath = join(props.lib.output, props.lib.exportsFileName)
 	}
 
@@ -82,28 +84,45 @@ export class ThemeBuilder {
 			return
 		}
 
-		// clear output dir if exists
-		if (existsSync(this.iconsDirPath)) {
-			rmSync(this.iconsDirPath, { recursive: true })
+		// // clear output dir if exists
+		if (!existsSync(this.props.lib.output)) {
+			mkdirSync(this.props.lib.output, { recursive: true })
 		}
 		// clear output exports file (index.js) if exists
 		if (existsSync(this.exportsFilePath)) {
 			rmSync(this.exportsFilePath, { recursive: true })
 		}
 
-		// create output dir
-		mkdirSync(this.iconsDirPath, { recursive: true })
-
 		//collect svg in dict
 		readdirSync(outputThemes).forEach((theme) => {
 			this.getIconsFromTheme(theme)
 		})
 
-		//write svg dict to files
-		this.writeSvgDict()
-
 		// write module exports
-		this.writeExportsModule()
+		this.writeExportsFile()
+
+		this.copyTypesFile()
+	}
+
+	private copyTypesFile() {
+		const typesOutputPath = join(this.props.lib.output, this.typesOutputFile)
+
+		if (!existsSync(this.typesInputFile)) {
+			console.log('No types file found')
+			return
+		}
+
+		if (existsSync(typesOutputPath)) {
+			rmSync(typesOutputPath, { recursive: true })
+		}
+
+		const data = readFileSync(join(this.typesInputFile)).toString()
+		const logger = createWriteStream(typesOutputPath, {
+			flags: 'a'
+		})
+		logger.write(data)
+		logger.write(EOL)
+		logger.end()
 	}
 
 	private getIconsFromTheme(theme: string) {
@@ -184,26 +203,19 @@ export class ThemeBuilder {
 		console.log('')
 	}
 
-	private async writeSvgDict() {
-		Object.keys(this.sourceDict).forEach((name) => {
-			writeFile(
-				join(this.iconsDirPath, `${name}.js`),
-				'export default ' + JSON.stringify(this.sourceDict[name]),
-				(_err: any) => {}
-			)
-		})
-	}
-
-	private writeExportsModule() {
+	private writeExportsFile() {
 		const logger = createWriteStream(this.exportsFilePath, {
 			flags: 'a'
 		})
+		// write types
+		logger.write('import type {IconSource} from "./types" \n')
+
+		// write exports
 		let exports = Object.keys(this.sourceDict)
-			.map((name) => {
-				return `export {default as ${this.normalizeLibName(name)}} from "./${join(
-					this.props.lib.iconsFolderName || '',
-					name + '.js'
-				)}"`
+			.map((key) => {
+				return `export const ${this.normalizeLibName(key)}=${JSON.stringify(
+					this.sourceDict[key]
+				)} as IconSource`
 			})
 			.join('\n')
 		logger.write(exports)

@@ -12,7 +12,7 @@ const builder = new ThemeBuilder({
 	},
 	lib: {
 		output: './src/lib',
-		exportsFileName: 'index.js',
+		exportsFileName: 'index.ts',
 		extendSvgAttributes: { fill: 'currentColor' },
 		excludeSvgAttributes: ['width', 'height', 'xmlns']
 	}
