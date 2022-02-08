@@ -1,7 +1,7 @@
 {
   "name": "@steeze-ui/remix-icons",
   "description": "Icon Sources (based on Remix Icons) built for @steeze-ui/icons",
-  "version": "1.0.0-next.2",
+  "version": "1.0.0",
   "type": "module",
   "main": "index.js",
   "scripts": {
