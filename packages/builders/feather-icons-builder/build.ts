@@ -1,11 +1,13 @@
-import { createLibIcons, createThemesFromDir } from '@steeze-ui/icons'
+import { ThemeBuilder } from '@steeze-ui/icons'
 
-const rawIconsDir = './node_modules/feather-icons/dist'
-const themesDir = './themes'
-const libIconsDir = 'icons'
-
-createThemesFromDir(rawIconsDir, themesDir, { icons: 'default' })
-
-createLibIcons(themesDir, libIconsDir, {
-	excludeSvgAttributes: ['xmlns', 'width', 'height', 'class']
+const builder = new ThemeBuilder({
+	sources: {
+		inputRaw: './node_modules/feather-icons/dist',
+		themesMap: { icons: 'default' }
+	},
+	lib: {
+		excludeSvgAttributes: ['xmlns', 'width', 'height', 'class']
+	}
 })
+
+builder.collectFromDir().build()

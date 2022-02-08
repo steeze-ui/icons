@@ -1,7 +1,7 @@
 {
   "name": "@steeze-ui/feather-icons",
   "description": "Icon Sources (based on Feather Icons) built for @steeze-ui/icons",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "type": "module",
   "main": "index.js",
   "scripts": {
