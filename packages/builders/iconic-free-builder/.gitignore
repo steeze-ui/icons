@@ -6,3 +6,5 @@ node_modules
 .env
 .env.*
 !.env.example
+**/lib/index.ts
+**/lib/types.d.ts

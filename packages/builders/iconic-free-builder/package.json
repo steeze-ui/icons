@@ -1,7 +1,7 @@
 {
   "name": "@steeze-ui/iconic-free",
   "description": "Icon Sources (based on iconic free Icons) built for @steeze-ui/icons",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "type": "module",
   "main": "index.js",
   "scripts": {

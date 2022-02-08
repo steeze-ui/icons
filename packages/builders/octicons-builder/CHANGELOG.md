@@ -1,4 +1,4 @@
-# @steeze-ui/iconic-free
+# @steeze-ui/feather-icons
 
 ## 1.1.0
 
@@ -7,9 +7,3 @@
 - improve typings
 - bundle sources in index.ts
 - shrinken package size
-
-## 1.0.2
-
-### Patch Changes
-
-- remove `width` & `height` from sources
