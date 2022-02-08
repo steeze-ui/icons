@@ -1,7 +1,7 @@
 {
   "name": "icons",
   "version": "0.0.1",
-  "description": "monorepo for @steeze-ui and friends",
+  "description": "monorepo for @steeze-ui/icons and friends",
   "scripts": {
     "package": "pnpm package --filter=\"@steeze-ui/*\"",
     "release": "pnpm release --filter=\"@steeze-ui/*\"",
