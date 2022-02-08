@@ -1,9 +1,13 @@
-import { createLibIcons, createThemesFromDir } from '@steeze-ui/icons'
+import { ThemeBuilder } from '@steeze-ui/icons'
 
-const rawIconsDir = './node_modules/heroicons'
-const themesDir = './themes'
-const libIconsDir = 'icons'
+const builder = new ThemeBuilder({
+	sources: {
+		inputRaw: './node_modules/heroicons',
+		themesMap: { outline: 'default', solid: 'solid' }
+	},
+	lib: {
+		excludeSvgAttributes: ['xmlns']
+	}
+})
 
-createThemesFromDir(rawIconsDir, themesDir, { outline: 'default', solid: 'solid' })
-
-createLibIcons(themesDir, libIconsDir, { excludeSvgAttributes: ['xmlns'] })
+builder.collectFromDir().build()

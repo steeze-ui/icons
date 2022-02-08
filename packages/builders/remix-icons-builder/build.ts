@@ -3,7 +3,6 @@ import { ThemeBuilder } from '@steeze-ui/icons'
 const builder = new ThemeBuilder({
 	sources: {
 		inputRaw: './node_modules/remixicon/icons',
-		outputThemes: './themes',
 		suffixMap: {
 			'-line': 'default',
 			'-fill': 'solid'
@@ -11,8 +10,6 @@ const builder = new ThemeBuilder({
 		fallbackTheme: 'default' // files without suffix will be added to this theme
 	},
 	lib: {
-		output: './src/lib',
-		exportsFileName: 'index.ts',
 		extendSvgAttributes: { fill: 'currentColor' },
 		excludeSvgAttributes: ['width', 'height', 'xmlns']
 	}
