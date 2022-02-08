@@ -1,14 +1,23 @@
+declare type SuffixToThemeMap = {
+    [key: string]: string;
+};
+declare type DirToThemeMap = {
+    [key: string]: string;
+};
 interface ThemeBuilderProperties {
-    sources: {
+    sources: ({
+        collectFromSuffix: SuffixToThemeMap;
+        collectFromDir?: never;
+        fallbackTheme?: string;
+    } | {
+        collectFromDir: DirToThemeMap;
+        collectFromSuffix?: never;
+        fallbackTheme?: never;
+    } | {
+        [K in any]: never;
+    }) & {
         inputRaw?: string;
         outputThemes?: string;
-        suffixMap?: {
-            [key: string]: string;
-        };
-        themesMap?: {
-            [key: string]: string;
-        };
-        fallbackTheme?: string;
     };
     lib: {
         output?: string;
@@ -31,8 +40,8 @@ export declare class ThemeBuilder {
     private copyTypesFile;
     private getIconsFromTheme;
     private writeExportsFile;
-    collectFromDir(): this | undefined;
-    collectFromSuffix(): this | undefined;
+    private collectFromDir;
+    private collectFromSuffix;
     private traverse;
     private normalizeSourceName;
     private normalizeLibName;

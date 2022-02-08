@@ -14,13 +14,27 @@ import { extname, join } from 'path'
 import { kebabcase } from './utils/kebabcase'
 import { pascalcase } from './utils/pascalcase'
 
+type SuffixToThemeMap = { [key: string]: string }
+type DirToThemeMap = { [key: string]: string }
+
 interface ThemeBuilderProperties {
-	sources: {
+	sources: (
+		| {
+				collectFromSuffix: SuffixToThemeMap
+				collectFromDir?: never
+				fallbackTheme?: string
+		  }
+		| {
+				collectFromDir: DirToThemeMap
+				collectFromSuffix?: never
+				fallbackTheme?: never
+		  }
+		| {
+				[K in any]: never
+		  }
+	) & {
 		inputRaw?: string
 		outputThemes?: string
-		suffixMap?: { [key: string]: string }
-		themesMap?: { [key: string]: string }
-		fallbackTheme?: string
 	}
 	lib: {
 		output?: string
@@ -80,7 +94,17 @@ export class ThemeBuilder {
 	}
 
 	build() {
-		const { outputThemes } = this.props.sources
+		const { outputThemes, collectFromDir, collectFromSuffix } = this.props.sources
+
+		//collect themes
+		if (collectFromDir) {
+			console.log('Collecting Sources from directory')
+			this.collectFromDir()
+		}
+		if (collectFromSuffix) {
+			console.log('Collecting Sources from suffix')
+			this.collectFromSuffix()
+		}
 
 		// check if input dir exists
 		if (!existsSync(outputThemes!)) {
@@ -234,12 +258,12 @@ export class ThemeBuilder {
 		logger.end()
 	}
 
-	collectFromDir() {
+	private collectFromDir() {
 		const outputPath = join(this.props.sources.outputThemes!)
 		const { inputRaw } = this.props.sources
-		let { themesMap } = this.props.sources
-		if (!themesMap) {
-			console.log("No Themes Map found! Please add 'themesMap' to your config.")
+		let { collectFromDir } = this.props.sources
+		if (!collectFromDir) {
+			console.log("No Themes Map found! Please add 'collectFromDir' to your config.")
 			return
 		}
 
@@ -252,12 +276,12 @@ export class ThemeBuilder {
 		}
 		mkdirSync(outputPath)
 
-		Object.keys(themesMap).forEach((themeDir) => {
+		Object.keys(collectFromDir).forEach((themeDir) => {
 			if (!existsSync(join(inputRaw!, themeDir))) {
 				console.log(`No input directory for theme ${themeDir} found`)
 				return
 			}
-			const outputThemeDir = themesMap?.[themeDir]
+			const outputThemeDir = collectFromDir?.[themeDir]
 
 			if (outputThemeDir) {
 				readdirSync(join(inputRaw!, themeDir)).forEach((fileName) => {
@@ -269,14 +293,13 @@ export class ThemeBuilder {
 				})
 			}
 		})
-		return this
 	}
 
-	collectFromSuffix() {
-		const { inputRaw, outputThemes, suffixMap } = this.props.sources
+	private collectFromSuffix() {
+		const { inputRaw, outputThemes, collectFromSuffix } = this.props.sources
 
-		if (!suffixMap) {
-			console.log("No Suffix Map found! Please add 'suffixMap' to your config.")
+		if (!collectFromSuffix) {
+			console.log("No Suffix Map found! Please add 'collectFromSuffix' to your config.")
 			return
 		}
 
@@ -294,7 +317,6 @@ export class ThemeBuilder {
 		if (this.unrecognizedSuffixes.length > 0) {
 			console.log('Unrecognized files:', this.unrecognizedSuffixes.join(', '))
 		}
-		return this
 	}
 
 	private traverse(path: string) {
@@ -309,16 +331,17 @@ export class ThemeBuilder {
 					console.log('Unrecognized file:', traversedPath)
 					this.unrecognizedSuffixes.push(traversedPath)
 				} else {
-					const { suffixMap, outputThemes, fallbackTheme } = this.props.sources
+					const { collectFromSuffix, outputThemes, fallbackTheme } = this.props.sources
 
-					if (!suffixMap) {
-						console.log("No Suffix Map found! Please add 'suffixMap' to your config.")
+					if (!collectFromSuffix) {
+						console.log("No Suffix Map found! Please add 'collectFromSuffix' to your config.")
 						return
 					}
 
-					const detectedSuffix = Object.keys(suffixMap).find((key) => fileName.includes(key)) || ''
+					const detectedSuffix =
+						Object.keys(collectFromSuffix).find((key) => fileName.includes(key)) || ''
 					if (detectedSuffix || fallbackTheme) {
-						const theme = suffixMap?.[detectedSuffix] || fallbackTheme
+						const theme = collectFromSuffix?.[detectedSuffix] || fallbackTheme
 						if (theme) {
 							const data = readFileSync(join(traversedPath)).toString()
 							if (!existsSync(join(outputThemes!, theme))) {
