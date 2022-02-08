@@ -1,5 +1,12 @@
 # @steeze-ui/icons
 
+## 2.0.0
+
+### Major Changes
+
+- new ThemeBuilder class
+- add shared types.d.ts
+
 ## 1.1.0
 
 ### Patch Changes

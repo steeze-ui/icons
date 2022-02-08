@@ -26,7 +26,6 @@ interface ThemeBuilderProperties {
 		output?: string
 		exportsFileName?: string
 		typesInputFile?: string
-		typesOutputFile?: string
 		extendSvgAttributes?: { [attribute: string]: string }
 		excludeSvgAttributes?: string[]
 	}
@@ -60,8 +59,7 @@ const defaultProps: {
 	lib: {
 		output: './src/lib',
 		exportsFileName: 'index.ts',
-		typesInputFile: './../shared/types/types.d.ts',
-		typesOutputFile: 'types.d.ts'
+		typesInputFile: './node_modules/@steeze-ui/icons/shared/types/types.d.ts'
 	}
 }
 
@@ -70,6 +68,7 @@ export class ThemeBuilder {
 	private exportsFilePath: string
 	private unrecognizedSuffixes: string[] = []
 	private sourceDict: SourceDict = {}
+	private typesOutputFile = 'types.d.ts'
 
 	constructor(props: ThemeBuilderProperties) {
 		props.lib = Object.assign(defaultProps.lib, props.lib)
@@ -115,9 +114,9 @@ export class ThemeBuilder {
 	}
 
 	private copyTypesFile() {
-		const typesOutputPath = join(this.props.lib.output!, this.props.lib.typesOutputFile!)
+		const typesOutputPath = join(this.props.lib.output!, this.typesOutputFile!)
 
-		if (!existsSync(this.props.lib.typesInputFile!)) {
+		if (!existsSync(join(this.props.lib.typesInputFile!))) {
 			console.log('No types file found')
 			return
 		}

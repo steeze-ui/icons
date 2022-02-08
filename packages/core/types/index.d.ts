@@ -14,7 +14,6 @@ interface ThemeBuilderProperties {
         output?: string;
         exportsFileName?: string;
         typesInputFile?: string;
-        typesOutputFile?: string;
         extendSvgAttributes?: {
             [attribute: string]: string;
         };
@@ -26,6 +25,7 @@ export declare class ThemeBuilder {
     private exportsFilePath;
     private unrecognizedSuffixes;
     private sourceDict;
+    private typesOutputFile;
     constructor(props: ThemeBuilderProperties);
     build(): void;
     private copyTypesFile;
