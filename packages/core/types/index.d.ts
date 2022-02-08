@@ -1,6 +1,6 @@
 interface ThemeBuilderProperties {
     sources: {
-        inputRaw: string;
+        inputRaw?: string;
         outputThemes?: string;
         suffixMap?: {
             [key: string]: string;

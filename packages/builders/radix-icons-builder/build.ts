@@ -1,6 +1,13 @@
-import { createLibIcons } from '@steeze-ui/icons'
+import { ThemeBuilder } from '@steeze-ui/icons'
 
-const themesDir = './themes'
-const libIconsDir = 'icons'
+const builder = new ThemeBuilder({
+	sources: {
+		// inputRaw: ''
+		// themesMap: { icons: 'default',  }
+	},
+	lib: {
+		excludeSvgAttributes: ['xmlns', 'width', 'height']
+	}
+})
 
-createLibIcons(themesDir, libIconsDir, { excludeSvgAttributes: ['xmlns', 'width', 'height'] })
+builder.build()

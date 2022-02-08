@@ -16,7 +16,7 @@ import { pascalcase } from './utils/pascalcase'
 
 interface ThemeBuilderProperties {
 	sources: {
-		inputRaw: string
+		inputRaw?: string
 		outputThemes?: string
 		suffixMap?: { [key: string]: string }
 		themesMap?: { [key: string]: string }
@@ -54,6 +54,7 @@ const defaultProps: {
 	lib: Partial<ThemeBuilderProperties['lib']>
 } = {
 	sources: {
+		inputRaw: '',
 		outputThemes: './themes'
 	},
 	lib: {
@@ -243,7 +244,7 @@ export class ThemeBuilder {
 			return
 		}
 
-		if (!existsSync(join(this.props.sources.inputRaw))) {
+		if (!existsSync(join(this.props.sources.inputRaw!))) {
 			console.log('No input directory found')
 			return
 		}
@@ -253,15 +254,15 @@ export class ThemeBuilder {
 		mkdirSync(outputPath)
 
 		Object.keys(themesMap).forEach((themeDir) => {
-			if (!existsSync(join(inputRaw, themeDir))) {
+			if (!existsSync(join(inputRaw!, themeDir))) {
 				console.log(`No input directory for theme ${themeDir} found`)
 				return
 			}
 			const outputThemeDir = themesMap?.[themeDir]
 
 			if (outputThemeDir) {
-				readdirSync(join(inputRaw, themeDir)).forEach((fileName) => {
-					const data = readFileSync(join(inputRaw, themeDir, fileName)).toString()
+				readdirSync(join(inputRaw!, themeDir)).forEach((fileName) => {
+					const data = readFileSync(join(inputRaw!, themeDir, fileName)).toString()
 					if (!existsSync(join(outputPath, outputThemeDir))) {
 						mkdirSync(join(outputPath, outputThemeDir))
 					}
@@ -280,7 +281,7 @@ export class ThemeBuilder {
 			return
 		}
 
-		if (!existsSync(join(inputRaw))) {
+		if (!existsSync(join(inputRaw!))) {
 			console.log('No input directory found')
 			return
 		}
@@ -290,7 +291,7 @@ export class ThemeBuilder {
 		mkdirSync(join(outputThemes!))
 
 		this.unrecognizedSuffixes = []
-		this.traverse(inputRaw)
+		this.traverse(inputRaw!)
 		if (this.unrecognizedSuffixes.length > 0) {
 			console.log('Unrecognized files:', this.unrecognizedSuffixes.join(', '))
 		}
