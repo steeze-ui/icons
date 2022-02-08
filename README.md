@@ -30,7 +30,7 @@ Effortless Icons
 | [@steeze-ui/lit-icon](packages/components/lit-icon)       | <a href="https://www.npmjs.com/package/@steeze-ui/lit-icon"><img src="https://img.shields.io/npm/v/@steeze-ui/lit-icon.svg?style=flat" /></a>       |
 | [@steeze-ui/solid-icon](packages/components/solid-icon)   | <a href="https://www.npmjs.com/package/@steeze-ui/solid-icon"><img src="https://img.shields.io/npm/v/@steeze-ui/solid-icon.svg?style=flat" /></a>   |
 | [@steeze-ui/react-icon](packages/components/react-icon)   | <a href="https://www.npmjs.com/package/@steeze-ui/react-icon"><img src="https://img.shields.io/npm/v/@steeze-ui/react-icon.svg?style=flat" /></a>   |
-| @steeze-ui/vue-icon                                       | coming                                                                                                                                              |
+| @steeze-ui/vue-icon                                       | planned                                                                                                                                             |
 
 ### Icon Packs
 
@@ -42,8 +42,8 @@ Effortless Icons
 | [@steeze-ui/feather-icons](packages/builders/feather-icons-builder) | default                                            | [feathericons/feather](https://github.com/feathericons/feather)                                        | <a href="https://www.npmjs.com/package/@steeze-ui/feather-icons"><img src="https://img.shields.io/npm/v/@steeze-ui/feather-icons.svg?style=flat" /></a> |
 | [@steeze-ui/octicons](packages/builders/octicons-builder)           | default(16), 24, 12                                | [primer/octicons](https://github.com/primer/octicons)                                                  | <a href="https://www.npmjs.com/package/@steeze-ui/octicons"><img src="https://img.shields.io/npm/v/@steeze-ui/octicons.svg?style=flat" /></a>           |
 | [@steeze-ui/remix-icons](packages/builders/remix-icons-builder)     | default(outline), solid                            | [Remix-Design/RemixIcon](https://github.com/Remix-Design/remixicon)                                    | <a href="https://www.npmjs.com/package/@steeze-ui/remix-icons"><img src="https://img.shields.io/npm/v/@steeze-ui/remix-icons.svg?style=flat" /></a>     |
-| @steeze-ui/md-icons (coming)                                        | default(outlined), filled, rounded, sharp, twotone | [google/material-design-icons](https://github.com/google/material-design-icons)                        |                                                                                                                                                         |
-| @steeze-ui/carbon-icons (coming)                                    | default                                            | [carbon-design-system/carbon](https://github.com/carbon-design-system/carbon/tree/main/packages/icons) |                                                                                                                                                         |
+| @steeze-ui/md-icons (planned)                                       | default(outlined), filled, rounded, sharp, twotone | [google/material-design-icons](https://github.com/google/material-design-icons)                        |                                                                                                                                                         |
+| @steeze-ui/carbon-icons (planned)                                   | default                                            | [carbon-design-system/carbon](https://github.com/carbon-design-system/carbon/tree/main/packages/icons) |                                                                                                                                                         |
 
 ### Utilities
 
