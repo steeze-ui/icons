@@ -4,7 +4,7 @@ This project is still in experimental development. Expect bugs and breaking chan
 
 ## Overview
 
-Effortless Icon Pack for Radix Icons
+Effortless Icon Pack for Iconic Free Icons
 
 - Based on [iconic free Icons](https://iconic.app/)
 - Defines the Icon Source to be used in any [steeze-ui icon component](https://github.com/steeze-ui/icons/tree/main/packages/components)

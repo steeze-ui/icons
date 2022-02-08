@@ -1,14 +1,37 @@
-interface Options {
-    extendSvgAttributes?: {
-        [key: string]: string;
+interface ThemeBuilderProperties {
+    sources: {
+        inputRaw: string;
+        outputThemes: string;
+        suffixMap?: {
+            [key: string]: string;
+        };
+        themesMap?: {
+            [key: string]: string;
+        };
+        fallbackTheme?: string;
     };
-    excludeSvgAttributes?: string[];
+    lib: {
+        output: string;
+        iconsFolderName?: string;
+        exportsFileName?: string;
+        extendSvgAttributes?: {
+            [attribute: string]: string;
+        };
+        excludeSvgAttributes?: string[];
+    };
 }
-export declare function createLibIcons(inputThemesDir: string, outputLibDir: string, options: Options): void;
-export declare function createThemesFromSuffix(inputDir: string, outputDir: string, themesMap: {
-    [key: string]: string;
-}): void;
-export declare function createThemesFromDir(inputDir: string, outputDir: string, dirToThemesMap: {
-    [key: string]: string;
-}): void;
+export declare class ThemeBuilder {
+    private props;
+    private iconsDirPath;
+    private exportsFilePath;
+    private unrecognizedFiles;
+    constructor(props: ThemeBuilderProperties);
+    build(): void;
+    private getIconsFromTheme;
+    private writeSvgDict;
+    private writeExportsModule;
+    collectFromDir(): this | undefined;
+    collectFromSuffix(): this | undefined;
+    private traverse;
+}
 export {};

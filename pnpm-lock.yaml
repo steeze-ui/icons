@@ -346,6 +346,40 @@ importers:
       tslib: 2.3.1
       typescript: 4.5.4
 
+  packages/builders/remix-icons-builder:
+    specifiers:
+      '@steeze-ui/icons': '*'
+      '@steeze-ui/svelte-icon': '*'
+      '@sveltejs/adapter-node': ^1.0.0-next.67
+      '@sveltejs/kit': next
+      '@types/node': ^17.0.0
+      esmo: ^0.14.1
+      prettier: ^2.4.1
+      prettier-plugin-svelte: ^2.4.0
+      remixicon: ^2.5.0
+      svelte: ^3.44.0
+      svelte-check: ^2.2.6
+      svelte-preprocess: ^4.9.4
+      svelte2tsx: ^0.4.11
+      tslib: ^2.3.1
+      typescript: ^4.4.3
+    devDependencies:
+      '@steeze-ui/icons': link:../../core
+      '@steeze-ui/svelte-icon': link:../../components/svelte-icon/package
+      '@sveltejs/adapter-node': 1.0.0-next.67
+      '@sveltejs/kit': 1.0.0-next.260_svelte@3.46.4
+      '@types/node': 17.0.15
+      esmo: 0.14.1
+      prettier: 2.5.1
+      prettier-plugin-svelte: 2.6.0_prettier@2.5.1+svelte@3.46.4
+      remixicon: 2.5.0
+      svelte: 3.46.4
+      svelte-check: 2.4.2_svelte@3.46.4
+      svelte-preprocess: 4.10.2_svelte@3.46.4+typescript@4.5.5
+      svelte2tsx: 0.4.14_svelte@3.46.4+typescript@4.5.5
+      tslib: 2.3.1
+      typescript: 4.5.5
+
   packages/components/lit-icon:
     specifiers:
       '@steeze-ui/feather-icons': workspace:^1.0.0
@@ -492,13 +526,11 @@ importers:
       '@types/node': ^17.0.0
       esbuild: ^0.14.5
       html-parse-stringify: ^3.0.1
-      pascalcase: ^1.0.0
       ts-node: ^10.2.1
       tslib: ^2.0.0
       typescript: ^4.4.2
     dependencies:
       html-parse-stringify: 3.0.1
-      pascalcase: 1.0.0
     devDependencies:
       '@types/node': 17.0.0
       esbuild: 0.14.5
@@ -1139,6 +1171,12 @@ packages:
     dependencies:
       '@iarna/toml': 2.2.5
       esbuild: 0.13.15
+      tiny-glob: 0.2.9
+    dev: true
+
+  /@sveltejs/adapter-node/1.0.0-next.67:
+    resolution: {integrity: sha512-+LuLn91xARZsRANiQNIIDpMMncUTnP2pJc8tyL+FdpVvs5UtlvkYJpeCBPFqjjseRpIIbi8Slu89GCdrRXBDUg==}
+    dependencies:
       tiny-glob: 0.2.9
     dev: true
 
@@ -2798,11 +2836,6 @@ packages:
       tslib: 2.3.1
     dev: true
 
-  /pascalcase/1.0.0:
-    resolution: {integrity: sha512-BSExi0rRnCHReJys6NocaK+cfTXNinAegfWBvr0JD3hiaEG7Nuc7r0CIdOJunXrs8gU/sbHQ9dxVAtiVQisjmg==}
-    engines: {node: '>=8'}
-    dev: false
-
   /path-exists/4.0.0:
     resolution: {integrity: sha512-ak9Qy5Q7jYb2Wwcey5Fpvg2KoAc/ZIhLSLOSBmRmygPsGwkVVt0fZa0qrtMz+m6tJTAHfZQ8FnmB4MG4LWy7/w==}
     engines: {node: '>=8'}
@@ -2991,6 +3024,10 @@ packages:
 
   /regenerator-runtime/0.13.9:
     resolution: {integrity: sha512-p3VT+cOEgxFsRRA9X4lkI1E+k2/CtnKtU4gcxyaCUreilL/vqI6CdZ3wxVUx3UOUg+gnUOQQcRI7BmSI656MYA==}
+    dev: true
+
+  /remixicon/2.5.0:
+    resolution: {integrity: sha512-q54ra2QutYDZpuSnFjmeagmEiN9IMo56/zz5dDNitzKD23oFRw77cWo4TsrAdmdkPiEn8mxlrTqxnkujDbEGww==}
     dev: true
 
   /require-directory/2.1.1:

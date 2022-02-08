@@ -4,10 +4,14 @@ const rawIconsDir = './node_modules/@primer/octicons/build/svg'
 const themesDir = './themes'
 const libIconsDir = 'icons'
 
-createThemesFromSuffix(rawIconsDir, themesDir, {
-	'-16': 'default',
-	'-24': '24',
-	'-12': '12'
+createThemesFromSuffix({
+	inutDir: rawIconsDir,
+	outputDir: themesDir,
+	themesMap: {
+		'-16': 'default',
+		'-24': '24',
+		'-12': '12'
+	}
 })
 
 createLibIcons(themesDir, libIconsDir, {

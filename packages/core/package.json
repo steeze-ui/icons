@@ -27,8 +27,7 @@
     "typescript": "^4.4.2"
   },
   "dependencies": {
-    "html-parse-stringify": "^3.0.1",
-    "pascalcase": "^1.0.0"
+    "html-parse-stringify": "^3.0.1"
   },
   "repository": {
     "type": "git",

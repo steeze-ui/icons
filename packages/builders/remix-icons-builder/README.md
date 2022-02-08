@@ -4,31 +4,31 @@ This project is still in experimental development. Expect bugs and breaking chan
 
 ## Overview
 
-Effortless Icon Pack for Octicons
+Effortless Icon Pack for Remix Icons
 
-- Based on [Octicons](https://primer.style/octicons/)
+- Based on [Remix Icons](https://github.com/Remix-Design/remixicon#usage)
 - Defines the Icon Source to be used in any [steeze-ui icon component](https://github.com/steeze-ui/icons/tree/main/packages/components)
 
 ## Installation
 
 ```bash
-npm i -D @steeze-ui/octicons
+npm i -D @steeze-ui/remix-icons
 ```
 
 ## Usage
 
 ```js
-import { Alert } from '@steeze-ui/octicons'
+import { User } from '@steeze-ui/remix-icons'
 ```
 
 ## Documentation
 
 ### Themes
 
-| Value   | Description                   |
-| ------- | ----------------------------- |
-| default | The 16px version of the Icons |
-| 24      | The 24px version of the Icons |
+| Value            | Description                     |
+| ---------------- | ------------------------------- |
+| default(outline) | The line version of the Icons   |
+| solid            | The filled version of the Icons |
 
 ### Other Icon Packs
 
