@@ -7,7 +7,7 @@ Effortless Icons
 - Icon components for different frameworks/libraries
 - Popular Icon Packs (Heroicons, Feather Icons, etc.)
 - Icon Themes (different versions of the same icon)
-- Templates to Create your own Icon Packs (coming)
+- [Builder Template](https://github.com/steeze-ui/icons/tree/main/packages/builders/template-builder) to Create your own Icon Packs
 
 ```svelte
 <script>
@@ -17,6 +17,10 @@ Effortless Icons
 
 <Icon src={LightningBolt} theme='solid' class='color-gray-900'/>
 ```
+
+## Deploy your own Icon Pack
+
+Copy the [Builder Template](https://github.com/steeze-ui/icons/tree/main/packages/builders/template-builder) to easily create and publish your own Icon Pack.
 
 ## Packages
 
