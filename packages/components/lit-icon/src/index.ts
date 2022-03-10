@@ -1,23 +1,32 @@
-import { html, LitElement } from 'lit'
+import { css, html, LitElement } from 'lit'
+import { customElement, property } from 'lit/decorators.js'
 import { ifDefined } from 'lit/directives/if-defined.js'
 import { unsafeSVG } from 'lit/directives/unsafe-svg.js'
-import { customElement, property } from 'lit/decorators.js'
 
 @customElement('lit-icon')
 export class LitIcon extends LitElement {
+	static styles = css`
+		:host {
+			display: inline-flex;
+		}
+	`
+
 	@property({ type: Object })
-	src: any = {}
+	src: any
 
 	@property()
 	theme = 'default'
 
 	@property()
-	size = '100%'
+	size = '16px'
 
-	@property({ attribute: 'style' })
+	@property()
+	color = 'currentColor'
+
+	@property()
 	styleProp = ''
 
-	@property({ attribute: 'class' })
+	@property()
 	classProp = ''
 
 	@property({ attribute: 'aria-hidden', type: Boolean })
@@ -35,6 +44,7 @@ export class LitIcon extends LitElement {
 				aria-hidden=${this.ariaHiddenProp}
 				aria-label=${ifDefined(this.ariaLabelProp ? this.ariaLabelProp : undefined)}
 				style=${ifDefined(this.styleProp ? this.styleProp : undefined)}
+				color=${ifDefined(this.color ? this.color : undefined)}
 				class=${ifDefined(this.classProp ? this.classProp : undefined)}
 				fill=${ifDefined(this.src?.[this.theme]?.a?.['fill'] ?? undefined)}
 				stroke=${ifDefined(this.src?.[this.theme]?.a?.['stroke'] ?? undefined)}
@@ -44,7 +54,7 @@ export class LitIcon extends LitElement {
 				viewBox=${ifDefined(this.src?.[this.theme]?.a?.['viewBox'] ?? undefined)}
 			>
 				${unsafeSVG(
-					this.src[this.theme]?.path
+					this?.src[this.theme]?.path
 						?.map(
 							(e: any) =>
 								`<path 

@@ -30,42 +30,8 @@ importers:
     devDependencies:
       '@steeze-ui/icons': link:../../core
       '@steeze-ui/svelte-icon': link:../../components/svelte-icon/package
-      '@sveltejs/adapter-auto': 1.0.0-next.17
-      '@sveltejs/kit': 1.0.0-next.260_svelte@3.44.3
-      '@types/node': 17.0.0
-      esmo: 0.14.1
-      feather-icons: 4.28.0
-      prettier: 2.5.1
-      prettier-plugin-svelte: 2.5.1_prettier@2.5.1+svelte@3.44.3
-      svelte: 3.44.3
-      svelte-check: 2.2.10_svelte@3.44.3
-      svelte-preprocess: 4.10.0_svelte@3.44.3+typescript@4.5.4
-      svelte2tsx: 0.4.11_svelte@3.44.3+typescript@4.5.4
-      tslib: 2.3.1
-      typescript: 4.5.4
-
-  packages/builders/feather-icons-builder/package:
-    specifiers:
-      '@steeze-ui/icons': '*'
-      '@steeze-ui/svelte-icon': '*'
-      '@sveltejs/adapter-auto': next
-      '@sveltejs/kit': next
-      '@types/node': ^17.0.0
-      esmo: ^0.14.1
-      feather-icons: ^4.28.0
-      prettier: ^2.4.1
-      prettier-plugin-svelte: ^2.4.0
-      svelte: ^3.44.0
-      svelte-check: ^2.2.6
-      svelte-preprocess: ^4.9.4
-      svelte2tsx: ^0.4.11
-      tslib: ^2.3.1
-      typescript: ^4.4.3
-    devDependencies:
-      '@steeze-ui/icons': link:../../../core
-      '@steeze-ui/svelte-icon': link:../../../components/svelte-icon/package
-      '@sveltejs/adapter-auto': 1.0.0-next.17
-      '@sveltejs/kit': 1.0.0-next.260_svelte@3.44.3
+      '@sveltejs/adapter-auto': 1.0.0-next.31
+      '@sveltejs/kit': 1.0.0-next.294_svelte@3.44.3
       '@types/node': 17.0.0
       esmo: 0.14.1
       feather-icons: 4.28.0
@@ -98,8 +64,8 @@ importers:
     devDependencies:
       '@steeze-ui/icons': link:../../core
       '@steeze-ui/svelte-icon': link:../../components/svelte-icon/package
-      '@sveltejs/adapter-auto': 1.0.0-next.17
-      '@sveltejs/kit': 1.0.0-next.260_svelte@3.44.3
+      '@sveltejs/adapter-auto': 1.0.0-next.31
+      '@sveltejs/kit': 1.0.0-next.294_svelte@3.44.3
       '@types/node': 17.0.0
       esmo: 0.14.1
       heroicons: 1.0.5
@@ -132,15 +98,15 @@ importers:
     devDependencies:
       '@steeze-ui/icons': link:../../../core
       '@steeze-ui/svelte-icon': link:../../../components/svelte-icon/package
-      '@sveltejs/adapter-auto': 1.0.0-next.17
-      '@sveltejs/kit': 1.0.0-next.260_svelte@3.46.4
-      '@types/node': 17.0.15
+      '@sveltejs/adapter-auto': 1.0.0-next.31
+      '@sveltejs/kit': 1.0.0-next.294_svelte@3.46.4
+      '@types/node': 17.0.16
       esmo: 0.14.1
       heroicons: 1.0.5
       prettier: 2.5.1
       prettier-plugin-svelte: 2.6.0_prettier@2.5.1+svelte@3.46.4
       svelte: 3.46.4
-      svelte-check: 2.4.2_svelte@3.46.4
+      svelte-check: 2.4.3_svelte@3.46.4
       svelte-preprocess: 4.10.2_svelte@3.46.4+typescript@4.5.5
       svelte2tsx: 0.4.14_svelte@3.46.4+typescript@4.5.5
       tslib: 2.3.1
@@ -166,42 +132,8 @@ importers:
     devDependencies:
       '@steeze-ui/icons': link:../../core
       '@steeze-ui/svelte-icon': link:../../components/svelte-icon/package
-      '@sveltejs/adapter-auto': 1.0.0-next.17
-      '@sveltejs/kit': 1.0.0-next.260_svelte@3.44.3
-      '@types/node': 17.0.0
-      esmo: 0.14.1
-      heroicons: 1.0.5
-      prettier: 2.5.1
-      prettier-plugin-svelte: 2.5.1_prettier@2.5.1+svelte@3.44.3
-      svelte: 3.44.3
-      svelte-check: 2.2.10_svelte@3.44.3
-      svelte-preprocess: 4.10.0_svelte@3.44.3+typescript@4.5.4
-      svelte2tsx: 0.4.11_svelte@3.44.3+typescript@4.5.4
-      tslib: 2.3.1
-      typescript: 4.5.4
-
-  packages/builders/iconic-free-builder/package:
-    specifiers:
-      '@steeze-ui/icons': '*'
-      '@steeze-ui/svelte-icon': '*'
-      '@sveltejs/adapter-auto': next
-      '@sveltejs/kit': next
-      '@types/node': ^17.0.0
-      esmo: ^0.14.1
-      heroicons: ^1.0.4
-      prettier: ^2.4.1
-      prettier-plugin-svelte: ^2.4.0
-      svelte: ^3.44.0
-      svelte-check: ^2.2.6
-      svelte-preprocess: ^4.9.4
-      svelte2tsx: ^0.4.11
-      tslib: ^2.3.1
-      typescript: ^4.4.3
-    devDependencies:
-      '@steeze-ui/icons': link:../../../core
-      '@steeze-ui/svelte-icon': link:../../../components/svelte-icon/package
-      '@sveltejs/adapter-auto': 1.0.0-next.17
-      '@sveltejs/kit': 1.0.0-next.260_svelte@3.44.3
+      '@sveltejs/adapter-auto': 1.0.0-next.31
+      '@sveltejs/kit': 1.0.0-next.294_svelte@3.44.3
       '@types/node': 17.0.0
       esmo: 0.14.1
       heroicons: 1.0.5
@@ -233,40 +165,8 @@ importers:
     devDependencies:
       '@primer/octicons': 16.2.0
       '@steeze-ui/icons': link:../../core
-      '@sveltejs/adapter-auto': 1.0.0-next.17
-      '@sveltejs/kit': 1.0.0-next.260_svelte@3.44.3
-      '@types/node': 17.0.0
-      esmo: 0.14.1
-      prettier: 2.5.1
-      prettier-plugin-svelte: 2.5.1_prettier@2.5.1+svelte@3.44.3
-      svelte: 3.44.3
-      svelte-check: 2.2.10_svelte@3.44.3
-      svelte-preprocess: 4.10.0_svelte@3.44.3+typescript@4.5.4
-      svelte2tsx: 0.4.11_svelte@3.44.3+typescript@4.5.4
-      tslib: 2.3.1
-      typescript: 4.5.4
-
-  packages/builders/octicons-builder/package:
-    specifiers:
-      '@primer/octicons': ^16.2.0
-      '@steeze-ui/icons': '*'
-      '@sveltejs/adapter-auto': next
-      '@sveltejs/kit': next
-      '@types/node': ^17.0.0
-      esmo: ^0.14.1
-      prettier: ^2.4.1
-      prettier-plugin-svelte: ^2.4.0
-      svelte: ^3.44.0
-      svelte-check: ^2.2.6
-      svelte-preprocess: ^4.9.4
-      svelte2tsx: ^0.4.11
-      tslib: ^2.3.1
-      typescript: ^4.4.3
-    devDependencies:
-      '@primer/octicons': 16.2.0
-      '@steeze-ui/icons': link:../../../core
-      '@sveltejs/adapter-auto': 1.0.0-next.17
-      '@sveltejs/kit': 1.0.0-next.260_svelte@3.44.3
+      '@sveltejs/adapter-auto': 1.0.0-next.31
+      '@sveltejs/kit': 1.0.0-next.294_svelte@3.44.3
       '@types/node': 17.0.0
       esmo: 0.14.1
       prettier: 2.5.1
@@ -280,7 +180,7 @@ importers:
 
   packages/builders/radix-icons-builder:
     specifiers:
-      '@steeze-ui/icons': workspace:^1.0.1
+      '@steeze-ui/icons': workspace:*
       '@steeze-ui/svelte-icon': '*'
       '@sveltejs/adapter-auto': next
       '@sveltejs/kit': next
@@ -298,42 +198,8 @@ importers:
     devDependencies:
       '@steeze-ui/icons': link:../../core
       '@steeze-ui/svelte-icon': link:../../components/svelte-icon/package
-      '@sveltejs/adapter-auto': 1.0.0-next.17
-      '@sveltejs/kit': 1.0.0-next.260_svelte@3.44.3
-      '@types/node': 17.0.0
-      esmo: 0.14.1
-      heroicons: 1.0.5
-      prettier: 2.5.1
-      prettier-plugin-svelte: 2.5.1_prettier@2.5.1+svelte@3.44.3
-      svelte: 3.44.3
-      svelte-check: 2.2.10_svelte@3.44.3
-      svelte-preprocess: 4.10.0_svelte@3.44.3+typescript@4.5.4
-      svelte2tsx: 0.4.11_svelte@3.44.3+typescript@4.5.4
-      tslib: 2.3.1
-      typescript: 4.5.4
-
-  packages/builders/radix-icons-builder/package:
-    specifiers:
-      '@steeze-ui/icons': workspace:^1.0.1
-      '@steeze-ui/svelte-icon': '*'
-      '@sveltejs/adapter-auto': next
-      '@sveltejs/kit': next
-      '@types/node': ^17.0.0
-      esmo: ^0.14.1
-      heroicons: ^1.0.4
-      prettier: ^2.4.1
-      prettier-plugin-svelte: ^2.4.0
-      svelte: ^3.44.0
-      svelte-check: ^2.2.6
-      svelte-preprocess: ^4.9.4
-      svelte2tsx: ^0.4.11
-      tslib: ^2.3.1
-      typescript: ^4.4.3
-    devDependencies:
-      '@steeze-ui/icons': link:../../../core
-      '@steeze-ui/svelte-icon': link:../../../components/svelte-icon/package
-      '@sveltejs/adapter-auto': 1.0.0-next.17
-      '@sveltejs/kit': 1.0.0-next.260_svelte@3.44.3
+      '@sveltejs/adapter-auto': 1.0.0-next.31
+      '@sveltejs/kit': 1.0.0-next.294_svelte@3.44.3
       '@types/node': 17.0.0
       esmo: 0.14.1
       heroicons: 1.0.5
@@ -367,7 +233,7 @@ importers:
       '@steeze-ui/icons': link:../../core
       '@steeze-ui/svelte-icon': link:../../components/svelte-icon/package
       '@sveltejs/adapter-node': 1.0.0-next.67
-      '@sveltejs/kit': 1.0.0-next.260_svelte@3.46.4
+      '@sveltejs/kit': 1.0.0-next.294_svelte@3.46.4
       '@types/node': 17.0.15
       esmo: 0.14.1
       prettier: 2.5.1
@@ -380,17 +246,16 @@ importers:
       tslib: 2.3.1
       typescript: 4.5.5
 
-  packages/builders/remix-icons-builder/package:
+  packages/builders/template-builder:
     specifiers:
       '@steeze-ui/icons': '*'
       '@steeze-ui/svelte-icon': '*'
-      '@sveltejs/adapter-node': ^1.0.0-next.67
+      '@sveltejs/adapter-auto': next
       '@sveltejs/kit': next
       '@types/node': ^17.0.0
       esmo: ^0.14.1
       prettier: ^2.4.1
       prettier-plugin-svelte: ^2.4.0
-      remixicon: ^2.5.0
       svelte: ^3.44.0
       svelte-check: ^2.2.6
       svelte-preprocess: ^4.9.4
@@ -398,15 +263,14 @@ importers:
       tslib: ^2.3.1
       typescript: ^4.4.3
     devDependencies:
-      '@steeze-ui/icons': link:../../../core
-      '@steeze-ui/svelte-icon': link:../../../components/svelte-icon/package
-      '@sveltejs/adapter-node': 1.0.0-next.67
-      '@sveltejs/kit': 1.0.0-next.260_svelte@3.46.4
+      '@steeze-ui/icons': link:../../core
+      '@steeze-ui/svelte-icon': link:../../components/svelte-icon/package
+      '@sveltejs/adapter-auto': 1.0.0-next.31
+      '@sveltejs/kit': 1.0.0-next.294_svelte@3.46.4
       '@types/node': 17.0.16
       esmo: 0.14.1
       prettier: 2.5.1
       prettier-plugin-svelte: 2.6.0_prettier@2.5.1+svelte@3.46.4
-      remixicon: 2.5.0
       svelte: 3.46.4
       svelte-check: 2.4.3_svelte@3.46.4
       svelte-preprocess: 4.10.2_svelte@3.46.4+typescript@4.5.5
@@ -416,22 +280,14 @@ importers:
 
   packages/components/lit-icon:
     specifiers:
-      '@steeze-ui/feather-icons': workspace:^1.0.0
-      '@steeze-ui/heroicons': workspace:^1.0.2
-      '@steeze-ui/iconic-free': workspace:^1.0.1
-      '@steeze-ui/octicons': workspace:^1.0.0
-      '@steeze-ui/radix-icons': workspace:^1.0.2
+      '@steeze-ui/heroicons': ^1.1.1
       lit: ^2.1.1
       typescript: ^4.5.4
       vite: ^2.7.10
     dependencies:
       lit: 2.1.1
     devDependencies:
-      '@steeze-ui/feather-icons': link:../../builders/feather-icons-builder/package
       '@steeze-ui/heroicons': link:../../builders/heroicons-builder/package
-      '@steeze-ui/iconic-free': link:../../builders/iconic-free-builder/package
-      '@steeze-ui/octicons': link:../../builders/octicons-builder/package
-      '@steeze-ui/radix-icons': link:../../builders/radix-icons-builder/package
       typescript: 4.5.4
       vite: 2.7.10
 
@@ -453,11 +309,11 @@ importers:
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
     devDependencies:
-      '@steeze-ui/feather-icons': link:../../builders/feather-icons-builder/package
+      '@steeze-ui/feather-icons': link:../../builders/feather-icons-builder
       '@steeze-ui/heroicons': link:../../builders/heroicons-builder/package
-      '@steeze-ui/iconic-free': link:../../builders/iconic-free-builder/package
-      '@steeze-ui/octicons': link:../../builders/octicons-builder/package
-      '@steeze-ui/radix-icons': link:../../builders/radix-icons-builder/package
+      '@steeze-ui/iconic-free': link:../../builders/iconic-free-builder
+      '@steeze-ui/octicons': link:../../builders/octicons-builder
+      '@steeze-ui/radix-icons': link:../../builders/radix-icons-builder
       '@types/react': 17.0.38
       '@types/react-dom': 17.0.11
       '@vitejs/plugin-react': 1.1.4
@@ -478,23 +334,17 @@ importers:
     dependencies:
       solid-js: 1.3.1
     devDependencies:
-      '@steeze-ui/feather-icons': link:../../builders/feather-icons-builder/package
+      '@steeze-ui/feather-icons': link:../../builders/feather-icons-builder
       '@steeze-ui/heroicons': link:../../builders/heroicons-builder/package
-      '@steeze-ui/iconic-free': link:../../builders/iconic-free-builder/package
-      '@steeze-ui/octicons': link:../../builders/octicons-builder/package
-      '@steeze-ui/radix-icons': link:../../builders/radix-icons-builder/package
+      '@steeze-ui/iconic-free': link:../../builders/iconic-free-builder
+      '@steeze-ui/octicons': link:../../builders/octicons-builder
+      '@steeze-ui/radix-icons': link:../../builders/radix-icons-builder
       typescript: 4.5.4
       vite: 2.7.10
       vite-plugin-solid: 2.2.1
 
   packages/components/svelte-icon:
     specifiers:
-      '@steeze-ui/feather-icons': workspace:*
-      '@steeze-ui/heroicons': workspace:*
-      '@steeze-ui/iconic-free': workspace:*
-      '@steeze-ui/octicons': workspace:*
-      '@steeze-ui/radix-icons': workspace:*
-      '@steeze-ui/remix-icons': workspace:*
       '@sveltejs/adapter-auto': next
       '@sveltejs/kit': next
       prettier: ^2.5.1
@@ -506,14 +356,8 @@ importers:
       tslib: ^2.3.1
       typescript: ^4.5.5
     devDependencies:
-      '@steeze-ui/feather-icons': link:../../builders/feather-icons-builder/package
-      '@steeze-ui/heroicons': link:../../builders/heroicons-builder/package
-      '@steeze-ui/iconic-free': link:../../builders/iconic-free-builder/package
-      '@steeze-ui/octicons': link:../../builders/octicons-builder/package
-      '@steeze-ui/radix-icons': link:../../builders/radix-icons-builder/package
-      '@steeze-ui/remix-icons': link:../../builders/remix-icons-builder/package
-      '@sveltejs/adapter-auto': 1.0.0-next.17
-      '@sveltejs/kit': 1.0.0-next.260_svelte@3.46.4
+      '@sveltejs/adapter-auto': 1.0.0-next.31
+      '@sveltejs/kit': 1.0.0-next.294_svelte@3.46.4
       prettier: 2.5.1
       prettier-plugin-svelte: 2.6.0_prettier@2.5.1+svelte@3.46.4
       svelte: 3.46.4
@@ -525,11 +369,6 @@ importers:
 
   packages/components/svelte-icon/package:
     specifiers:
-      '@steeze-ui/feather-icons': workspace:^1.0.0
-      '@steeze-ui/heroicons': workspace:^1.0.2
-      '@steeze-ui/iconic-free': workspace:^1.0.2
-      '@steeze-ui/octicons': workspace:^1.0.0
-      '@steeze-ui/radix-icons': workspace:^1.0.4
       '@sveltejs/adapter-auto': next
       '@sveltejs/kit': next
       prettier: ^2.5.1
@@ -541,13 +380,8 @@ importers:
       tslib: ^2.3.1
       typescript: ^4.5.5
     devDependencies:
-      '@steeze-ui/feather-icons': link:../../../builders/feather-icons-builder/package
-      '@steeze-ui/heroicons': link:../../../builders/heroicons-builder/package
-      '@steeze-ui/iconic-free': link:../../../builders/iconic-free-builder/package
-      '@steeze-ui/octicons': link:../../../builders/octicons-builder/package
-      '@steeze-ui/radix-icons': link:../../../builders/radix-icons-builder/package
-      '@sveltejs/adapter-auto': 1.0.0-next.17
-      '@sveltejs/kit': 1.0.0-next.260_svelte@3.46.4
+      '@sveltejs/adapter-auto': 1.0.0-next.31
+      '@sveltejs/kit': 1.0.0-next.294_svelte@3.46.4
       prettier: 2.5.1
       prettier-plugin-svelte: 2.6.0_prettier@2.5.1+svelte@3.46.4
       svelte: 3.46.4
@@ -1188,25 +1022,25 @@ packages:
       picomatch: 2.3.1
     dev: true
 
-  /@sveltejs/adapter-auto/1.0.0-next.17:
-    resolution: {integrity: sha512-jLMh+5whg9uSJkvAYyVhi4z4GpqWxSR/XhhFCUqDMYN2hMTGCBaB4ReUAHSYIFw3IPV7m318z9igXriOaL6agQ==}
+  /@sveltejs/adapter-auto/1.0.0-next.31:
+    resolution: {integrity: sha512-N1ZFGxulcSAOJrtdFR567diwbWKUvLrHZiUE9TiEvIahnndeRa50MF9LDg/CuIvpa6fHqz5K827XXrADlPAr9g==}
     dependencies:
-      '@sveltejs/adapter-cloudflare': 1.0.0-next.9
-      '@sveltejs/adapter-netlify': 1.0.0-next.44
-      '@sveltejs/adapter-vercel': 1.0.0-next.39
+      '@sveltejs/adapter-cloudflare': 1.0.0-next.15
+      '@sveltejs/adapter-netlify': 1.0.0-next.50
+      '@sveltejs/adapter-vercel': 1.0.0-next.46
     dev: true
 
-  /@sveltejs/adapter-cloudflare/1.0.0-next.9:
-    resolution: {integrity: sha512-xoPbFinqFbzphVf4rjGqU/6CC/QciXtXpBn6+hp4mChjX/9X5c/fxjkVGHPdpq6moTIfaZiMU/EUKtbBvyTBUw==}
+  /@sveltejs/adapter-cloudflare/1.0.0-next.15:
+    resolution: {integrity: sha512-kq3vNFpKmRVgAOfz4HrcleBnUADs++dfVF8S61EAFqNTEvGtOVdJKLql66Pe/uxlY0VxAp1dplxtEDf4/R70lQ==}
     dependencies:
-      esbuild: 0.13.15
+      esbuild: 0.14.23
     dev: true
 
-  /@sveltejs/adapter-netlify/1.0.0-next.44:
-    resolution: {integrity: sha512-GY3w4K4gW+wXo6lGes7gFcPPaUt9kY2xCfhcNfwDvbOf0PsasZD5WatAPtEE9Xz5WTtQLEEgXljVMqsPkpb75Q==}
+  /@sveltejs/adapter-netlify/1.0.0-next.50:
+    resolution: {integrity: sha512-lpHvjcHiC77SPyLp7OjhenJF9KYfKsXlmUua7icNh0Hc8SKtRQf0dn+a1Zy77AslikvOX7/4HZE8zPIyIvYYqw==}
     dependencies:
       '@iarna/toml': 2.2.5
-      esbuild: 0.13.15
+      esbuild: 0.14.23
       tiny-glob: 0.2.9
     dev: true
 
@@ -1216,23 +1050,23 @@ packages:
       tiny-glob: 0.2.9
     dev: true
 
-  /@sveltejs/adapter-vercel/1.0.0-next.39:
-    resolution: {integrity: sha512-YOPGKIILm26h22GN4/iliXce61aTG3Dq5hX8xpDx0cNuCocv0OoLfIqiGpdyJ9NIMpjwXmpVoL4+nV+yh2wcSA==}
+  /@sveltejs/adapter-vercel/1.0.0-next.46:
+    resolution: {integrity: sha512-6Rwf3kZF6uX2JxDMoYgZWZe5TjVTTWZa57VukdNGjnlAT3CrfsEOBWyskX/8hx7AiYX5fucZaAtYPNZpUmueIA==}
     dependencies:
-      esbuild: 0.13.15
+      esbuild: 0.14.23
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.260_svelte@3.44.3:
-    resolution: {integrity: sha512-0EEkGD0BpZdgRm9UoOnldS8iDFFhT2ixN3oQ/9DblGKNo7cz/FEQmKoYYIOOVYI3XyurwccWORPEpTTA4l9Oew==}
+  /@sveltejs/kit/1.0.0-next.294_svelte@3.44.3:
+    resolution: {integrity: sha512-whTYeri/oaV672KErlhCAvAawlsnd8iu/MQmjdu85TApDYolLe8FDTg6GQ55+0IJbx1N7dOer/HopWzKudPgFA==}
     engines: {node: '>=14.13'}
     hasBin: true
     peerDependencies:
       svelte: ^3.44.0
     dependencies:
-      '@sveltejs/vite-plugin-svelte': 1.0.0-next.37_svelte@3.44.3+vite@2.7.13
+      '@sveltejs/vite-plugin-svelte': 1.0.0-next.37_svelte@3.44.3+vite@2.8.4
       sade: 1.8.1
       svelte: 3.44.3
-      vite: 2.7.13
+      vite: 2.8.4
     transitivePeerDependencies:
       - diff-match-patch
       - less
@@ -1241,17 +1075,17 @@ packages:
       - supports-color
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.260_svelte@3.46.4:
-    resolution: {integrity: sha512-0EEkGD0BpZdgRm9UoOnldS8iDFFhT2ixN3oQ/9DblGKNo7cz/FEQmKoYYIOOVYI3XyurwccWORPEpTTA4l9Oew==}
+  /@sveltejs/kit/1.0.0-next.294_svelte@3.46.4:
+    resolution: {integrity: sha512-whTYeri/oaV672KErlhCAvAawlsnd8iu/MQmjdu85TApDYolLe8FDTg6GQ55+0IJbx1N7dOer/HopWzKudPgFA==}
     engines: {node: '>=14.13'}
     hasBin: true
     peerDependencies:
       svelte: ^3.44.0
     dependencies:
-      '@sveltejs/vite-plugin-svelte': 1.0.0-next.37_svelte@3.46.4+vite@2.7.13
+      '@sveltejs/vite-plugin-svelte': 1.0.0-next.37_svelte@3.46.4+vite@2.8.4
       sade: 1.8.1
       svelte: 3.46.4
-      vite: 2.7.13
+      vite: 2.8.4
     transitivePeerDependencies:
       - diff-match-patch
       - less
@@ -1260,7 +1094,7 @@ packages:
       - supports-color
     dev: true
 
-  /@sveltejs/vite-plugin-svelte/1.0.0-next.37_svelte@3.44.3+vite@2.7.13:
+  /@sveltejs/vite-plugin-svelte/1.0.0-next.37_svelte@3.44.3+vite@2.8.4:
     resolution: {integrity: sha512-EdSXw2rXeOahNrQfMJVZxa/NxZxW1a0TiBI3s+pVxnxU14hEQtnkLtdbTFhnceu22gJpNPFSIJRcIwRBBDQIeA==}
     engines: {node: ^14.13.1 || >= 16}
     peerDependencies:
@@ -1277,12 +1111,12 @@ packages:
       magic-string: 0.25.7
       svelte: 3.44.3
       svelte-hmr: 0.14.9_svelte@3.44.3
-      vite: 2.7.13
+      vite: 2.8.4
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /@sveltejs/vite-plugin-svelte/1.0.0-next.37_svelte@3.46.4+vite@2.7.13:
+  /@sveltejs/vite-plugin-svelte/1.0.0-next.37_svelte@3.46.4+vite@2.8.4:
     resolution: {integrity: sha512-EdSXw2rXeOahNrQfMJVZxa/NxZxW1a0TiBI3s+pVxnxU14hEQtnkLtdbTFhnceu22gJpNPFSIJRcIwRBBDQIeA==}
     engines: {node: ^14.13.1 || >= 16}
     peerDependencies:
@@ -1299,7 +1133,7 @@ packages:
       magic-string: 0.25.7
       svelte: 3.46.4
       svelte-hmr: 0.14.9_svelte@3.46.4
-      vite: 2.7.13
+      vite: 2.8.4
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -1825,6 +1659,15 @@ packages:
     dev: true
     optional: true
 
+  /esbuild-android-arm64/0.14.23:
+    resolution: {integrity: sha512-k9sXem++mINrZty1v4FVt6nC5BQCFG4K2geCIUUqHNlTdFnuvcqsY7prcKZLFhqVC1rbcJAr9VSUGFL/vD4vsw==}
+    engines: {node: '>=12'}
+    cpu: [arm64]
+    os: [android]
+    requiresBuild: true
+    dev: true
+    optional: true
+
   /esbuild-android-arm64/0.14.5:
     resolution: {integrity: sha512-Sl6ysm7OAZZz+X3Mv3tOPhjMuSxNmztgoXH4ZZ3Yhbje5emEY6qiTnv3vBSljDlUl/yGaIjqC44qlj8s8G71xA==}
     cpu: [arm64]
@@ -1835,6 +1678,15 @@ packages:
 
   /esbuild-darwin-64/0.13.15:
     resolution: {integrity: sha512-ihOQRGs2yyp7t5bArCwnvn2Atr6X4axqPpEdCFPVp7iUj4cVSdisgvEKdNR7yH3JDjW6aQDw40iQFoTqejqxvQ==}
+    cpu: [x64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /esbuild-darwin-64/0.14.23:
+    resolution: {integrity: sha512-lB0XRbtOYYL1tLcYw8BoBaYsFYiR48RPrA0KfA/7RFTr4MV7Bwy/J4+7nLsVnv9FGuQummM3uJ93J3ptaTqFug==}
+    engines: {node: '>=12'}
     cpu: [x64]
     os: [darwin]
     requiresBuild: true
@@ -1857,6 +1709,15 @@ packages:
     dev: true
     optional: true
 
+  /esbuild-darwin-arm64/0.14.23:
+    resolution: {integrity: sha512-yat73Z/uJ5tRcfRiI4CCTv0FSnwErm3BJQeZAh+1tIP0TUNh6o+mXg338Zl5EKChD+YGp6PN+Dbhs7qa34RxSw==}
+    engines: {node: '>=12'}
+    cpu: [arm64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
   /esbuild-darwin-arm64/0.14.5:
     resolution: {integrity: sha512-ugPOLgEQPoPLSqAFBajaczt+lcbUZR+V2fby3572h5jf/kFV6UL8LAZ1Ze58hcbKwfvbh4C09kp0PhqPgXKwOg==}
     cpu: [arm64]
@@ -1867,6 +1728,15 @@ packages:
 
   /esbuild-freebsd-64/0.13.15:
     resolution: {integrity: sha512-G3dLBXUI6lC6Z09/x+WtXBXbOYQZ0E8TDBqvn7aMaOCzryJs8LyVXKY4CPnHFXZAbSwkCbqiPuSQ1+HhrNk7EA==}
+    cpu: [x64]
+    os: [freebsd]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /esbuild-freebsd-64/0.14.23:
+    resolution: {integrity: sha512-/1xiTjoLuQ+LlbfjJdKkX45qK/M7ARrbLmyf7x3JhyQGMjcxRYVR6Dw81uH3qlMHwT4cfLW4aEVBhP1aNV7VsA==}
+    engines: {node: '>=12'}
     cpu: [x64]
     os: [freebsd]
     requiresBuild: true
@@ -1889,6 +1759,15 @@ packages:
     dev: true
     optional: true
 
+  /esbuild-freebsd-arm64/0.14.23:
+    resolution: {integrity: sha512-uyPqBU/Zcp6yEAZS4LKj5jEE0q2s4HmlMBIPzbW6cTunZ8cyvjG6YWpIZXb1KK3KTJDe62ltCrk3VzmWHp+iLg==}
+    engines: {node: '>=12'}
+    cpu: [arm64]
+    os: [freebsd]
+    requiresBuild: true
+    dev: true
+    optional: true
+
   /esbuild-freebsd-arm64/0.14.5:
     resolution: {integrity: sha512-M99NPu8hlirFo6Fgx0WfX6XxUFdGclUNv3MyyfDtTdNYbccMESwLSACGpE7HvJKWscdjaqajeMu2an9adGNfCw==}
     cpu: [arm64]
@@ -1899,6 +1778,15 @@ packages:
 
   /esbuild-linux-32/0.13.15:
     resolution: {integrity: sha512-ZvTBPk0YWCLMCXiFmD5EUtB30zIPvC5Itxz0mdTu/xZBbbHJftQgLWY49wEPSn2T/TxahYCRDWun5smRa0Tu+g==}
+    cpu: [ia32]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /esbuild-linux-32/0.14.23:
+    resolution: {integrity: sha512-37R/WMkQyUfNhbH7aJrr1uCjDVdnPeTHGeDhZPUNhfoHV0lQuZNCKuNnDvlH/u/nwIYZNdVvz1Igv5rY/zfrzQ==}
+    engines: {node: '>=12'}
     cpu: [ia32]
     os: [linux]
     requiresBuild: true
@@ -1921,6 +1809,15 @@ packages:
     dev: true
     optional: true
 
+  /esbuild-linux-64/0.14.23:
+    resolution: {integrity: sha512-H0gztDP60qqr8zoFhAO64waoN5yBXkmYCElFklpd6LPoobtNGNnDe99xOQm28+fuD75YJ7GKHzp/MLCLhw2+vQ==}
+    engines: {node: '>=12'}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
   /esbuild-linux-64/0.14.5:
     resolution: {integrity: sha512-T+OuYPlhytjj5DsvjUXizNjbV+/IrZiaDc9SNUfqiUOXHu0URFqchjhPVbBiBnWykCMJFB6pqNap2Oxth4iuYw==}
     cpu: [x64]
@@ -1931,6 +1828,15 @@ packages:
 
   /esbuild-linux-arm/0.13.15:
     resolution: {integrity: sha512-wUHttDi/ol0tD8ZgUMDH8Ef7IbDX+/UsWJOXaAyTdkT7Yy9ZBqPg8bgB/Dn3CZ9SBpNieozrPRHm0BGww7W/jA==}
+    cpu: [arm]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /esbuild-linux-arm/0.14.23:
+    resolution: {integrity: sha512-x64CEUxi8+EzOAIpCUeuni0bZfzPw/65r8tC5cy5zOq9dY7ysOi5EVQHnzaxS+1NmV+/RVRpmrzGw1QgY2Xpmw==}
+    engines: {node: '>=12'}
     cpu: [arm]
     os: [linux]
     requiresBuild: true
@@ -1953,6 +1859,15 @@ packages:
     dev: true
     optional: true
 
+  /esbuild-linux-arm64/0.14.23:
+    resolution: {integrity: sha512-c4MLOIByNHR55n3KoYf9hYDfBRghMjOiHLaoYLhkQkIabb452RWi+HsNgB41sUpSlOAqfpqKPFNg7VrxL3UX9g==}
+    engines: {node: '>=12'}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
   /esbuild-linux-arm64/0.14.5:
     resolution: {integrity: sha512-ANOzoaH4kfbhEZT0EGY9g1tsZhDA+I0FRwBsj7D8pCU900pXF/l8YAOy5jWFQIb3vjG5+orFc5SqSzAKCisvTQ==}
     cpu: [arm64]
@@ -1963,6 +1878,15 @@ packages:
 
   /esbuild-linux-mips64le/0.13.15:
     resolution: {integrity: sha512-KlVjIG828uFPyJkO/8gKwy9RbXhCEUeFsCGOJBepUlpa7G8/SeZgncUEz/tOOUJTcWMTmFMtdd3GElGyAtbSWg==}
+    cpu: [mips64el]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /esbuild-linux-mips64le/0.14.23:
+    resolution: {integrity: sha512-kHKyKRIAedYhKug2EJpyJxOUj3VYuamOVA1pY7EimoFPzaF3NeY7e4cFBAISC/Av0/tiV0xlFCt9q0HJ68IBIw==}
+    engines: {node: '>=12'}
     cpu: [mips64el]
     os: [linux]
     requiresBuild: true
@@ -1985,6 +1909,15 @@ packages:
     dev: true
     optional: true
 
+  /esbuild-linux-ppc64le/0.14.23:
+    resolution: {integrity: sha512-7ilAiJEPuJJnJp/LiDO0oJm5ygbBPzhchJJh9HsHZzeqO+3PUzItXi+8PuicY08r0AaaOe25LA7sGJ0MzbfBag==}
+    engines: {node: '>=12'}
+    cpu: [ppc64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
   /esbuild-linux-ppc64le/0.14.5:
     resolution: {integrity: sha512-usfQrVVIQcpuc/U2NWc7/Ry+m622v+PjJ5eErNPdjWBPlcvD6kXaBTv94uQkVzZOHX3uYqprRrOjseed9ApSYA==}
     cpu: [ppc64]
@@ -1993,8 +1926,35 @@ packages:
     dev: true
     optional: true
 
+  /esbuild-linux-riscv64/0.14.23:
+    resolution: {integrity: sha512-fbL3ggK2wY0D8I5raPIMPhpCvODFE+Bhb5QGtNP3r5aUsRR6TQV+ZBXIaw84iyvKC8vlXiA4fWLGhghAd/h/Zg==}
+    engines: {node: '>=12'}
+    cpu: [riscv64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /esbuild-linux-s390x/0.14.23:
+    resolution: {integrity: sha512-GHMDCyfy7+FaNSO8RJ8KCFsnax8fLUsOrj9q5Gi2JmZMY0Zhp75keb5abTFCq2/Oy6KVcT0Dcbyo/bFb4rIFJA==}
+    engines: {node: '>=12'}
+    cpu: [s390x]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
   /esbuild-netbsd-64/0.13.15:
     resolution: {integrity: sha512-3+yE9emwoevLMyvu+iR3rsa+Xwhie7ZEHMGDQ6dkqP/ndFzRHkobHUKTe+NCApSqG5ce2z4rFu+NX/UHnxlh3w==}
+    cpu: [x64]
+    os: [netbsd]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /esbuild-netbsd-64/0.14.23:
+    resolution: {integrity: sha512-ovk2EX+3rrO1M2lowJfgMb/JPN1VwVYrx0QPUyudxkxLYrWeBxDKQvc6ffO+kB4QlDyTfdtAURrVzu3JeNdA2g==}
+    engines: {node: '>=12'}
     cpu: [x64]
     os: [netbsd]
     requiresBuild: true
@@ -2017,6 +1977,15 @@ packages:
 
   /esbuild-openbsd-64/0.13.15:
     resolution: {integrity: sha512-wTfvtwYJYAFL1fSs8yHIdf5GEE4NkbtbXtjLWjM3Cw8mmQKqsg8kTiqJ9NJQe5NX/5Qlo7Xd9r1yKMMkHllp5g==}
+    cpu: [x64]
+    os: [openbsd]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /esbuild-openbsd-64/0.14.23:
+    resolution: {integrity: sha512-uYYNqbVR+i7k8ojP/oIROAHO9lATLN7H2QeXKt2H310Fc8FJj4y3Wce6hx0VgnJ4k1JDrgbbiXM8rbEgQyg8KA==}
+    engines: {node: '>=12'}
     cpu: [x64]
     os: [openbsd]
     requiresBuild: true
@@ -2047,6 +2016,15 @@ packages:
     dev: true
     optional: true
 
+  /esbuild-sunos-64/0.14.23:
+    resolution: {integrity: sha512-hAzeBeET0+SbScknPzS2LBY6FVDpgE+CsHSpe6CEoR51PApdn2IB0SyJX7vGelXzlyrnorM4CAsRyb9Qev4h9g==}
+    engines: {node: '>=12'}
+    cpu: [x64]
+    os: [sunos]
+    requiresBuild: true
+    dev: true
+    optional: true
+
   /esbuild-sunos-64/0.14.5:
     resolution: {integrity: sha512-J2ffKsBBWscQlye+/giEgKsQCppwHHFqqt/sh+ojVF+DZy1ve6RpPGwXGcGF6IaZTAI9+Vk4eHleiQxb+PC9Yw==}
     cpu: [x64]
@@ -2057,6 +2035,15 @@ packages:
 
   /esbuild-windows-32/0.13.15:
     resolution: {integrity: sha512-fDMEf2g3SsJ599MBr50cY5ve5lP1wyVwTe6aLJsM01KtxyKkB4UT+fc5MXQFn3RLrAIAZOG+tHC+yXObpSn7Nw==}
+    cpu: [ia32]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /esbuild-windows-32/0.14.23:
+    resolution: {integrity: sha512-Kttmi3JnohdaREbk6o9e25kieJR379TsEWF0l39PQVHXq3FR6sFKtVPgY8wk055o6IB+rllrzLnbqOw/UV60EA==}
+    engines: {node: '>=12'}
     cpu: [ia32]
     os: [win32]
     requiresBuild: true
@@ -2079,6 +2066,15 @@ packages:
     dev: true
     optional: true
 
+  /esbuild-windows-64/0.14.23:
+    resolution: {integrity: sha512-JtIT0t8ymkpl6YlmOl6zoSWL5cnCgyLaBdf/SiU/Eg3C13r0NbHZWNT/RDEMKK91Y6t79kTs3vyRcNZbfu5a8g==}
+    engines: {node: '>=12'}
+    cpu: [x64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
   /esbuild-windows-64/0.14.5:
     resolution: {integrity: sha512-ZM9rlBDsPEeMVJ1wcpNMXUad9VzYOFeOBUXBi+16HZTvFPy2DkcC2ZWcrByP3IESToD5lvHdjSX/w8rxphjqig==}
     cpu: [x64]
@@ -2089,6 +2085,15 @@ packages:
 
   /esbuild-windows-arm64/0.13.15:
     resolution: {integrity: sha512-zzvyCVVpbwQQATaf3IG8mu1IwGEiDxKkYUdA4FpoCHi1KtPa13jeScYDjlW0Qh+ebWzpKfR2ZwvqAQkSWNcKjA==}
+    cpu: [arm64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /esbuild-windows-arm64/0.14.23:
+    resolution: {integrity: sha512-cTFaQqT2+ik9e4hePvYtRZQ3pqOvKDVNarzql0VFIzhc0tru/ZgdLoXd6epLiKT+SzoSce6V9YJ+nn6RCn6SHw==}
+    engines: {node: '>=12'}
     cpu: [arm64]
     os: [win32]
     requiresBuild: true
@@ -2125,6 +2130,33 @@ packages:
       esbuild-windows-32: 0.13.15
       esbuild-windows-64: 0.13.15
       esbuild-windows-arm64: 0.13.15
+    dev: true
+
+  /esbuild/0.14.23:
+    resolution: {integrity: sha512-XjnIcZ9KB6lfonCa+jRguXyRYcldmkyZ99ieDksqW/C8bnyEX299yA4QH2XcgijCgaddEZePPTgvx/2imsq7Ig==}
+    engines: {node: '>=12'}
+    hasBin: true
+    requiresBuild: true
+    optionalDependencies:
+      esbuild-android-arm64: 0.14.23
+      esbuild-darwin-64: 0.14.23
+      esbuild-darwin-arm64: 0.14.23
+      esbuild-freebsd-64: 0.14.23
+      esbuild-freebsd-arm64: 0.14.23
+      esbuild-linux-32: 0.14.23
+      esbuild-linux-64: 0.14.23
+      esbuild-linux-arm: 0.14.23
+      esbuild-linux-arm64: 0.14.23
+      esbuild-linux-mips64le: 0.14.23
+      esbuild-linux-ppc64le: 0.14.23
+      esbuild-linux-riscv64: 0.14.23
+      esbuild-linux-s390x: 0.14.23
+      esbuild-netbsd-64: 0.14.23
+      esbuild-openbsd-64: 0.14.23
+      esbuild-sunos-64: 0.14.23
+      esbuild-windows-32: 0.14.23
+      esbuild-windows-64: 0.14.23
+      esbuild-windows-arm64: 0.14.23
     dev: true
 
   /esbuild/0.14.5:
@@ -3790,8 +3822,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vite/2.7.13:
-    resolution: {integrity: sha512-Mq8et7f3aK0SgSxjDNfOAimZGW9XryfHRa/uV0jseQSilg+KhYDSoNb9h1rknOy6SuMkvNDLKCYAYYUMCE+IgQ==}
+  /vite/2.8.4:
+    resolution: {integrity: sha512-GwtOkkaT2LDI82uWZKcrpRQxP5tymLnC7hVHHqNkhFNknYr0hJUlDLfhVRgngJvAy3RwypkDCWtTKn1BjO96Dw==}
     engines: {node: '>=12.2.0'}
     hasBin: true
     peerDependencies:
@@ -3806,7 +3838,7 @@ packages:
       stylus:
         optional: true
     dependencies:
-      esbuild: 0.13.15
+      esbuild: 0.14.23
       postcss: 8.4.6
       resolve: 1.22.0
       rollup: 2.67.1

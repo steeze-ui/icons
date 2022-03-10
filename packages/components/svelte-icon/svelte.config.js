@@ -10,10 +10,10 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		package: {
-			exports: (file) => {
-				console.log(file)
-				return file === 'index.ts'
-			}
+			// exports: (file) => {
+			// 	console.log(file)
+			// 	return file === 'index.ts'
+			// }
 			// exports: (file) => file === 'index.js'
 			// files: (file) => !file.startsWith("internal"), //exclude internal Components
 		}

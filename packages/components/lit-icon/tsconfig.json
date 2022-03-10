@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "module": "esnext",
-    "lib": ["ESNext", "dom", "dom.iterable"],
+    "lib": [
+      "ESNext",
+      "dom",
+      "dom.iterable"
+    ],
     "declaration": true,
     "emitDeclarationOnly": true,
     "outDir": "./types",
@@ -15,8 +19,12 @@
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
     "experimentalDecorators": true,
-    "useDefineForClassFields": false
+    "useDefineForClassFields": false,
   },
-  "include": ["src/**/*.ts"],
-  "exclude": ["src/**/*example*"]
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "src/**/*example*"
+  ]
 }

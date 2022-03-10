@@ -1,6 +1,6 @@
 {
   "name": "@steeze-ui/svelte-icon",
-  "version": "1.3.1",
+  "version": "1.3.2-next.0",
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
@@ -18,12 +18,6 @@
     "release": "pnpm release:patch"
   },
   "devDependencies": {
-    "@steeze-ui/feather-icons": "workspace:*",
-    "@steeze-ui/heroicons": "workspace:*",
-    "@steeze-ui/iconic-free": "workspace:*",
-    "@steeze-ui/octicons": "workspace:*",
-    "@steeze-ui/radix-icons": "workspace:*",
-    "@steeze-ui/remix-icons": "workspace:*",
     "@sveltejs/adapter-auto": "next",
     "@sveltejs/kit": "next",
     "prettier": "^2.5.1",

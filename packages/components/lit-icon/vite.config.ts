@@ -4,7 +4,7 @@ import { defineConfig } from 'vite'
 export default defineConfig({
 	build: {
 		lib: {
-			entry: 'src/lit-icon.ts',
+			entry: 'src/index.ts',
 			formats: ['es']
 		},
 		rollupOptions: {
@@ -12,12 +12,6 @@ export default defineConfig({
 		}
 	},
 	optimizeDeps: {
-		include: [
-			'@steeze-ui/heroicons',
-			'@steeze-ui/radix-icons',
-			'@steeze-ui/iconic-free',
-			'@steeze-ui/octicons',
-			'@steeze-ui/feather-icons'
-		]
+		include: ['@steeze-ui/heroicons']
 	}
 })
