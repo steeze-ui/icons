@@ -4,21 +4,21 @@ This project is still in experimental development. Expect bugs and breaking chan
 
 ## Overview
 
-Effortless Icon Pack for template Icons
+Effortless Icon Pack for Simple Icons
 
-- Based on [Feather Icons](https://feathericons.com/)
+- Based on [Simple Icons](https://simpleicons.org/)
 - Defines the Icon Source to be used in any [steeze-ui icon component](https://github.com/steeze-ui/icons/tree/main/packages/components)
 
 ## Installation
 
 ```bash
-npm i -D @steeze-ui/feather-icons
+npm i -D @steeze-ui/simple-icons
 ```
 
 ## Usage
 
 ```js
-import { Activity } from '@steeze-ui/template-icons'
+import { Github } from '@steeze-ui/simple-icons'
 ```
 
 ## Documentation
@@ -27,8 +27,7 @@ import { Activity } from '@steeze-ui/template-icons'
 
 | Value   | Description                      |
 | ------- | -------------------------------- |
-| default | The outline version of the Icons |
-| solid   | The solid version of the Icons   |
+| default | The default version of the Icons |
 
 ### Other Icon Packs
 

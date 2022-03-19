@@ -1,1 +1,1 @@
-# @steeze-ui/template-icons
+# @steeze-ui/simple-icons
