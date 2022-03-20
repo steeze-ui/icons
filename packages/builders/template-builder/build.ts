@@ -5,7 +5,7 @@ const builder = new ThemeBuilder({
 		// inputRaw: './node_modules/', //* use this if your sources come from a npm package
 		// collectFromDir: { icons: 'default' }, //* use this if icon themes are bound to the overlying derectory (e.g. outline/cake.svg, fill/cake.svg).
 		// collectFromSuffix: { '-line': 'default', fill: 'solid' }, //* use this if icon themes are bound to a suffix (e.g. cake-line.svg, cake-fill.svg).
-		// fallbackTheme: 'default', //* collect in which theme folder, when icons cannot be identified by their suffix (default is dont collect)
+		// fallbackTheme: 'default', //* where to collect, when icons cannot be identified by their suffix (default is dont collect)
 	},
 	lib: {
 		excludeSvgAttributes: ['xmlns', 'width', 'height', 'class'], //* exclude certain attributes from the svg's, which might be controlled by the used Icon component
