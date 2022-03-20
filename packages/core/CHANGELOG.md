@@ -1,5 +1,11 @@
 # @steeze-ui/icons
 
+## 2.0.1
+
+### Patch Changes
+
+- only allow .svg files to be collected
+
 ## 2.0.0
 
 ### Major Changes

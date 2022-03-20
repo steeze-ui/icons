@@ -285,11 +285,17 @@ export class ThemeBuilder {
 
 			if (outputThemeDir) {
 				readdirSync(join(inputRaw!, themeDir)).forEach((fileName) => {
-					const data = readFileSync(join(inputRaw!, themeDir, fileName)).toString()
-					if (!existsSync(join(outputPath, outputThemeDir))) {
-						mkdirSync(join(outputPath, outputThemeDir))
+					const ext = extname(fileName)
+					if (ext === '.svg') {
+						const data = readFileSync(join(inputRaw!, themeDir, fileName)).toString()
+						if (!existsSync(join(outputPath, outputThemeDir))) {
+							mkdirSync(join(outputPath, outputThemeDir))
+						}
+						writeFileSync(
+							join(outputPath, outputThemeDir, this.normalizeSourceName(fileName)),
+							data
+						)
 					}
-					writeFileSync(join(outputPath, outputThemeDir, this.normalizeSourceName(fileName)), data)
 				})
 			}
 		})
