@@ -1,5 +1,5 @@
 {
-  "name": "@steeze.ui/simple-icons",
+  "name": "@steeze-ui/simple-icons",
   "description": "Icon Sources (based on Simple Icons) built for @steeze-ui/icons",
   "version": "1.0.0-next.0",
   "type": "module",
