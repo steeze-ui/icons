@@ -30,8 +30,8 @@ importers:
     devDependencies:
       '@steeze-ui/icons': link:../../core
       '@steeze-ui/svelte-icon': link:../../components/svelte-icon/package
-      '@sveltejs/adapter-auto': 1.0.0-next.31
-      '@sveltejs/kit': 1.0.0-next.294_svelte@3.44.3
+      '@sveltejs/adapter-auto': 1.0.0-next.33
+      '@sveltejs/kit': 1.0.0-next.301_svelte@3.44.3
       '@types/node': 17.0.0
       esmo: 0.14.1
       feather-icons: 4.28.0
@@ -64,8 +64,8 @@ importers:
     devDependencies:
       '@steeze-ui/icons': link:../../core
       '@steeze-ui/svelte-icon': link:../../components/svelte-icon/package
-      '@sveltejs/adapter-auto': 1.0.0-next.31
-      '@sveltejs/kit': 1.0.0-next.294_svelte@3.44.3
+      '@sveltejs/adapter-auto': 1.0.0-next.33
+      '@sveltejs/kit': 1.0.0-next.301_svelte@3.44.3
       '@types/node': 17.0.0
       esmo: 0.14.1
       heroicons: 1.0.5
@@ -98,8 +98,8 @@ importers:
     devDependencies:
       '@steeze-ui/icons': link:../../../core
       '@steeze-ui/svelte-icon': link:../../../components/svelte-icon/package
-      '@sveltejs/adapter-auto': 1.0.0-next.31
-      '@sveltejs/kit': 1.0.0-next.294_svelte@3.46.4
+      '@sveltejs/adapter-auto': 1.0.0-next.33
+      '@sveltejs/kit': 1.0.0-next.301_svelte@3.46.4
       '@types/node': 17.0.16
       esmo: 0.14.1
       heroicons: 1.0.5
@@ -132,8 +132,8 @@ importers:
     devDependencies:
       '@steeze-ui/icons': link:../../core
       '@steeze-ui/svelte-icon': link:../../components/svelte-icon/package
-      '@sveltejs/adapter-auto': 1.0.0-next.31
-      '@sveltejs/kit': 1.0.0-next.294_svelte@3.44.3
+      '@sveltejs/adapter-auto': 1.0.0-next.33
+      '@sveltejs/kit': 1.0.0-next.301_svelte@3.44.3
       '@types/node': 17.0.0
       esmo: 0.14.1
       heroicons: 1.0.5
@@ -165,8 +165,8 @@ importers:
     devDependencies:
       '@primer/octicons': 16.2.0
       '@steeze-ui/icons': link:../../core
-      '@sveltejs/adapter-auto': 1.0.0-next.31
-      '@sveltejs/kit': 1.0.0-next.294_svelte@3.44.3
+      '@sveltejs/adapter-auto': 1.0.0-next.33
+      '@sveltejs/kit': 1.0.0-next.301_svelte@3.44.3
       '@types/node': 17.0.0
       esmo: 0.14.1
       prettier: 2.5.1
@@ -198,8 +198,8 @@ importers:
     devDependencies:
       '@steeze-ui/icons': link:../../core
       '@steeze-ui/svelte-icon': link:../../components/svelte-icon/package
-      '@sveltejs/adapter-auto': 1.0.0-next.31
-      '@sveltejs/kit': 1.0.0-next.294_svelte@3.44.3
+      '@sveltejs/adapter-auto': 1.0.0-next.33
+      '@sveltejs/kit': 1.0.0-next.301_svelte@3.44.3
       '@types/node': 17.0.0
       esmo: 0.14.1
       heroicons: 1.0.5
@@ -233,7 +233,7 @@ importers:
       '@steeze-ui/icons': link:../../core
       '@steeze-ui/svelte-icon': link:../../components/svelte-icon/package
       '@sveltejs/adapter-node': 1.0.0-next.67
-      '@sveltejs/kit': 1.0.0-next.294_svelte@3.46.4
+      '@sveltejs/kit': 1.0.0-next.301_svelte@3.46.4
       '@types/node': 17.0.15
       esmo: 0.14.1
       prettier: 2.5.1
@@ -241,6 +241,40 @@ importers:
       remixicon: 2.5.0
       svelte: 3.46.4
       svelte-check: 2.4.2_svelte@3.46.4
+      svelte-preprocess: 4.10.2_svelte@3.46.4+typescript@4.5.5
+      svelte2tsx: 0.4.14_svelte@3.46.4+typescript@4.5.5
+      tslib: 2.3.1
+      typescript: 4.5.5
+
+  packages/builders/simple-icons-builder:
+    specifiers:
+      '@steeze-ui/icons': '*'
+      '@steeze-ui/svelte-icon': '*'
+      '@sveltejs/adapter-auto': next
+      '@sveltejs/kit': next
+      '@types/node': ^17.0.0
+      esmo: ^0.14.1
+      prettier: ^2.4.1
+      prettier-plugin-svelte: ^2.4.0
+      simple-icons: ^6.14.0
+      svelte: ^3.44.0
+      svelte-check: ^2.2.6
+      svelte-preprocess: ^4.9.4
+      svelte2tsx: ^0.4.11
+      tslib: ^2.3.1
+      typescript: ^4.4.3
+    devDependencies:
+      '@steeze-ui/icons': link:../../core
+      '@steeze-ui/svelte-icon': link:../../components/svelte-icon/package
+      '@sveltejs/adapter-auto': 1.0.0-next.33
+      '@sveltejs/kit': 1.0.0-next.301_svelte@3.46.4
+      '@types/node': 17.0.16
+      esmo: 0.14.1
+      prettier: 2.5.1
+      prettier-plugin-svelte: 2.6.0_prettier@2.5.1+svelte@3.46.4
+      simple-icons: 6.14.0
+      svelte: 3.46.4
+      svelte-check: 2.4.3_svelte@3.46.4
       svelte-preprocess: 4.10.2_svelte@3.46.4+typescript@4.5.5
       svelte2tsx: 0.4.14_svelte@3.46.4+typescript@4.5.5
       tslib: 2.3.1
@@ -265,8 +299,8 @@ importers:
     devDependencies:
       '@steeze-ui/icons': link:../../core
       '@steeze-ui/svelte-icon': link:../../components/svelte-icon/package
-      '@sveltejs/adapter-auto': 1.0.0-next.31
-      '@sveltejs/kit': 1.0.0-next.294_svelte@3.46.4
+      '@sveltejs/adapter-auto': 1.0.0-next.33
+      '@sveltejs/kit': 1.0.0-next.301_svelte@3.46.4
       '@types/node': 17.0.16
       esmo: 0.14.1
       prettier: 2.5.1
@@ -356,8 +390,8 @@ importers:
       tslib: ^2.3.1
       typescript: ^4.5.5
     devDependencies:
-      '@sveltejs/adapter-auto': 1.0.0-next.31
-      '@sveltejs/kit': 1.0.0-next.294_svelte@3.46.4
+      '@sveltejs/adapter-auto': 1.0.0-next.33
+      '@sveltejs/kit': 1.0.0-next.301_svelte@3.46.4
       prettier: 2.5.1
       prettier-plugin-svelte: 2.6.0_prettier@2.5.1+svelte@3.46.4
       svelte: 3.46.4
@@ -380,8 +414,8 @@ importers:
       tslib: ^2.3.1
       typescript: ^4.5.5
     devDependencies:
-      '@sveltejs/adapter-auto': 1.0.0-next.31
-      '@sveltejs/kit': 1.0.0-next.294_svelte@3.46.4
+      '@sveltejs/adapter-auto': 1.0.0-next.33
+      '@sveltejs/kit': 1.0.0-next.301_svelte@3.46.4
       prettier: 2.5.1
       prettier-plugin-svelte: 2.6.0_prettier@2.5.1+svelte@3.46.4
       svelte: 3.46.4
@@ -1022,22 +1056,22 @@ packages:
       picomatch: 2.3.1
     dev: true
 
-  /@sveltejs/adapter-auto/1.0.0-next.31:
-    resolution: {integrity: sha512-N1ZFGxulcSAOJrtdFR567diwbWKUvLrHZiUE9TiEvIahnndeRa50MF9LDg/CuIvpa6fHqz5K827XXrADlPAr9g==}
+  /@sveltejs/adapter-auto/1.0.0-next.33:
+    resolution: {integrity: sha512-FVEBSw5XIYCrqMPY2VGmaGyT4ZvbahcdQJ613O4lgAoafRdUy7ZaE8GoeDmCJxtTUsqhAQUFu7jx9IIhz+QrsQ==}
     dependencies:
-      '@sveltejs/adapter-cloudflare': 1.0.0-next.15
-      '@sveltejs/adapter-netlify': 1.0.0-next.50
-      '@sveltejs/adapter-vercel': 1.0.0-next.46
+      '@sveltejs/adapter-cloudflare': 1.0.0-next.16
+      '@sveltejs/adapter-netlify': 1.0.0-next.51
+      '@sveltejs/adapter-vercel': 1.0.0-next.47
     dev: true
 
-  /@sveltejs/adapter-cloudflare/1.0.0-next.15:
-    resolution: {integrity: sha512-kq3vNFpKmRVgAOfz4HrcleBnUADs++dfVF8S61EAFqNTEvGtOVdJKLql66Pe/uxlY0VxAp1dplxtEDf4/R70lQ==}
+  /@sveltejs/adapter-cloudflare/1.0.0-next.16:
+    resolution: {integrity: sha512-ripTRtOasAtxDJEIF3kwwji/9WHfX069i5LuRwGUzOi4/cbcGfgV1RFBVfo/8G6hr3ehqLeKCdloet1yTsp34A==}
     dependencies:
       esbuild: 0.14.23
     dev: true
 
-  /@sveltejs/adapter-netlify/1.0.0-next.50:
-    resolution: {integrity: sha512-lpHvjcHiC77SPyLp7OjhenJF9KYfKsXlmUua7icNh0Hc8SKtRQf0dn+a1Zy77AslikvOX7/4HZE8zPIyIvYYqw==}
+  /@sveltejs/adapter-netlify/1.0.0-next.51:
+    resolution: {integrity: sha512-P7/cW/0z8zd8J6DOI2yxKZG0+HRMMuzfOf0yzFXX0vRwBePhKlZ/H4qhTOo2NrCmj3Len545o+ugj5gyMXl1+g==}
     dependencies:
       '@iarna/toml': 2.2.5
       esbuild: 0.14.23
@@ -1050,14 +1084,14 @@ packages:
       tiny-glob: 0.2.9
     dev: true
 
-  /@sveltejs/adapter-vercel/1.0.0-next.46:
-    resolution: {integrity: sha512-6Rwf3kZF6uX2JxDMoYgZWZe5TjVTTWZa57VukdNGjnlAT3CrfsEOBWyskX/8hx7AiYX5fucZaAtYPNZpUmueIA==}
+  /@sveltejs/adapter-vercel/1.0.0-next.47:
+    resolution: {integrity: sha512-VV3vP8KqL9XOc7xfQLVhXTM5jrTme+r1qJy98u5/dhAhkdjqrGDwAKo/s7MoB3rTYxLb2b8I4QxAaoz2Y2aIBg==}
     dependencies:
       esbuild: 0.14.23
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.294_svelte@3.44.3:
-    resolution: {integrity: sha512-whTYeri/oaV672KErlhCAvAawlsnd8iu/MQmjdu85TApDYolLe8FDTg6GQ55+0IJbx1N7dOer/HopWzKudPgFA==}
+  /@sveltejs/kit/1.0.0-next.301_svelte@3.44.3:
+    resolution: {integrity: sha512-F/XP1VEu+fpvgY04JekNxAFupccNMKOyXtbox0LwNJvBulL15/Tzy6tf4g+9t2Jy7mprwI3h0ZC9G/nVujRFnQ==}
     engines: {node: '>=14.13'}
     hasBin: true
     peerDependencies:
@@ -1075,8 +1109,8 @@ packages:
       - supports-color
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.294_svelte@3.46.4:
-    resolution: {integrity: sha512-whTYeri/oaV672KErlhCAvAawlsnd8iu/MQmjdu85TApDYolLe8FDTg6GQ55+0IJbx1N7dOer/HopWzKudPgFA==}
+  /@sveltejs/kit/1.0.0-next.301_svelte@3.46.4:
+    resolution: {integrity: sha512-F/XP1VEu+fpvgY04JekNxAFupccNMKOyXtbox0LwNJvBulL15/Tzy6tf4g+9t2Jy7mprwI3h0ZC9G/nVujRFnQ==}
     engines: {node: '>=14.13'}
     hasBin: true
     peerDependencies:
@@ -3259,6 +3293,11 @@ packages:
 
   /signal-exit/3.0.7:
     resolution: {integrity: sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==}
+    dev: true
+
+  /simple-icons/6.14.0:
+    resolution: {integrity: sha512-G1BloriCtFDxdxLPJJ7Ri4ffYp4ET/KOvpqTWaFUxeHcGognm468hmXp5g7auPYxKg2OsPqJ1zCYEjCRMqFtMg==}
+    engines: {node: '>=0.12.18'}
     dev: true
 
   /slash/3.0.0:
