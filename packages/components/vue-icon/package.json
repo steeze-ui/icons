@@ -1,0 +1,55 @@
+{
+  "name": "@steeze-ui/vue-icon",
+  "version": "1.0.0-next.2",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/vue-icon.js",
+      "types": "./types/index.d.ts"
+    }
+  },
+  "types": "types/index.d.ts",
+  "files": [
+    "dist",
+    "types"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.2.37"
+  },
+  "devDependencies": {
+    "@steeze-ui/heroicons": "workspace:^1.1.1",
+    "@vitejs/plugin-vue": "^3.0.3",
+    "typescript": "^4.7.4",
+    "vite": "^3.0.9",
+    "vue-tsc": "^0.40.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steeze-ui/icons.git",
+    "directory": "packages/components/svelte-icon"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "keywords": [
+    "lit",
+    "lit-element",
+    "lit-html",
+    "icon",
+    "icons",
+    "component",
+    "steeze"
+  ],
+  "author": "Justin Voitel <mail@justinv.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/steeze-ui/icons/issues"
+  },
+  "homepage": "https://github.com/steeze-ui/icons#readme"
+}
