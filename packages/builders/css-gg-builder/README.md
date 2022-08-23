@@ -4,9 +4,9 @@ This project is still in experimental development. Expect bugs and breaking chan
 
 ## Overview
 
-Effortless Icon Pack for Feather Icons
+Effortless Icon Pack for CSS.gg Icons
 
-- Based on [Feather Icons](https://feathericons.com/)
+- Based on [CSS.gg Icons](https://css.gg/)
 - Defines the Icon Source to be used in any [steeze-ui icon component](https://github.com/steeze-ui/icons/tree/main/packages/components)
 
 ## Installation
@@ -18,7 +18,7 @@ npm i -D @steeze-ui/css-gg
 ## Usage
 
 ```js
-import { Activity } from '@steeze-ui/feather-icons'
+import { Add } from '@steeze-ui/css-gg'
 ```
 
 ## Documentation
