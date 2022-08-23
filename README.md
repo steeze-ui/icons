@@ -32,7 +32,7 @@ Copy the [Builder Template](https://github.com/steeze-ui/icons/tree/main/package
 | [@steeze-ui/lit-icon](packages/components/lit-icon)       | <a href="https://www.npmjs.com/package/@steeze-ui/lit-icon"><img src="https://img.shields.io/npm/v/@steeze-ui/lit-icon.svg?style=flat" /></a>       |
 | [@steeze-ui/solid-icon](packages/components/solid-icon)   | <a href="https://www.npmjs.com/package/@steeze-ui/solid-icon"><img src="https://img.shields.io/npm/v/@steeze-ui/solid-icon.svg?style=flat" /></a>   |
 | [@steeze-ui/react-icon](packages/components/react-icon)   | <a href="https://www.npmjs.com/package/@steeze-ui/react-icon"><img src="https://img.shields.io/npm/v/@steeze-ui/react-icon.svg?style=flat" /></a>   |
-| @steeze-ui/vue-icon                                       | <a href="https://www.npmjs.com/package/@steeze-ui/vue-icon"><img src="https://img.shields.io/npm/v/@steeze-ui/vue-icon.svg?style=flat" /></a>                                                                                                                                             |
+| [@steeze-ui/vue-icon](packages/components/vue-icon)                                       | <a href="https://www.npmjs.com/package/@steeze-ui/vue-icon"><img src="https://img.shields.io/npm/v/@steeze-ui/vue-icon.svg?style=flat" /></a>                                                                                                                                             |
 
 ### Icon Packs
 
