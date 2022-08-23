@@ -1,9 +1,7 @@
-# @steeze-ui/feather-icons
+# @steeze-ui/css-gg
 
-## 1.2.0
+## 1.0.0
 
-### Minor Changes
+### Features
 
-- improve typings
-- bundle sources in index.ts
-- shrinken package size
+- initial release

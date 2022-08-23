@@ -1,7 +1,3 @@
-# READ THIS FIRST
-
-This project is still in experimental development. Expect bugs and breaking changes!
-
 ## Overview
 
 Effortless Icon Pack for CSS.gg Icons
@@ -17,18 +13,23 @@ npm i -D @steeze-ui/css-gg
 
 ## Usage
 
-```js
-import { Add } from '@steeze-ui/css-gg'
+```svelte
+<!-- svelte example -->
+<script>
+  import { Add } from '@steeze-ui/css-gg'
+  import { Icon } from '@steeze-ui/svelte-icon'
+</script>
+
+<Icon src={Add} size="24px" />
 ```
 
 ## Documentation
 
 ### Themes
 
-| Value   | Description                      |
-| ------- | -------------------------------- |
-| default | The outline version of the Icons |
-| solid   | The solid version of the Icons   |
+| Value   | Description                      | Prefered Size |
+| ------- | -------------------------------- | ------------- |
+| default | The outline version of the Icons | 24px          |
 
 ### Other Icon Packs
 
