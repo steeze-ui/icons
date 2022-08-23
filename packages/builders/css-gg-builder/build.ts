@@ -3,10 +3,10 @@ import { ThemeBuilder } from '@steeze-ui/icons'
 const builder = new ThemeBuilder({
 	sources: {
 		inputRaw: './node_modules/css.gg/icons',
-		collectFromDir: { icons: 'default' }
+		collectFromDir: { svg: 'default' }
 	},
 	lib: {
-		excludeSvgAttributes: ['xmlns', 'width', 'height', 'class']
+		excludeSvgAttributes: ['xmlns', 'width', 'height']
 	}
 })
 
