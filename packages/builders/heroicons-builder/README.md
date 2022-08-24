@@ -1,10 +1,6 @@
-# READ THIS FIRST
-
-This project is still in experimental development. Expect bugs and breaking changes!
-
 ## Overview
 
-Effortless Icon Pack for Heroicons
+Effortless Icon Pack for Heroicons 2.0
 
 - Based on [Heroicons](https://heroicons.dev/)
 - Defines the Icon Source to be used in any [steeze-ui icon component](https://github.com/steeze-ui/icons/tree/main/packages/components)
@@ -25,10 +21,11 @@ import { LightningBolt } from '@steeze-ui/heroicons'
 
 ### Themes
 
-| Value   | Description                      |
-| ------- | -------------------------------- |
-| default | The outline version of the Icons |
-| solid   | The solid version of the Icons   |
+| Value   | Description                         | Prefered Size |
+| ------- | ----------------------------------- | ------------- |
+| default | A outline version of the Icons      | 24px          |
+| solid   | A solid version of the Icons        | 24px          |
+| mini    | A mini (solid) version of the Icons | 20px          |
 
 ### Other Icon Packs
 
