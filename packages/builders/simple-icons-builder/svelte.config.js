@@ -8,12 +8,7 @@ const config = {
 	preprocess: preprocess(),
 
 	kit: {
-		adapter: adapter(),
-		package: {
-			// exports: (file) => file === 'index.js'
-			// files: (file) => !file.startsWith("internal"), //exclude internal Components
-		}
-		// hydrate the <div id="svelte"> element in src/app.html
+		adapter: adapter()
 	}
 }
 
