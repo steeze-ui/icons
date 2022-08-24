@@ -116,6 +116,44 @@ importers:
       typescript: 4.7.4
       vite: 3.0.9
 
+  packages/builders/css-gg-builder/package:
+    specifiers:
+      '@steeze-ui/icons': '*'
+      '@steeze-ui/svelte-icon': '*'
+      '@sveltejs/adapter-auto': next
+      '@sveltejs/kit': next
+      '@sveltejs/package': 1.0.0-next.1
+      '@types/node': ^17.0.0
+      css.gg: ^2.0.0
+      esmo: ^0.14.1
+      prettier: ^2.4.1
+      prettier-plugin-svelte: ^2.4.0
+      svelte: ^3.44.0
+      svelte-check: ^2.2.6
+      svelte-preprocess: ^4.9.4
+      svelte2tsx: ^0.4.11
+      tslib: ^2.3.1
+      typescript: ^4.4.3
+      vite: ^3.0.9
+    devDependencies:
+      '@steeze-ui/icons': link:../../../core
+      '@steeze-ui/svelte-icon': link:../../../components/svelte-icon/package
+      '@sveltejs/adapter-auto': 1.0.0-next.65
+      '@sveltejs/kit': 1.0.0-next.431_svelte@3.46.4+vite@3.0.9
+      '@sveltejs/package': 1.0.0-next.1_xdoso6aeppehragramniftzfcm
+      '@types/node': 17.0.16
+      css.gg: 2.0.0
+      esmo: 0.14.1
+      prettier: 2.5.1
+      prettier-plugin-svelte: 2.6.0_a6mk22ceh463eaorpsa4xgvlmq
+      svelte: 3.46.4
+      svelte-check: 2.4.3_svelte@3.46.4
+      svelte-preprocess: 4.10.2_xdoso6aeppehragramniftzfcm
+      svelte2tsx: 0.4.14_xdoso6aeppehragramniftzfcm
+      tslib: 2.3.1
+      typescript: 4.7.4
+      vite: 3.0.9
+
   packages/builders/feather-icons-builder:
     specifiers:
       '@steeze-ui/icons': '*'
@@ -156,67 +194,37 @@ importers:
       '@steeze-ui/svelte-icon': '*'
       '@sveltejs/adapter-auto': next
       '@sveltejs/kit': next
+      '@sveltejs/package': 1.0.0-next.1
       '@types/node': ^17.0.0
       esmo: ^0.14.1
-      heroicons: ^1.0.5
+      heroicons: ^2.0.1
       prettier: ^2.4.1
       prettier-plugin-svelte: ^2.4.0
-      svelte: ^3.44.0
+      svelte: ^3.49.0
       svelte-check: ^2.2.6
       svelte-preprocess: ^4.9.4
       svelte2tsx: ^0.4.11
       tslib: ^2.3.1
-      typescript: ^4.4.3
+      typescript: ^4.7.4
+      vite: ^3.0.9
     devDependencies:
       '@steeze-ui/icons': link:../../core
       '@steeze-ui/svelte-icon': link:../../components/svelte-icon/package
       '@sveltejs/adapter-auto': 1.0.0-next.65
-      '@sveltejs/kit': 1.0.0-next.431_svelte@3.44.3
+      '@sveltejs/kit': 1.0.0-next.431_svelte@3.49.0+vite@3.0.9
+      '@sveltejs/package': 1.0.0-next.1_uslzfc62di2n2otc2tvfklnwji
       '@types/node': 17.0.0
       esmo: 0.14.1
-      heroicons: 1.0.5
+      heroicons: 2.0.1
       prettier: 2.5.1
-      prettier-plugin-svelte: 2.5.1_2d5j24vruagh2a5fnoq5h6zw2m
-      svelte: 3.44.3
-      svelte-check: 2.2.10_svelte@3.44.3
-      svelte-preprocess: 4.10.0_4mfbg7enynchqcvqsuw2l6w43a
-      svelte2tsx: 0.4.11_4mfbg7enynchqcvqsuw2l6w43a
+      prettier-plugin-svelte: 2.5.1_xlvzo2xr2tkfrhqugxhq3ycwyy
+      svelte: 3.49.0
+      svelte-check: 2.2.10_svelte@3.49.0
+      svelte-preprocess: 4.10.0_uslzfc62di2n2otc2tvfklnwji
+      svelte2tsx: 0.4.11_uslzfc62di2n2otc2tvfklnwji
       tslib: 2.3.1
-      typescript: 4.5.4
-
-  packages/builders/heroicons-builder/package:
-    specifiers:
-      '@steeze-ui/icons': '*'
-      '@steeze-ui/svelte-icon': '*'
-      '@sveltejs/adapter-auto': next
-      '@sveltejs/kit': next
-      '@types/node': ^17.0.0
-      esmo: ^0.14.1
-      heroicons: ^1.0.5
-      prettier: ^2.4.1
-      prettier-plugin-svelte: ^2.4.0
-      svelte: ^3.44.0
-      svelte-check: ^2.2.6
-      svelte-preprocess: ^4.9.4
-      svelte2tsx: ^0.4.11
-      tslib: ^2.3.1
-      typescript: ^4.4.3
-    devDependencies:
-      '@steeze-ui/icons': link:../../../core
-      '@steeze-ui/svelte-icon': link:../../../components/svelte-icon/package
-      '@sveltejs/adapter-auto': 1.0.0-next.65
-      '@sveltejs/kit': 1.0.0-next.431_svelte@3.46.4
-      '@types/node': 17.0.16
-      esmo: 0.14.1
-      heroicons: 1.0.5
-      prettier: 2.5.1
-      prettier-plugin-svelte: 2.6.0_a6mk22ceh463eaorpsa4xgvlmq
-      svelte: 3.46.4
-      svelte-check: 2.4.3_svelte@3.46.4
-      svelte-preprocess: 4.10.2_fngr4nv3btlkitf54ufimnf32y
-      svelte2tsx: 0.4.14_fngr4nv3btlkitf54ufimnf32y
-      tslib: 2.3.1
-      typescript: 4.5.5
+      typescript: 4.7.4
+      vite: 3.0.9
 
   packages/builders/iconic-free-builder:
     specifiers:
@@ -461,7 +469,7 @@ importers:
     dependencies:
       lit: 2.1.1
     devDependencies:
-      '@steeze-ui/heroicons': link:../../builders/heroicons-builder/package
+      '@steeze-ui/heroicons': link:../../builders/heroicons-builder
       typescript: 4.5.4
       vite: 2.7.10
 
@@ -484,7 +492,7 @@ importers:
       react-dom: 17.0.2_react@17.0.2
     devDependencies:
       '@steeze-ui/feather-icons': link:../../builders/feather-icons-builder
-      '@steeze-ui/heroicons': link:../../builders/heroicons-builder/package
+      '@steeze-ui/heroicons': link:../../builders/heroicons-builder
       '@steeze-ui/iconic-free': link:../../builders/iconic-free-builder
       '@steeze-ui/octicons': link:../../builders/octicons-builder
       '@steeze-ui/radix-icons': link:../../builders/radix-icons-builder
@@ -509,7 +517,7 @@ importers:
       solid-js: 1.3.1
     devDependencies:
       '@steeze-ui/feather-icons': link:../../builders/feather-icons-builder
-      '@steeze-ui/heroicons': link:../../builders/heroicons-builder/package
+      '@steeze-ui/heroicons': link:../../builders/heroicons-builder
       '@steeze-ui/iconic-free': link:../../builders/iconic-free-builder
       '@steeze-ui/octicons': link:../../builders/octicons-builder
       '@steeze-ui/radix-icons': link:../../builders/radix-icons-builder
@@ -576,7 +584,7 @@ importers:
     dependencies:
       vue: 3.2.37
     devDependencies:
-      '@steeze-ui/heroicons': link:../../builders/heroicons-builder/package
+      '@steeze-ui/heroicons': link:../../builders/heroicons-builder
       '@vitejs/plugin-vue': 3.0.3_vite@3.0.9+vue@3.2.37
       typescript: 4.7.4
       vite: 3.0.9
@@ -1385,6 +1393,50 @@ packages:
       - supports-color
     dev: true
 
+  /@sveltejs/kit/1.0.0-next.431_svelte@3.49.0+vite@3.0.9:
+    resolution: {integrity: sha512-kK3FCw0cBB/nqjgV8G9W5ctDxemQpkqxidsKVr3aEXSExm4mdM3MYgNf6y2OuvOH9zLD+/t6DAxQQC/RPxuz8Q==}
+    engines: {node: '>=16.9'}
+    hasBin: true
+    requiresBuild: true
+    peerDependencies:
+      svelte: ^3.44.0
+      vite: ^3.0.0
+    dependencies:
+      '@sveltejs/vite-plugin-svelte': 1.0.1_svelte@3.49.0+vite@3.0.9
+      cookie: 0.5.0
+      devalue: 2.0.1
+      kleur: 4.1.5
+      magic-string: 0.26.2
+      mime: 3.0.0
+      node-fetch: 3.2.10
+      sade: 1.8.1
+      set-cookie-parser: 2.5.1
+      sirv: 2.0.2
+      svelte: 3.49.0
+      tiny-glob: 0.2.9
+      undici: 5.9.1
+      vite: 3.0.9
+    transitivePeerDependencies:
+      - diff-match-patch
+      - supports-color
+    dev: true
+
+  /@sveltejs/package/1.0.0-next.1_uslzfc62di2n2otc2tvfklnwji:
+    resolution: {integrity: sha512-U8XBk6Cfy8MjKG41Uyo+fqBpdhu7xUSnhiCNoODRaAtWV02RZoLh+McXrsxEvqi/ycgymctlhJhssqDnD+E+FA==}
+    engines: {node: '>=16.9'}
+    hasBin: true
+    peerDependencies:
+      svelte: ^3.44.0
+    dependencies:
+      chokidar: 3.5.3
+      kleur: 4.1.5
+      sade: 1.8.1
+      svelte: 3.49.0
+      svelte2tsx: 0.5.14_uslzfc62di2n2otc2tvfklnwji
+    transitivePeerDependencies:
+      - typescript
+    dev: true
+
   /@sveltejs/package/1.0.0-next.1_xdoso6aeppehragramniftzfcm:
     resolution: {integrity: sha512-U8XBk6Cfy8MjKG41Uyo+fqBpdhu7xUSnhiCNoODRaAtWV02RZoLh+McXrsxEvqi/ycgymctlhJhssqDnD+E+FA==}
     engines: {node: '>=16.9'}
@@ -1463,6 +1515,29 @@ packages:
       magic-string: 0.26.2
       svelte: 3.46.4
       svelte-hmr: 0.14.12_svelte@3.46.4
+      vite: 3.0.9
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /@sveltejs/vite-plugin-svelte/1.0.1_svelte@3.49.0+vite@3.0.9:
+    resolution: {integrity: sha512-PorCgUounn0VXcpeJu+hOweZODKmGuLHsLomwqSj+p26IwjjGffmYQfVHtiTWq+NqaUuuHWWG7vPge6UFw4Aeg==}
+    engines: {node: ^14.18.0 || >= 16}
+    peerDependencies:
+      diff-match-patch: ^1.0.5
+      svelte: ^3.44.0
+      vite: ^3.0.0
+    peerDependenciesMeta:
+      diff-match-patch:
+        optional: true
+    dependencies:
+      '@rollup/pluginutils': 4.2.1
+      debug: 4.3.4
+      deepmerge: 4.2.2
+      kleur: 4.1.5
+      magic-string: 0.26.2
+      svelte: 3.49.0
+      svelte-hmr: 0.14.12_svelte@3.49.0
       vite: 3.0.9
     transitivePeerDependencies:
       - supports-color
@@ -3038,6 +3113,10 @@ packages:
     resolution: {integrity: sha512-QMidnnCbBSmnuN0ieh6lDvAmIFeUoPyPv0z1/3Q2gM8c69aIcoolMCg9i0MZXwnNE//jWU1sxEFY4T2o1fYgeg==}
     dev: true
 
+  /heroicons/2.0.1:
+    resolution: {integrity: sha512-PG+w77atf6BSMTqpEB/yqYYFhLXimhC1L9kHAw/4CA5Vw5SEkcbgO55XbjJ0iwReo6FBs7CbT/0Iv4E2HQJNNg==}
+    dev: true
+
   /hosted-git-info/2.8.9:
     resolution: {integrity: sha512-mxIDAb9Lsm6DoOJ7xH+5+X4y1LU/4Hi50L9C5sIswK3JzULS4bwk1FvjdBgvYR4bzT4tuUQiC15FE2f5HbLvYw==}
     dev: true
@@ -3710,6 +3789,16 @@ packages:
       svelte: 3.44.3
     dev: true
 
+  /prettier-plugin-svelte/2.5.1_xlvzo2xr2tkfrhqugxhq3ycwyy:
+    resolution: {integrity: sha512-IhZUcqr7Bg4LY15d87t9lDr7EyC0IPehkzH5ya5igG8zYwf3UYaYDFnVW2mckREaZyLREcH9YOouesmt4f5Ozg==}
+    peerDependencies:
+      prettier: ^1.16.4 || ^2.0.0
+      svelte: ^3.2.0
+    dependencies:
+      prettier: 2.5.1
+      svelte: 3.49.0
+    dev: true
+
   /prettier-plugin-svelte/2.6.0_a6mk22ceh463eaorpsa4xgvlmq:
     resolution: {integrity: sha512-NPSRf6Y5rufRlBleok/pqg4+1FyGsL0zYhkYP6hnueeL1J/uCm3OfOZPsLX4zqD9VAdcXfyEL2PYqGv8ZoOSfA==}
     peerDependencies:
@@ -4219,8 +4308,37 @@ packages:
       sade: 1.7.4
       source-map: 0.7.3
       svelte: 3.44.3
-      svelte-preprocess: 4.10.0_4mfbg7enynchqcvqsuw2l6w43a
-      typescript: 4.5.4
+      svelte-preprocess: 4.10.0_d3t7ok47ij7cs72x2vo7xbtfqq
+      typescript: 4.7.4
+    transitivePeerDependencies:
+      - '@babel/core'
+      - coffeescript
+      - less
+      - node-sass
+      - postcss
+      - postcss-load-config
+      - pug
+      - sass
+      - stylus
+      - sugarss
+    dev: true
+
+  /svelte-check/2.2.10_svelte@3.49.0:
+    resolution: {integrity: sha512-UVLd/N7hUIG2v6dytofsw8MxYn2iS2hpNSglsGz9Z9b8ZfbJ5jayl4Mm1SXhNwiFs5aklG90zSBJtd7NTK8dTg==}
+    hasBin: true
+    peerDependencies:
+      svelte: ^3.24.0
+    dependencies:
+      chalk: 4.1.2
+      chokidar: 3.5.2
+      fast-glob: 3.2.9
+      import-fresh: 3.3.0
+      minimist: 1.2.5
+      sade: 1.7.4
+      source-map: 0.7.3
+      svelte: 3.49.0
+      svelte-preprocess: 4.10.0_uslzfc62di2n2otc2tvfklnwji
+      typescript: 4.7.4
     transitivePeerDependencies:
       - '@babel/core'
       - coffeescript
@@ -4310,6 +4428,15 @@ packages:
       svelte: 3.46.4
     dev: true
 
+  /svelte-hmr/0.14.12_svelte@3.49.0:
+    resolution: {integrity: sha512-4QSW/VvXuqVcFZ+RhxiR8/newmwOCTlbYIezvkeN6302YFRE8cXy0naamHcjz8Y9Ce3ITTZtrHrIL0AGfyo61w==}
+    engines: {node: ^12.20 || ^14.13.1 || >= 16}
+    peerDependencies:
+      svelte: '>=3.19.0'
+    dependencies:
+      svelte: 3.49.0
+    dev: true
+
   /svelte-preprocess/4.10.0_4mfbg7enynchqcvqsuw2l6w43a:
     resolution: {integrity: sha512-uZgGyC4SwkFoby2ceiMgGYs4qHYGz2fT06cAsHO8FHdDbvj1dKQyQ/fD9OB0KLymVv0fmzuJo/On7Kv7AeVhWA==}
     engines: {node: '>= 9.11.2'}
@@ -4359,6 +4486,108 @@ packages:
       strip-indent: 3.0.0
       svelte: 3.44.3
       typescript: 4.5.4
+    dev: true
+
+  /svelte-preprocess/4.10.0_d3t7ok47ij7cs72x2vo7xbtfqq:
+    resolution: {integrity: sha512-uZgGyC4SwkFoby2ceiMgGYs4qHYGz2fT06cAsHO8FHdDbvj1dKQyQ/fD9OB0KLymVv0fmzuJo/On7Kv7AeVhWA==}
+    engines: {node: '>= 9.11.2'}
+    requiresBuild: true
+    peerDependencies:
+      '@babel/core': ^7.10.2
+      coffeescript: ^2.5.1
+      less: ^3.11.3
+      node-sass: '*'
+      postcss: ^7 || ^8
+      postcss-load-config: ^2.1.0 || ^3.0.0
+      pug: ^3.0.0
+      sass: ^1.26.8
+      stylus: ^0.54.7
+      sugarss: ^2.0.0
+      svelte: ^3.23.0
+      typescript: ^4.5.2
+    peerDependenciesMeta:
+      '@babel/core':
+        optional: true
+      coffeescript:
+        optional: true
+      less:
+        optional: true
+      node-sass:
+        optional: true
+      postcss:
+        optional: true
+      postcss-load-config:
+        optional: true
+      pug:
+        optional: true
+      sass:
+        optional: true
+      stylus:
+        optional: true
+      sugarss:
+        optional: true
+      typescript:
+        optional: true
+    dependencies:
+      '@types/pug': 2.0.5
+      '@types/sass': 1.43.1
+      detect-indent: 6.1.0
+      magic-string: 0.25.7
+      sorcery: 0.10.0
+      strip-indent: 3.0.0
+      svelte: 3.44.3
+      typescript: 4.7.4
+    dev: true
+
+  /svelte-preprocess/4.10.0_uslzfc62di2n2otc2tvfklnwji:
+    resolution: {integrity: sha512-uZgGyC4SwkFoby2ceiMgGYs4qHYGz2fT06cAsHO8FHdDbvj1dKQyQ/fD9OB0KLymVv0fmzuJo/On7Kv7AeVhWA==}
+    engines: {node: '>= 9.11.2'}
+    requiresBuild: true
+    peerDependencies:
+      '@babel/core': ^7.10.2
+      coffeescript: ^2.5.1
+      less: ^3.11.3
+      node-sass: '*'
+      postcss: ^7 || ^8
+      postcss-load-config: ^2.1.0 || ^3.0.0
+      pug: ^3.0.0
+      sass: ^1.26.8
+      stylus: ^0.54.7
+      sugarss: ^2.0.0
+      svelte: ^3.23.0
+      typescript: ^4.5.2
+    peerDependenciesMeta:
+      '@babel/core':
+        optional: true
+      coffeescript:
+        optional: true
+      less:
+        optional: true
+      node-sass:
+        optional: true
+      postcss:
+        optional: true
+      postcss-load-config:
+        optional: true
+      pug:
+        optional: true
+      sass:
+        optional: true
+      stylus:
+        optional: true
+      sugarss:
+        optional: true
+      typescript:
+        optional: true
+    dependencies:
+      '@types/pug': 2.0.5
+      '@types/sass': 1.43.1
+      detect-indent: 6.1.0
+      magic-string: 0.25.7
+      sorcery: 0.10.0
+      strip-indent: 3.0.0
+      svelte: 3.49.0
+      typescript: 4.7.4
     dev: true
 
   /svelte-preprocess/4.10.2_fngr4nv3btlkitf54ufimnf32y:
@@ -4473,6 +4702,11 @@ packages:
     engines: {node: '>= 8'}
     dev: true
 
+  /svelte/3.49.0:
+    resolution: {integrity: sha512-+lmjic1pApJWDfPCpUUTc1m8azDqYCG1JN9YEngrx/hUyIcFJo6VZhj0A1Ai0wqoHcEIuQy+e9tk+4uDgdtsFA==}
+    engines: {node: '>= 8'}
+    dev: true
+
   /svelte2tsx/0.4.11_4mfbg7enynchqcvqsuw2l6w43a:
     resolution: {integrity: sha512-y1mqNrxv3TzDHstM0qlHrbKwfWk+G/uB28yRH4JYMjJ7N3XZrfrLad+/+P6ITTawbUfLqfs/WlxJDKzl7F2CPw==}
     peerDependencies:
@@ -4483,6 +4717,18 @@ packages:
       pascal-case: 3.1.2
       svelte: 3.44.3
       typescript: 4.5.4
+    dev: true
+
+  /svelte2tsx/0.4.11_uslzfc62di2n2otc2tvfklnwji:
+    resolution: {integrity: sha512-y1mqNrxv3TzDHstM0qlHrbKwfWk+G/uB28yRH4JYMjJ7N3XZrfrLad+/+P6ITTawbUfLqfs/WlxJDKzl7F2CPw==}
+    peerDependencies:
+      svelte: ^3.24
+      typescript: ^4.1.2
+    dependencies:
+      dedent-js: 1.0.1
+      pascal-case: 3.1.2
+      svelte: 3.49.0
+      typescript: 4.7.4
     dev: true
 
   /svelte2tsx/0.4.14_fngr4nv3btlkitf54ufimnf32y:
@@ -4506,6 +4752,18 @@ packages:
       dedent-js: 1.0.1
       pascal-case: 3.1.2
       svelte: 3.46.4
+      typescript: 4.7.4
+    dev: true
+
+  /svelte2tsx/0.5.14_uslzfc62di2n2otc2tvfklnwji:
+    resolution: {integrity: sha512-/9hGkIUMVwZDJoERS6k1x+y6Ir+PpkxbL/UWQ2+RhK/PwUoIaDTCfw79/H1bgYNUTr/7ZaYanJGPuaWARNbbyQ==}
+    peerDependencies:
+      svelte: ^3.24
+      typescript: ^4.1.2
+    dependencies:
+      dedent-js: 1.0.1
+      pascal-case: 3.1.2
+      svelte: 3.49.0
       typescript: 4.7.4
     dev: true
 
