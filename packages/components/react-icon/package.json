@@ -15,13 +15,13 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@steeze-ui/heroicons": "workspace:^1.0.2",
+    "@steeze-ui/heroicons": "workspace:*",
     "typescript": "^4.5.4",
     "vite": "^2.7.10",
-    "@steeze-ui/feather-icons": "workspace:^1.0.0",
-    "@steeze-ui/iconic-free": "workspace:^1.0.2",
-    "@steeze-ui/octicons": "workspace:^1.0.0",
-    "@steeze-ui/radix-icons": "workspace:^1.0.4",
+    "@steeze-ui/feather-icons": "workspace:*",
+    "@steeze-ui/iconic-free": "workspace:*",
+    "@steeze-ui/octicons": "workspace:*",
+    "@steeze-ui/radix-icons": "workspace:*",
     "@types/react": "^17.0.33",
     "@types/react-dom": "^17.0.10",
     "@vitejs/plugin-react": "^1.0.7"
