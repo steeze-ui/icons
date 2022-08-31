@@ -17,7 +17,7 @@ npm i -D @steeze-ui/feather-icons
 
 ## Usage
 
-```js
+```svelte
 import { Activity } from '@steeze-ui/feather-icons'
 ```
 
@@ -28,7 +28,6 @@ import { Activity } from '@steeze-ui/feather-icons'
 | Value   | Description                      |
 | ------- | -------------------------------- |
 | default | The outline version of the Icons |
-| solid   | The solid version of the Icons   |
 
 ### Other Icon Packs
 

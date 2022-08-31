@@ -9,7 +9,8 @@ Effortless Icons
 - Icon Themes (different versions of the same icon)
 - [Builder Template](https://github.com/steeze-ui/icons/tree/main/packages/builders/template-builder) to Create your own Icon Packs
 
-```svelte
+```html
+  <!-- svelte example -->
 <script>
   import {Icon} from '@steeze-ui/svelte-icon'
   import {LightningBolt} from '@steeze-ui/heroicons'
