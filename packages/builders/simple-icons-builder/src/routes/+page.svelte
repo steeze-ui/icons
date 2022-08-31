@@ -1,9 +1,30 @@
 <script lang="ts">
-	import { Github } from '$lib'
 	import { Icon } from '@steeze-ui/svelte-icon'
+	import * as Icons from '$lib'
+
+	const themes = Object.keys(Icons[Object.keys(Icons)[0]])
+
+	let theme = 'default'
 </script>
 
-<h1>Test your icons right here!</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<h1>@steeze-ui/simple-icons</h1>
 
-<Icon src={Github} size="100" />
+<label for="theme-select">Theme</label>
+<select id="theme-select" bind:value={theme}>
+	{#each themes as th}
+		<option value={th}>{th}</option>
+	{/each}
+</select>
+<div>
+	{#each Object.keys(Icons) as Src}
+		<Icon src={Icons[Src]} size="24px" {theme} />
+	{/each}
+</div>
+
+<style>
+	div {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+	}
+</style>
