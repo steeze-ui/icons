@@ -4,8 +4,9 @@
 
 ### Breaking Changes
 
-- use 2.0 icons
+- use 2.0.10 icon set
 - new `mini` theme
+- [many name changes](https://github.com/tailwindlabs/heroicons/issues/750)
 
 
 ## 1.1.0
