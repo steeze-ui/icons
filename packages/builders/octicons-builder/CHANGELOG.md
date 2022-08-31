@@ -1,4 +1,4 @@
-# @steeze-ui/feather-icons
+# @steeze-ui/octicons
 
 ## 1.2.0
 
