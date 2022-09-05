@@ -36,7 +36,8 @@
     "heroicons": "^1.0.4",
     "esmo": "^0.14.1",
     "@types/node": "^17.0.0",
-    "svelte2tsx": "^0.4.11"
+    "svelte2tsx": "^0.4.11",
+    "vite": "^3.1.0"
   },
   "repository": {
     "type": "git",
