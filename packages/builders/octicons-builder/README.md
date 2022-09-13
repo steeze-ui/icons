@@ -27,8 +27,9 @@ import { Alert } from '@steeze-ui/octicons'
 
 | Value   | Description                   |
 | ------- | ----------------------------- |
-| default | The 16px version of the Icons |
-| 24      | The 24px version of the Icons |
+| default | The 24px version of the Icons |
+| 16      | The 16px version of the Icons |
+| 12      | The 12px version of the Icons |
 
 ### Other Icon Packs
 

@@ -204,6 +204,35 @@ export class ThemeBuilder {
 							}
 							tagsDict[child.name].push(child.attrs)
 						})
+				} else if (node.name === 'switch') {
+					const hasAttributes = Object.keys(node.attrs).length > 0
+					node.children
+						.filter((e) => e.type != 'text')
+						.forEach((child) => {
+							if (child.name === 'g') {
+								child.children
+									.filter((ec) => ec.type != 'text')
+									.forEach((c) => {
+										if (hasAttributes) {
+											Object.assign(c.attrs, node.attrs)
+										}
+
+										if (!tagsDict[c.name]) {
+											tagsDict[c.name] = []
+										}
+										tagsDict[c.name].push(c.attrs)
+									})
+							} else {
+								if (hasAttributes) {
+									Object.assign(child.attrs, node.attrs)
+								}
+
+								if (!tagsDict[child.name]) {
+									tagsDict[child.name] = []
+								}
+								tagsDict[child.name].push(child.attrs)
+							}
+						})
 				} else {
 					if (!tagsDict[node.name]) {
 						tagsDict[node.name] = []

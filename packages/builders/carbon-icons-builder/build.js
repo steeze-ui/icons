@@ -9,7 +9,7 @@ const builder = new ThemeBuilder({
 	},
 	lib: {
 		excludeSvgAttributes: ['xmlns', 'width', 'height', 'class'], //* exclude certain attributes from the svg's, which might be controlled by the used Icon component
-		extendSvgAttributes: {} //* extend the svg's attributes
+		extendSvgAttributes: { fill: 'currentColor' } //* extend the svg's attributes
 	}
 })
 

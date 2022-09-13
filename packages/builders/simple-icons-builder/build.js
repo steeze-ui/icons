@@ -6,7 +6,8 @@ const builder = new ThemeBuilder({
 		collectFromDir: { icons: 'default' }
 	},
 	lib: {
-		excludeSvgAttributes: ['xmlns']
+		excludeSvgAttributes: ['xmlns'],
+		extendSvgAttributes: { fill: 'currentColor' }
 	}
 })
 

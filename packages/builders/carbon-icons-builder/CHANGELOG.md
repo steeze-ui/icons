@@ -1,5 +1,17 @@
 # @steeze-ui/carbon-icons
 
+## 1.1.2
+
+### Fixes
+
+- fix several icon sources
+
+## 1.1.1
+
+### Fixes
+
+- add fill attribute to sources
+
 ## 1.1.0
 
 ### Features
