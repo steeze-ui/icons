@@ -1,5 +1,7 @@
 import { For, mergeProps, Show, splitProps } from 'solid-js'
 
+export type IconSource = { default: IconThemeSource } & { [theme: string]: IconThemeSource }
+
 interface IconProps {
 	src: IconSource
 	theme?: string
@@ -7,9 +9,11 @@ interface IconProps {
 	[key: string]: any
 }
 
-export interface IconSource {
-	default: any
-	[key: string]: any
+type AllowedTags = 'path' | 'circle' | 'rect' | 'polygon' | 'polyline' | 'line'
+type IconThemeSource = {
+	a: { [attribute: string]: string }
+} & {
+	[tag in AllowedTags]?: { [attribute: string]: string }[]
 }
 
 export function Icon(props: IconProps) {
