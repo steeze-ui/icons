@@ -1,5 +1,11 @@
 # @steeze-ui/heroicons
 
+## 2.2.0
+
+### Minor Changes
+
+- use heroicons@2.0.13 sources
+
 ## 2.0.0
 
 ### Breaking Changes
@@ -7,7 +13,6 @@
 - use 2.0.10 icon set
 - new `mini` theme
 - [many name changes](https://github.com/tailwindlabs/heroicons/issues/750)
-
 
 ## 1.1.0
 
