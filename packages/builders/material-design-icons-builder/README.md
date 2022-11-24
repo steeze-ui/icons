@@ -1,6 +1,6 @@
 ## Overview
 
-Effortless Icon Pack for Material Design Icons 2.0
+Effortless Icon Pack for Material Design Icons
 
 - Based on [Material Design Icons](https://fonts.google.com/icons)
 - Defines the Icon Source to be used in any [steeze-ui icon component](https://github.com/steeze-ui/icons/tree/main/packages/components)
