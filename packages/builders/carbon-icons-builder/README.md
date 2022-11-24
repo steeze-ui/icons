@@ -17,8 +17,13 @@ npm i -D @steeze-ui/carbon-icons
 
 ## Usage
 
-```js
+### Svelte Example
+
+```svelte
 import { Category } from '@steeze-ui/carbon-icons'
+import { Icon } from '@steeze-ui/svelte-icon'
+
+<Icon src={Category} size="24px" />
 ```
 
 ## Documentation

@@ -13,8 +13,13 @@ npm i -D @steeze-ui/material-design-icons
 
 ## Usage
 
-```js
+### Svelte Example
+
+```svelte
 import { Camera } from '@steeze-ui/material-design-icons'
+import { Icon } from '@steeze-ui/svelte-icon'
+
+<Icon src={Camera} size="24px" theme="round" />
 ```
 
 ## Documentation

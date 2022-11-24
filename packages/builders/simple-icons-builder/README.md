@@ -17,8 +17,13 @@ npm i -D @steeze-ui/simple-icons
 
 ## Usage
 
-```js
+### Svelte Example
+
+```svelte
 import { Github } from '@steeze-ui/simple-icons'
+import { Icon } from '@steeze-ui/svelte-icon'
+
+<Icon src={Github} size="24px" />
 ```
 
 ## Documentation

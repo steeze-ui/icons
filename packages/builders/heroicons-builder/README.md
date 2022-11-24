@@ -13,8 +13,13 @@ npm i -D @steeze-ui/heroicons
 
 ## Usage
 
-```js
+### Svelte Example
+
+```svelte
 import { LightningBolt } from '@steeze-ui/heroicons'
+import { Icon } from '@steeze-ui/svelte-icon'
+
+<Icon src={LightningBolt} size="24px" theme="solid" />
 ```
 
 ## Documentation
