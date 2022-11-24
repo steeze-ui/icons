@@ -13,7 +13,7 @@ Effortless Svelte Icon Component
 ## Installation
 
 ```bash
-npm i -D @steeze-ui/svelte-icon
+npm i @steeze-ui/svelte-icon
 ```
 
 ## Usage
