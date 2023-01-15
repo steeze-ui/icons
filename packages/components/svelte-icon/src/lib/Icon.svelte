@@ -4,6 +4,7 @@
 	export let src: IconSource
 	export let size = '100%'
 	export let theme = 'default'
+	export let title: string;
 
 	$: icon = src?.[theme] ?? src?.['default']
 
@@ -19,6 +20,9 @@
 </script>
 
 <svg {...icon?.a} xmlns="http://www.w3.org/2000/svg" width={size} height={size} {...$$restProps}>
+	{#if (!(title === undefined))}
+		<title>{title}</title>
+	{/if}
 	{#each icon?.path ?? [] as a}
 		<path {...a} />
 	{/each}
