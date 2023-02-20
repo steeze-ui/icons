@@ -1,5 +1,11 @@
 # @steeze-ui/heroicons
 
+## 2.2.2
+
+### Minor Changes
+
+- update to heroicons@2.0.16 sources
+
 ## 2.2.1
 
 ### Fix
@@ -10,7 +16,7 @@
 
 ### Minor Changes
 
-- use heroicons@2.0.13 sources
+- update to heroicons@2.0.13 sources
 
 ## 2.0.0
 
