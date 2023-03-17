@@ -1,0 +1,23 @@
+{
+   "files.exclude": {
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/CVS": true,
+      "**/.DS_Store": true,
+      "**/Thumbs.db": true,
+      "**/node_modules": false,
+      ".vscode": true,
+      ".devcontainer": true,
+      ".mvn": true,
+      ".gradle": true,
+      ".build": true,
+      "bin": true,
+      "build": true,
+      "**/*generated*": true,
+      "gradlew": true,
+      "gradlew.bat": true,
+      "gradle": true
+   },
+   "explorerExclude.backup": {}
+}
