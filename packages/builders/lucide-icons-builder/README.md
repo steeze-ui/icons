@@ -1,24 +1,20 @@
-# READ THIS FIRST
-
-This package is deprecated and won't get any future updates! Please refer to [lucide-icons](https://github.com/steeze-ui/icons/tree/main/packages/builders/lucide-icons-builde)
-
 ## Overview
 
-Effortless Icon Pack for Feather Icons
+Effortless Icon Pack for Lucide Icons
 
-- Based on [Feather Icons](https://feathericons.com/)
+- Based on [Lucide Icons](https://lucide.dev/)
 - Defines the Icon Source to be used in any [steeze-ui icon component](https://github.com/steeze-ui/icons/tree/main/packages/components)
 
 ## Installation
 
 ```bash
-npm i -D @steeze-ui/feather-icons
+npm i -D @steeze-ui/lucide-icons
 ```
 
 ## Usage
 
 ```svelte
-import { Activity } from '@steeze-ui/feather-icons'
+import { Activity } from '@steeze-ui/lucide-icons'
 ```
 
 ## Documentation
