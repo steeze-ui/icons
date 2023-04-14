@@ -1,6 +1,6 @@
 # READ THIS FIRST
 
-This package is deprecated and won't get any future updates! Please refer to [lucide-icons](https://github.com/steeze-ui/icons/tree/main/packages/builders/lucide-icons-builde)
+This package is deprecated and won't get any future updates! Please refer to [lucide-icons](https://github.com/steeze-ui/icons/tree/main/packages/builders/lucide-icons-builder)
 
 ## Overview
 
