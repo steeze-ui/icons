@@ -1,5 +1,11 @@
 # @steeze-ui/radix-icons
 
+## 1.1.1
+
+### Patch Changes
+
+- add IconSource types
+
 ## 1.1.0
 
 ### Minor Changes

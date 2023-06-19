@@ -17,7 +17,7 @@
   "type": "module",
   "exports": {
     ".": {
-      "types": "./dist/types/index.d.ts",
+      "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
       "svelte": "./dist/index.js"
     }
@@ -31,7 +31,6 @@
     "svelte": "^3.54.0"
   },
   "devDependencies": {
-    "@steeze-ui/heroicons": "workspace:^",
     "@sveltejs/adapter-auto": "^2.1.0",
     "@sveltejs/kit": "^1.20.4",
     "@sveltejs/package": "^2.0.2",

@@ -270,7 +270,7 @@ export class ThemeBuilder {
 			flags: 'a'
 		})
 		// write types
-		logger.write('import type {IconSource} from "./types" \n')
+		logger.write('import type {IconSource} from "./types.js" \nexport {IconSource} \n')
 
 		// write exports
 		let exports = Object.keys(this.sourceDict)

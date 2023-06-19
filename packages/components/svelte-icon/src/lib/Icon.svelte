@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { IconSource } from './types/index.js'
+	import type { IconSource } from './index.js'
 
 	export let src: IconSource
 	export let size = '100%'

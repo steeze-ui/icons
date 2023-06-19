@@ -4,12 +4,12 @@
 
 	const icons: any = Icons
 
-	const themes = Object.keys(icons[Object.keys(Icons)[0]])
+	const themes = Object.keys(icons[Object.keys(icons)[0]])
 
 	let theme = 'default'
 </script>
 
-<h1>@steeze-ui/heroicons</h1>
+<h1>Your Custom Iconpack</h1>
 
 <label for="theme-select">Theme</label>
 <select id="theme-select" bind:value={theme}>
@@ -18,7 +18,7 @@
 	{/each}
 </select>
 <div>
-	{#each Object.keys(Icons) as Src}
+	{#each Object.keys(icons) as Src}
 		<Icon src={icons[Src]} size="24px" {theme} />
 	{/each}
 </div>

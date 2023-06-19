@@ -1,7 +1,7 @@
-declare type SuffixToThemeMap = {
+type SuffixToThemeMap = {
     [key: string]: string;
 };
-declare type DirToThemeMap = {
+type DirToThemeMap = {
     [key: string]: string;
 };
 interface ThemeBuilderProperties {

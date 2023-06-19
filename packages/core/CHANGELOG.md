@@ -1,5 +1,11 @@
 # @steeze-ui/icons
 
+## 2.0.2
+
+### Patch Changes
+
+- export IconSource
+
 ## 2.0.1
 
 ### Patch Changes
