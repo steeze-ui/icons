@@ -1,5 +1,11 @@
 # @steeze-ui/icons
 
+## 2.1.0
+
+### Features
+
+- add `sources.endsWithThemeName` config, when set removes it from the name
+
 ## 2.0.2
 
 ### Patch Changes

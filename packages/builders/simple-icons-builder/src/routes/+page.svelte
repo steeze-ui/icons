@@ -1,8 +1,10 @@
 <script lang="ts">
 	import { Icon } from '@steeze-ui/svelte-icon'
-	import * as Icons from '$lib'
+	import * as Icons from '$lib/index.js'
 
-	const themes = Object.keys(Icons[Object.keys(Icons)[0]])
+	const icons: any = Icons
+
+	const themes = Object.keys(icons[Object.keys(icons)[0]])
 
 	let theme = 'default'
 </script>
@@ -16,8 +18,8 @@
 	{/each}
 </select>
 <div>
-	{#each Object.keys(Icons) as Src}
-		<Icon src={Icons[Src]} size="24px" {theme} />
+	{#each Object.keys(icons) as Src}
+		<Icon src={icons[Src]} size="24px" {theme} />
 	{/each}
 </div>
 

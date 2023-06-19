@@ -1,5 +1,11 @@
 # @steeze-ui/material-design-icons
 
+## 1.1.1
+
+### Patch
+
+- fix fill color
+
 ## 1.1.0
 
 ### Features

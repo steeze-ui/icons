@@ -372,6 +372,51 @@ importers:
         specifier: ^4.3.9
         version: 4.3.9
 
+  packages/builders/phosphor-icons:
+    devDependencies:
+      '@phosphor-icons/core':
+        specifier: ^2.0.2
+        version: 2.0.2
+      '@steeze-ui/icons':
+        specifier: workspace:^
+        version: link:../../core
+      '@steeze-ui/svelte-icon':
+        specifier: workspace:^
+        version: link:../../components/svelte-icon
+      '@sveltejs/adapter-auto':
+        specifier: ^2.1.0
+        version: 2.1.0(@sveltejs/kit@1.20.4)
+      '@sveltejs/kit':
+        specifier: ^1.20.4
+        version: 1.20.4(svelte@3.59.1)(vite@4.3.9)
+      '@sveltejs/package':
+        specifier: ^2.0.2
+        version: 2.0.2(svelte@3.59.1)(typescript@5.1.3)
+      prettier:
+        specifier: ^2.8.8
+        version: 2.8.8
+      prettier-plugin-svelte:
+        specifier: ^2.10.1
+        version: 2.10.1(prettier@2.8.8)(svelte@3.59.1)
+      publint:
+        specifier: ^0.1.12
+        version: 0.1.12
+      svelte:
+        specifier: ^3.59.1
+        version: 3.59.1
+      svelte-check:
+        specifier: ^3.4.3
+        version: 3.4.3(svelte@3.59.1)
+      tslib:
+        specifier: ^2.5.3
+        version: 2.5.3
+      typescript:
+        specifier: ^5.1.3
+        version: 5.1.3
+      vite:
+        specifier: ^4.3.9
+        version: 4.3.9
+
   packages/builders/radix-icons-builder:
     devDependencies:
       '@steeze-ui/icons':
@@ -2585,6 +2630,10 @@ packages:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.15.0
+    dev: true
+
+  /@phosphor-icons/core@2.0.2:
+    resolution: {integrity: sha512-ZHvHBagars5C2IGKW9TdiOe8LwIVq6/LmJRfxBlfFcbsNAfYXTNzf6IUQKy0hrPTn6bTdQh5ghe436i+W1JKrw==}
     dev: true
 
   /@polka/url@1.0.0-next.21:

@@ -1,5 +1,11 @@
 # @steeze-ui/svelte-icon
 
+## 1.4.1
+
+### Path Changes
+
+- export IconSource type
+
 ## 1.4.0
 
 ### Minor Changes

@@ -35,6 +35,7 @@ interface ThemeBuilderProperties {
 	) & {
 		inputRaw?: string
 		outputThemes?: string
+		endsWithThemeName?: boolean
 	}
 	lib: {
 		output?: string
@@ -321,7 +322,7 @@ export class ThemeBuilder {
 							mkdirSync(join(outputPath, outputThemeDir))
 						}
 						writeFileSync(
-							join(outputPath, outputThemeDir, this.normalizeSourceName(fileName)),
+							join(outputPath, outputThemeDir, this.normalizeSourceName(fileName, themeDir)),
 							data
 						)
 					}
@@ -386,7 +387,10 @@ export class ThemeBuilder {
 							if (detectedSuffix) {
 								fileName = fileName.replace(detectedSuffix, '')
 							}
-							writeFileSync(join(outputThemes!, theme, this.normalizeSourceName(fileName)), data)
+							writeFileSync(
+								join(outputThemes!, theme, this.normalizeSourceName(fileName, theme)),
+								data
+							)
 						} else {
 							console.log(path, traversedPath)
 						}
@@ -398,8 +402,18 @@ export class ThemeBuilder {
 		})
 	}
 
-	private normalizeSourceName(fileName: string) {
-		return kebabcase(fileName)
+	private normalizeSourceName(fileName: string, themeDir: string) {
+		let normalizedName = fileName
+
+		if (this.props.sources.endsWithThemeName) {
+			const searchString = '-' + themeDir + '.svg'
+			if (fileName.endsWith(searchString)) {
+				normalizedName =
+					normalizedName.slice(0, normalizedName.length - searchString.length) + '.svg'
+			}
+		}
+
+		return kebabcase(normalizedName)
 	}
 
 	private normalizeLibName(fileName: string) {

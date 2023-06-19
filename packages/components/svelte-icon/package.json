@@ -1,6 +1,6 @@
 {
   "name": "@steeze-ui/svelte-icon",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "scripts": {
     "dev": "vite dev",
     "build": "vite build && npm run package",

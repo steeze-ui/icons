@@ -1,6 +1,6 @@
 {
   "name": "@steeze-ui/icons",
-  "version": "2.0.2",
+  "version": "2.1.0",
   "description": "Utilities for @steeze-ui/icons",
   "main": "dist/index.js",
   "exports": {
@@ -14,7 +14,7 @@
     "shared"
   ],
   "scripts": {
-    "dev": "pnpm run build -- --watch",
+    "dev": "pnpm build --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "esbuild --bundle src/index.ts --outdir=dist --platform=node --format=esm --external:html-parse-stringify --external:pascalcase --minify",
     "prepublishOnly": "pnpm build"

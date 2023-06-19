@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { Icon } from '@steeze-ui/svelte-icon'
-	// import * as Icons from '$lib'
-	import { Aliens } from '$lib'
+	// import * as Icons from '$lib/index.js'
+	import { Aliens } from '$lib/index.js'
 
 	let theme = 'default'
 

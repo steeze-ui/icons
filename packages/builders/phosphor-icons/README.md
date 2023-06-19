@@ -1,20 +1,24 @@
+# READ THIS FIRST
+
+This project is still in experimental development. Expect bugs and breaking changes!
+
 ## Overview
 
 Effortless Icon Pack for template Icons
 
-- Based on [unnamed]()
+- Based on [Phosphor Icons](https://phosphoricons.com/)
 - Defines the Icon Source to be used in any [steeze-ui icon component](https://github.com/steeze-ui/icons/tree/main/packages/components)
 
 ## Installation
 
 ```bash
-npm i -D @steeze-ui/unnamed
+npm i -D @steeze-ui/phosphor-icons
 ```
 
 ## Usage
 
 ```js
-import { Activity } from '@steeze-ui/unnamed'
+import { Lightbulb } from '@steeze-ui/phosphor-icons'
 ```
 
 ## Documentation
@@ -23,7 +27,12 @@ import { Activity } from '@steeze-ui/unnamed'
 
 | Value   | Description                      |
 | ------- | -------------------------------- |
-| default | The default version of the Icons |
+| default | The Regular version of the Icons |
+| thin    | The Thin version of the Icons    |
+| light   | The Light version of the Icons   |
+| bold    | The Bold version of the Icons    |
+| fill    | The Fill version of the Icons    |
+| duotone | The Duotone version of the Icons |
 
 ### Other Icon Packs
 

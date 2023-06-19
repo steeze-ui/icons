@@ -1,5 +1,6 @@
 <script lang="ts">
-	import Icon from '$lib/Icon.svelte'
+	import { Icon } from '$lib/index.js'
+	import type { IconSource } from '$lib/index.js'
 	// import * as HeroIcons from '@steeze-ui/heroicons'
 	// import * as RadixIcons from '@steeze-ui/radix-icons'
 	// import * as IconicFreeIcons from '@steeze-ui/iconic-free'

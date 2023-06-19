@@ -12,7 +12,8 @@ const builder = new ThemeBuilder({
 		}
 	},
 	lib: {
-		excludeSvgAttributes: ['xmlns', 'width', 'height']
+		excludeSvgAttributes: ['xmlns', 'width', 'height'],
+		extendSvgAttributes: { fill: 'currentColor' }
 	}
 })
 

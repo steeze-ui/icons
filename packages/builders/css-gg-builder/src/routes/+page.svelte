@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { Icon } from '@steeze-ui/svelte-icon'
-	import * as Icons from '$lib'
+	import * as Icons from '$lib/index.js'
 </script>
 
 <h1>Welcome to SvelteKit</h1>

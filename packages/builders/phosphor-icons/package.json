@@ -1,7 +1,7 @@
 {
-	"name": "@steeze-ui/material-design-icons",
-	"description": "Icon Sources (based on Material Design Icons) built for @steeze-ui/icons",
-	"version": "1.1.1",
+	"name": "@steeze-ui/phosphor-icons",
+	"description": "Icon Sources (based on template) built for @steeze-ui/icons",
+	"version": "1.0.1",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
@@ -33,7 +33,7 @@
 		"svelte": "^3.54.0"
 	},
 	"devDependencies": {
-		"@material-design-icons/svg": "^0.14.9",
+		"@phosphor-icons/core": "^2.0.2",
 		"@steeze-ui/icons": "workspace:^",
 		"@steeze-ui/svelte-icon": "workspace:^",
 		"@sveltejs/adapter-auto": "^2.1.0",
@@ -50,23 +50,20 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/steeze-ui/icons.git",
-		"directory": "packages/builders/material-design-icons-builder"
+		"url": "git+https://github.com/steeze-ui/icons.git"
 	},
 	"keywords": [
-		"steeze",
+		"phosphor",
+		"phosphor-icons",
 		"raw",
 		"icons",
-		"google",
-		"material",
-		"md",
-		"material design",
-		"material design icons",
-		"filled",
-		"outlined",
-		"round",
-		"sharp",
-		"two-tone"
+		"steeze",
+		"regular",
+		"thin",
+		"light",
+		"bold",
+		"fill",
+		"duotone"
 	],
 	"author": "Justin Voitel <mail@justinv.me>",
 	"license": "MIT",
