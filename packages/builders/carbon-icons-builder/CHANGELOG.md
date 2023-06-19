@@ -1,5 +1,11 @@
 # @steeze-ui/carbon-icons
 
+## 1.2.0
+
+### Features
+
+- update icon sources to [v11.21.0](https://github.com/carbon-design-system/carbon/releases/tag/v11.21.0)
+
 ## 1.1.2
 
 ### Fixes

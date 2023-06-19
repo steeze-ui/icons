@@ -35,7 +35,6 @@
 	"devDependencies": {
 		"@steeze-ui/icons": "workspace:^",
 		"@steeze-ui/svelte-icon": "workspace:^",
-		"@steeze-ui/heroicons": "workspace:^",
 		"heroicons": "^2.0.18",
 		"@sveltejs/adapter-auto": "^2.1.0",
 		"@sveltejs/kit": "^1.20.4",
