@@ -1,66 +1,66 @@
 {
-  "name": "@steeze-ui/carbon-icons",
-  "description": "Icon Sources (based on Carbon Icons) built for @steeze-ui/icons",
-  "version": "1.1.2",
-  "type": "module",
-  "main": "index.js",
-  "scripts": {
-    "dev": "vite dev",
-    "build": "vite build",
-    "preview": "vite preview",
-    "check": "svelte-check --tsconfig ./tsconfig.json",
-    "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
-    "lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. .",
-    "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. .",
-    "package": "pnpm build:icons && svelte-package",
-    "release:next": "pnpm publish:npm -- --tag=next",
-    "build:icons": "node build.js",
-    "publish:npm": "pnpm package && cd package && pnpm publish --no-git-checks",
-    "release:patch": "pnpm version patch --force && pnpm publish:npm",
-    "release:minor": "pnpm version minor --force && pnpm publish:npm",
-    "release:major": "pnpm version major --force && pnpm publish:npm",
-    "release": "pnpm release:patch"
-  },
-  "devDependencies": {
-    "@steeze-ui/icons": "*",
-    "@steeze-ui/svelte-icon": "*",
-    "@sveltejs/adapter-auto": "next",
-    "@sveltejs/kit": "next",
-    "@types/node": "^17.0.0",
-    "prettier": "^2.4.1",
-    "prettier-plugin-svelte": "^2.4.0",
-    "svelte": "^3.44.0",
-    "svelte-check": "^2.2.6",
-    "svelte-preprocess": "^4.9.4",
-    "svelte2tsx": "^0.4.11",
-    "esmo": "^0.14.1",
-    "tslib": "^2.3.1",
-    "typescript": "^4.4.3",
-    "@carbon/icons": "^11.7.0",
-    "@sveltejs/package": "1.0.0-next.1",
-    "vite": "^3.1.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/steeze-ui/icons.git"
-  },
-  "keywords": [
-    "raw",
-    "icons",
-    "steeze",
-    "carbon",
-    "IBM",
-    "carbon icons",
-    "carbon-icons"
-  ],
-  "author": "Justin Voitel <mail@justinv.me>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/steeze-ui/icons/issues"
-  },
-  "homepage": "https://github.com/steeze-ui/icons#readme",
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org/"
-  }
+	"name": "@steeze-ui/carbon-icons",
+	"description": "Icon Sources (based on Carbon Icons) built for @steeze-ui/icons",
+	"version": "1.1.2",
+	"type": "module",
+	"main": "index.js",
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"check": "svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
+		"lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. .",
+		"format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. .",
+		"package": "pnpm build:icons && svelte-package",
+		"release:next": "pnpm publish:npm -- --tag=next",
+		"build:icons": "node build.js",
+		"publish:npm": "pnpm package && cd package && pnpm publish --no-git-checks",
+		"release:patch": "pnpm version patch --force && pnpm publish:npm",
+		"release:minor": "pnpm version minor --force && pnpm publish:npm",
+		"release:major": "pnpm version major --force && pnpm publish:npm",
+		"release": "pnpm release:patch"
+	},
+	"devDependencies": {
+		"@steeze-ui/icons": "*",
+		"@steeze-ui/svelte-icon": "*",
+		"@sveltejs/adapter-auto": "^2.1.0",
+		"@sveltejs/kit": "^1.20.4",
+		"@types/node": "^17.0.0",
+		"prettier": "^2.4.1",
+		"prettier-plugin-svelte": "^2.4.0",
+		"svelte": "^3.58.0",
+		"svelte-check": "^2.2.6",
+		"svelte-preprocess": "^4.9.4",
+		"svelte2tsx": "^0.4.11",
+		"esmo": "^0.14.1",
+		"tslib": "^2.3.1",
+		"typescript": "^4.4.3",
+		"@carbon/icons": "^11.7.0",
+		"@sveltejs/package": "^2.0.2",
+		"vite": "^4.2.1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/steeze-ui/icons.git"
+	},
+	"keywords": [
+		"raw",
+		"icons",
+		"steeze",
+		"carbon",
+		"IBM",
+		"carbon icons",
+		"carbon-icons"
+	],
+	"author": "Justin Voitel <mail@justinv.me>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/steeze-ui/icons/issues"
+	},
+	"homepage": "https://github.com/steeze-ui/icons#readme",
+	"publishConfig": {
+		"access": "public",
+		"registry": "https://registry.npmjs.org/"
+	}
 }
