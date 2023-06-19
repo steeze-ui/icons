@@ -27,7 +27,7 @@
 		"@sveltejs/adapter-auto": "^2.1.0",
 		"@sveltejs/kit": "^1.20.4",
 		"@sveltejs/package": "^2.0.2",
-		"@tabler/icons": "^2.10.0",
+		"@tabler/icons": "^2.22.0",
 		"@types/node": "^17.0.45",
 		"esmo": "^0.14.1",
 		"prettier": "^2.8.4",

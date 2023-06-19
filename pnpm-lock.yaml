@@ -14,8 +14,8 @@ importers:
   packages/builders/carbon-icons-builder:
     devDependencies:
       '@carbon/icons':
-        specifier: ^11.7.0
-        version: 11.7.0
+        specifier: ^11.21.0
+        version: 11.21.0
       '@steeze-ui/icons':
         specifier: '*'
         version: link:../../core
@@ -302,8 +302,8 @@ importers:
         specifier: ^0.14.1
         version: 0.14.1
       lucide-static:
-        specifier: ^0.129.0
-        version: 0.129.0
+        specifier: ^0.246.0
+        version: 0.246.0
       prettier:
         specifier: ^2.8.7
         version: 2.8.8
@@ -335,8 +335,8 @@ importers:
   packages/builders/material-design-icons-builder:
     devDependencies:
       '@material-design-icons/svg':
-        specifier: ^0.14.1
-        version: 0.14.1
+        specifier: ^0.14.9
+        version: 0.14.9
       '@steeze-ui/icons':
         specifier: '*'
         version: link:../../core
@@ -389,8 +389,8 @@ importers:
   packages/builders/octicons-builder:
     devDependencies:
       '@primer/octicons':
-        specifier: ^17.5.0
-        version: 17.5.0
+        specifier: ^19.3.0
+        version: 19.3.0
       '@steeze-ui/icons':
         specifier: '*'
         version: link:../../core
@@ -524,8 +524,8 @@ importers:
         specifier: ^2.4.0
         version: 2.10.1(prettier@2.8.8)(svelte@3.58.0)
       remixicon:
-        specifier: ^2.5.0
-        version: 2.5.0
+        specifier: ^3.3.0
+        version: 3.3.0
       svelte:
         specifier: ^3.58.0
         version: 3.58.0
@@ -578,8 +578,8 @@ importers:
         specifier: ^2.9.0
         version: 2.10.1(prettier@2.8.8)(svelte@3.58.0)
       simple-icons:
-        specifier: ^8.5.0
-        version: 8.5.0
+        specifier: ^9.2.0
+        version: 9.2.0
       svelte:
         specifier: ^3.58.0
         version: 3.58.0
@@ -620,8 +620,8 @@ importers:
         specifier: ^2.0.2
         version: 2.0.2(svelte@3.58.0)(typescript@4.9.5)
       '@tabler/icons':
-        specifier: ^2.10.0
-        version: 2.10.0
+        specifier: ^2.22.0
+        version: 2.22.0
       '@types/node':
         specifier: ^17.0.45
         version: 17.0.45
@@ -2215,8 +2215,8 @@ packages:
       '@babel/helper-validator-identifier': 7.22.5
       to-fast-properties: 2.0.0
 
-  /@carbon/icons@11.7.0:
-    resolution: {integrity: sha512-Q6CPWSI/ypl+thK9Mivsf1/QPUa2sKMXazRe1sIlGwYA+gshWde9GYf7PPCoSOy8Agzw+VRQM8G8yMb1SLx/hg==}
+  /@carbon/icons@11.21.0:
+    resolution: {integrity: sha512-U07CJh49OLBhFccK57lwhEufnn6RzujHBFLJ+FDyGhjzmkyYWMuTcAlXINIX91kEjjhF28i2qhdLN4+m/A5gCg==}
     dev: true
 
   /@changesets/apply-release-plan@6.1.3:
@@ -2720,8 +2720,8 @@ packages:
       read-yaml-file: 1.1.0
     dev: true
 
-  /@material-design-icons/svg@0.14.1:
-    resolution: {integrity: sha512-hkSgqFY7UenKL/N3dEXK5f77KSJtXN2R2rQ8BTRVtUsmxbVeb7l/KrKn1QKBgAY6A+5XpVHA3TGIhb1IbInmsg==}
+  /@material-design-icons/svg@0.14.9:
+    resolution: {integrity: sha512-YRPon593EAx13GpVSvSd6N8T8j3oCk9RQ6M676hC7RV/28xkyHhw2uxxxbkrL6/WsoFGl00fJJSs8SlrViOoJA==}
     dev: true
 
   /@nodelib/fs.scandir@2.1.5:
@@ -2749,8 +2749,8 @@ packages:
     resolution: {integrity: sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==}
     dev: true
 
-  /@primer/octicons@17.5.0:
-    resolution: {integrity: sha512-Bx/IfCMXZSq0YBPspoRoALVou5LiAdSg4yNtwEoYDZ137aq238Glnb6SBE5BtRSyzegTv7wFp/uYUPXMXT2MRg==}
+  /@primer/octicons@19.3.0:
+    resolution: {integrity: sha512-hyIo54VPC3VI7ZyAgosiJcbhxq1gZLbBspZwN9cg1uImRd2E8T9JST3kGeezezJYPjG367FuF7p1L+gmLmeESw==}
     dependencies:
       object-assign: 4.1.1
     dev: true
@@ -2994,8 +2994,8 @@ packages:
       - supports-color
     dev: true
 
-  /@tabler/icons@2.10.0:
-    resolution: {integrity: sha512-rj9xrHTSw7bPpylx8g9xhhUgO9NYKX1wGnGrMaFS5CQ9KS+jhwhKFqbZaQKhXNhpvI0cLEEW6GaRXdrC3iBs1A==}
+  /@tabler/icons@2.22.0:
+    resolution: {integrity: sha512-lOsGHqRPIKNARMWHHFkUUJH78C8ptQmUcDnumFBUI4YLRKFouKa7uAZL3ZfuH0HjDpOhsnWqUYZ7FhMCLcGpAQ==}
     dev: true
 
   /@tsconfig/node10@1.0.9:
@@ -5369,8 +5369,8 @@ packages:
       yallist: 4.0.0
     dev: true
 
-  /lucide-static@0.129.0:
-    resolution: {integrity: sha512-MZGpZ11MUQ55/xhD6PMhZDm4tHUZbjAulWkLEzAzIYCOGC+ojf2qb81CSEjYXgu8eHMWArjd9ieRthIk3mWVvw==}
+  /lucide-static@0.246.0:
+    resolution: {integrity: sha512-pJfTrqv1xCHTUDkAHrvgni7DWZP1GZ8rdcsHSHK/t14z/z0LQNH2Oi5rucqwxYPmQRVZ9H0x/7lubR5LFhf0VA==}
     dev: true
 
   /magic-string@0.25.9:
@@ -5876,8 +5876,8 @@ packages:
       jsesc: 0.5.0
     dev: true
 
-  /remixicon@2.5.0:
-    resolution: {integrity: sha512-q54ra2QutYDZpuSnFjmeagmEiN9IMo56/zz5dDNitzKD23oFRw77cWo4TsrAdmdkPiEn8mxlrTqxnkujDbEGww==}
+  /remixicon@3.3.0:
+    resolution: {integrity: sha512-iNeRbwVgd8Ef467IjMd/+joFWSBOYfqsLtxtSzsS8fWn75a1H7sgGu5uWE4c3NLjP2C1giFlx8gw63qZd96yJQ==}
     dev: true
 
   /require-directory@2.1.1:
@@ -6100,8 +6100,8 @@ packages:
     resolution: {integrity: sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==}
     dev: true
 
-  /simple-icons@8.5.0:
-    resolution: {integrity: sha512-OpRzQuj4HLZOQmGuYrO/4uZOyhHTFDnB5Xj/t0L2mIJbSa1bkMUJ7d5MppIJdwuiRnRiY767S6/EV99MKghThA==}
+  /simple-icons@9.2.0:
+    resolution: {integrity: sha512-BwLa76uMHBZKN1+L7Qmboj47mcFADiA/dfAePOd3arSPv6JMRNptJ2FNDBLuqkKliWG2W9XuBKhunuv+GzPpLA==}
     engines: {node: '>=0.12.18'}
     dev: true
 
