@@ -33,9 +33,9 @@
 		"svelte": "^3.54.0"
 	},
 	"devDependencies": {
+		"heroicons": "^2.0.18",
 		"@steeze-ui/icons": "workspace:^",
 		"@steeze-ui/svelte-icon": "workspace:^",
-		"heroicons": "^2.0.18",
 		"@sveltejs/adapter-auto": "^2.1.0",
 		"@sveltejs/kit": "^1.20.4",
 		"@sveltejs/package": "^2.0.2",
