@@ -22,7 +22,7 @@
 		"release": "pnpm release:patch"
 	},
 	"devDependencies": {
-		"@material-design-icons/svg": "^0.14.1",
+		"@material-design-icons/svg": "^0.14.9",
 		"@steeze-ui/icons": "*",
 		"@steeze-ui/svelte-icon": "*",
 		"@sveltejs/adapter-auto": "^2.1.0",
