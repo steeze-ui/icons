@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { Icon } from '$lib/index.js'
 	import type { IconSource } from '$lib/index.js'
-	// import * as HeroIcons from '@steeze-ui/heroicons'
+	import * as HeroIcons from '@steeze-ui/heroicons'
 	// import * as RadixIcons from '@steeze-ui/radix-icons'
 	// import * as IconicFreeIcons from '@steeze-ui/iconic-free'
 	// import * as Octicons from '@steeze-ui/octicons'
@@ -10,14 +10,12 @@
 
 	let isSolid = false
 
-	let octiconsTheme = 'default'
-
 	const iconpacks: any = {
-		// Heroicons: {
-		// 	icons: HeroIcons,
-		// 	themes: ['default', 'solid'],
-		// 	activeTheme: 'default'
-		// }
+		Heroicons: {
+			icons: HeroIcons,
+			themes: ['default', 'solid'],
+			activeTheme: 'default'
+		}
 		// RadixIcons: {
 		// 	icons: RadixIcons,
 		// 	themes: ['default'],

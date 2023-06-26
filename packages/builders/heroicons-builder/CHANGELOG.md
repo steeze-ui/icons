@@ -1,8 +1,14 @@
 # @steeze-ui/heroicons
 
+## 2.2.3
+
+### Path Changes
+
+- remove `svelte` peerDependency
+
 ## 2.2.2
 
-### Minor Changes
+### Path Changes
 
 - update to heroicons@2.0.16 sources
 

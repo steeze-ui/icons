@@ -29,9 +29,6 @@
 		"!dist/**/*.test.*",
 		"!dist/**/*.spec.*"
 	],
-	"peerDependencies": {
-		"svelte": "^3.54.0"
-	},
 	"devDependencies": {
 		"@primer/octicons": "^19.3.0",
 		"@steeze-ui/icons": "workspace:^",

@@ -1,5 +1,11 @@
 # @steeze-ui/svelte-icon
 
+## 1.5.0
+
+### Minor Changes
+
+- add svelte 4 support
+
 ## 1.4.1
 
 ### Path Changes

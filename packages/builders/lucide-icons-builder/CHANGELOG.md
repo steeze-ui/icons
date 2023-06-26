@@ -1,5 +1,11 @@
 # @steeze-ui/lucide-icons
 
+## 1.1.1
+
+### Path Changes
+
+- remove `svelte` peerDependency
+
 ## 1.1.0
 
 ### Features

@@ -1,9 +1,9 @@
 {
 	"name": "@steeze-ui/svelte-icon",
-	"version": "1.4.1",
+	"version": "1.5.0",
 	"scripts": {
 		"dev": "vite dev",
-		"build": "vite build && npm run package",
+		"build": "npm run package",
 		"preview": "vite preview",
 		"package": "svelte-kit sync && svelte-package && publint",
 		"prepublishOnly": "npm run package",
@@ -31,6 +31,7 @@
 		"svelte": "^4.0.0"
 	},
 	"devDependencies": {
+		"@steeze-ui/heroicons": "^2.2.2",
 		"@sveltejs/adapter-auto": "^2.1.0",
 		"@sveltejs/kit": "^1.20.5",
 		"@sveltejs/package": "^2.1.0",

@@ -1,5 +1,11 @@
 # @steeze-ui/phosphor-icons
 
+## 1.0.2
+
+### Path Changes
+
+- remove `svelte` peerDependency
+
 ## 1.0.1
 
 ### Patch

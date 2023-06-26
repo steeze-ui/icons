@@ -1,7 +1,7 @@
 {
 	"name": "@steeze-ui/tabler-icons",
 	"description": "Icon Sources (based on @tabler/icons) built for @steeze-ui/icons",
-	"version": "2.1.0",
+	"version": "2.1.1",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
@@ -29,9 +29,6 @@
 		"!dist/**/*.test.*",
 		"!dist/**/*.spec.*"
 	],
-	"peerDependencies": {
-		"svelte": "^3.54.0"
-	},
 	"devDependencies": {
 		"@tabler/icons": "^2.22.0",
 		"@steeze-ui/icons": "workspace:^",

@@ -375,8 +375,8 @@ importers:
   packages/builders/phosphor-icons:
     devDependencies:
       '@phosphor-icons/core':
-        specifier: ^2.0.2
-        version: 2.0.2
+        specifier: ^1.0.0
+        version: 1.4.1
       '@steeze-ui/icons':
         specifier: workspace:^
         version: link:../../core
@@ -710,6 +710,9 @@ importers:
 
   packages/components/svelte-icon:
     devDependencies:
+      '@steeze-ui/heroicons':
+        specifier: ^2.2.2
+        version: link:../../builders/heroicons-builder
       '@sveltejs/adapter-auto':
         specifier: ^2.1.0
         version: 2.1.0(@sveltejs/kit@1.20.5)
@@ -2632,8 +2635,8 @@ packages:
       fastq: 1.15.0
     dev: true
 
-  /@phosphor-icons/core@2.0.2:
-    resolution: {integrity: sha512-ZHvHBagars5C2IGKW9TdiOe8LwIVq6/LmJRfxBlfFcbsNAfYXTNzf6IUQKy0hrPTn6bTdQh5ghe436i+W1JKrw==}
+  /@phosphor-icons/core@1.4.1:
+    resolution: {integrity: sha512-vLHHXb6XvZY576aYfUr4Orq27d6TlzQhq4aEHRK3mXAQlRvdZ0ZcipLjz9soeyTwYF/wvHr6ZkS6hUkzztixsA==}
     dev: true
 
   /@polka/url@1.0.0-next.21:

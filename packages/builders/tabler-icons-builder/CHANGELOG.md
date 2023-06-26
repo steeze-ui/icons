@@ -1,5 +1,11 @@
 # @steeze-ui/tabler-icons
 
+## 2.1.1
+
+### Path Changes
+
+- remove `svelte` peerDependency
+
 ## 2.1.0
 
 ### Features

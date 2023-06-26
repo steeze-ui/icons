@@ -1,5 +1,11 @@
 # @steeze-ui/simple-icons
 
+## 1.5.1
+
+### Path Changes
+
+- remove `svelte` peerDependency
+
 ## 1.5.0
 
 ### Features

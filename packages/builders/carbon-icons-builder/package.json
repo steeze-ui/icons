@@ -29,9 +29,6 @@
 		"!dist/**/*.test.*",
 		"!dist/**/*.spec.*"
 	],
-	"peerDependencies": {
-		"svelte": "^3.54.0"
-	},
 	"devDependencies": {
 		"@carbon/icons": "^11.21.0",
 		"@steeze-ui/icons": "workspace:^",
