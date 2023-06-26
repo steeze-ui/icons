@@ -1,68 +1,68 @@
 {
-  "name": "@steeze-ui/svelte-icon",
-  "version": "1.4.1",
-  "scripts": {
-    "dev": "vite dev",
-    "build": "vite build && npm run package",
-    "preview": "vite preview",
-    "package": "svelte-kit sync && svelte-package && publint",
-    "prepublishOnly": "npm run package",
-    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-    "lint": "prettier --plugin-search-dir . --check .",
-    "format": "prettier --plugin-search-dir . --write ."
-  },
-  "svelte": "./dist/index.js",
-  "types": "./dist/index.d.ts",
-  "type": "module",
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js",
-      "svelte": "./dist/index.js"
-    }
-  },
-  "files": [
-    "dist",
-    "!dist/**/*.test.*",
-    "!dist/**/*.spec.*"
-  ],
-  "peerDependencies": {
-    "svelte": "^3.54.0"
-  },
-  "devDependencies": {
-    "@sveltejs/adapter-auto": "^2.1.0",
-    "@sveltejs/kit": "^1.20.4",
-    "@sveltejs/package": "^2.0.2",
-    "prettier": "^2.8.8",
-    "prettier-plugin-svelte": "^2.10.1",
-    "publint": "^0.1.12",
-    "svelte": "^3.59.1",
-    "svelte-check": "^3.4.3",
-    "tslib": "^2.5.3",
-    "typescript": "^5.1.3",
-    "vite": "^4.3.9"
-  },
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org/"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/steeze-ui/icons.git",
-    "directory": "packages/components/svelte-icon"
-  },
-  "keywords": [
-    "svelte",
-    "component",
-    "icon",
-    "icons",
-    "steeze"
-  ],
-  "author": "Justin Voitel <mail@justinv.me>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/steeze-ui/icons/issues"
-  },
-  "homepage": "https://github.com/steeze-ui/icons#readme"
+	"name": "@steeze-ui/svelte-icon",
+	"version": "1.4.1",
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build && npm run package",
+		"preview": "vite preview",
+		"package": "svelte-kit sync && svelte-package && publint",
+		"prepublishOnly": "npm run package",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"lint": "prettier --plugin-search-dir . --check .",
+		"format": "prettier --plugin-search-dir . --write ."
+	},
+	"svelte": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.js",
+			"svelte": "./dist/index.js"
+		}
+	},
+	"files": [
+		"dist",
+		"!dist/**/*.test.*",
+		"!dist/**/*.spec.*"
+	],
+	"peerDependencies": {
+		"svelte": "^4.0.0"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "^2.1.0",
+		"@sveltejs/kit": "^1.20.5",
+		"@sveltejs/package": "^2.1.0",
+		"prettier": "^2.8.8",
+		"prettier-plugin-svelte": "^2.10.1",
+		"publint": "^0.1.12",
+		"svelte": "^4.0.0",
+		"svelte-check": "^3.4.4",
+		"tslib": "^2.5.3",
+		"typescript": "^5.1.3",
+		"vite": "^4.3.9"
+	},
+	"publishConfig": {
+		"access": "public",
+		"registry": "https://registry.npmjs.org/"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/steeze-ui/icons.git",
+		"directory": "packages/components/svelte-icon"
+	},
+	"keywords": [
+		"svelte",
+		"component",
+		"icon",
+		"icons",
+		"steeze"
+	],
+	"author": "Justin Voitel <mail@justinv.me>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/steeze-ui/icons/issues"
+	},
+	"homepage": "https://github.com/steeze-ui/icons#readme"
 }
