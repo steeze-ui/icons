@@ -1,5 +1,11 @@
 # @steeze-ui/carbon-icons
 
+## 1.2.1
+
+### Path Changes
+
+- remove `svelte` peerDependency
+
 ## 1.2.0
 
 ### Features

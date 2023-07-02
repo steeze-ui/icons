@@ -1,7 +1,7 @@
 {
 	"name": "@steeze-ui/octicons",
 	"description": "Icon Sources (based on Octicons) built for @steeze-ui/icons",
-	"version": "2.1.0",
+	"version": "2.1.1",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",

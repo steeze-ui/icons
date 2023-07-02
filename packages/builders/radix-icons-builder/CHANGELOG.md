@@ -1,5 +1,11 @@
 # @steeze-ui/radix-icons
 
+## 1.1.2
+
+### Path Changes
+
+- remove `svelte` peerDependency
+
 ## 1.1.1
 
 ### Patch Changes

@@ -1,7 +1,7 @@
 {
 	"name": "@steeze-ui/remix-icons",
 	"description": "Icon Sources (based on Remix Icons) built for @steeze-ui/icons",
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",

@@ -1,5 +1,11 @@
 # @steeze-ui/iconic-free
 
+## 1.1.1
+
+### Path Changes
+
+- remove `svelte` peerDependency
+
 ## 1.1.0
 
 ### Minor Changes

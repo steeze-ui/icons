@@ -1,5 +1,11 @@
 # @steeze-ui/octicons
 
+## 2.1.1
+
+### Path Changes
+
+- remove `svelte` peerDependency
+
 ## 2.1.0
 
 ### Features

@@ -1,7 +1,7 @@
 {
 	"name": "@steeze-ui/carbon-icons",
 	"description": "Icon Sources (based on Carbon Icons) built for @steeze-ui/icons",
-	"version": "1.2.0",
+	"version": "1.2.1",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
