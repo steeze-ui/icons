@@ -1,17 +1,31 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import dts from 'vite-plugin-dts'
 
 export default defineConfig({
-	plugins: [react()],
+	plugins: [
+		react(),
+		dts({
+			insertTypesEntry: true
+		})
+	],
 	build: {
 		target: 'esnext',
 		polyfillDynamicImport: false,
 		lib: {
-			entry: 'src/react-icon.tsx',
-			formats: ['es']
+			entry: 'src/index.tsx',
+			// name: 'Icon',
+			formats: ['es'],
+			fileName: (format) => `Icon.js`
 		},
 		rollupOptions: {
-			external: /^solid-js/
+			external: ['react', 'react-dom'],
+			output: {
+				globals: {
+					react: 'React',
+					'react-dom': 'ReactDOM'
+				}
+			}
 		}
 	},
 	optimizeDeps: {

@@ -256,6 +256,10 @@ export class ThemeBuilder {
 					})
 				})
 			})
+
+			if (key == 'file-pdf-01') {
+				console.log({ svgAst, sourceDict: this.sourceDict[key][theme] })
+			}
 		})
 
 		Object.keys(usedAttrsDict).forEach((tagName) => {

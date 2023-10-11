@@ -1,10 +1,10 @@
 {
   "name": "@steeze-ui/react-icon",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build",
     "serve": "vite preview",
     "release:next": "pnpm run publish:npm -- --tag=next",
     "publish:npm": "pnpm run build && pnpm publish --no-git-checks",
@@ -15,30 +15,33 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@steeze-ui/heroicons": "workspace:*",
-    "typescript": "^4.5.4",
-    "vite": "^2.7.10",
     "@steeze-ui/feather-icons": "workspace:*",
+    "@steeze-ui/heroicons": "workspace:*",
     "@steeze-ui/iconic-free": "workspace:*",
     "@steeze-ui/octicons": "workspace:*",
     "@steeze-ui/radix-icons": "workspace:*",
     "@types/react": "^17.0.33",
     "@types/react-dom": "^17.0.10",
-    "@vitejs/plugin-react": "^1.0.7"
+    "@vitejs/plugin-react": "^1.0.7",
+    "typescript": "^4.5.4",
+    "vite": "^2.7.10",
+    "vite-plugin-dts": "^3.5.1"
   },
   "dependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
-  "main": "dist/react-icon.es.js",
-  "exports": {
-    ".": "./dist/react-icon.es.js"
-  },
-  "types": "types/react-icon.d.ts",
   "files": [
-    "dist",
-    "types"
+    "dist"
   ],
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "Icon.js": {
+      "import": "./dist/Icon.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/steeze-ui/icons.git",
