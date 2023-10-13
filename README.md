@@ -13,10 +13,10 @@ Effortless Icons
 <!-- svelte example -->
 <script>
 	import { Icon } from '@steeze-ui/svelte-icon'
-	import { LightningBolt } from '@steeze-ui/heroicons'
+	import { Bolt } from '@steeze-ui/heroicons'
 </script>
 
-<Icon src="{LightningBolt}" theme="solid" class="color-gray-900" />
+<Icon src="{Bolt}" theme="solid" class="color-gray-900" />
 ```
 
 ## Deploy your own Icon Pack
