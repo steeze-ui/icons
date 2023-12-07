@@ -1,7 +1,7 @@
 {
 	"name": "@steeze-ui/phosphor-icons",
 	"description": "Icon Sources (based on template) built for @steeze-ui/icons",
-	"version": "1.0.2",
+	"version": "2.0.3",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
@@ -30,7 +30,7 @@
 		"!dist/**/*.spec.*"
 	],
 	"devDependencies": {
-		"@phosphor-icons/core": "^1.0.0",
+		"@phosphor-icons/core": "^2.0.3",
 		"@steeze-ui/icons": "workspace:^",
 		"@steeze-ui/svelte-icon": "workspace:^",
 		"@sveltejs/adapter-auto": "^2.1.0",
