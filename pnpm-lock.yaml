@@ -531,8 +531,8 @@ importers:
         specifier: ^0.1.12
         version: 0.1.12
       simple-icons:
-        specifier: ^9.17.0
-        version: 9.17.0
+        specifier: ^10.2.0
+        version: 10.2.0
       svelte:
         specifier: ^3.59.1
         version: 3.59.1
@@ -6246,8 +6246,8 @@ packages:
     resolution: {integrity: sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==}
     dev: true
 
-  /simple-icons@9.17.0:
-    resolution: {integrity: sha512-/jBnXMjyj5VAwSmg+V7ecXTvpe5xQ9KxcEiVAoM4XiDeTGP4cULfgQGM3060KJP0RGmNUdekpb39QaInFsVnQQ==}
+  /simple-icons@10.2.0:
+    resolution: {integrity: sha512-NBCvnCEoNAFC6ihODFWPq372NRvD84m1iRRxRtw9e30F7TgX/l/I5jBF1XlHehj5pMgQo0S4m/3cOqafAQhq7w==}
     engines: {node: '>=0.12.18'}
     dev: true
 
