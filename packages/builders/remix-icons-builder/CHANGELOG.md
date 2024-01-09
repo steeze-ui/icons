@@ -1,5 +1,11 @@
 # @steeze-ui/radix-icons
 
+## 1.2.0
+
+### Features
+
+- update icon sources to version 4.0.1
+
 ## 1.1.1
 
 ### Path Changes

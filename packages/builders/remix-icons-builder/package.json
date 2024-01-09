@@ -1,7 +1,7 @@
 {
 	"name": "@steeze-ui/remix-icons",
 	"description": "Icon Sources (based on Remix Icons) built for @steeze-ui/icons",
-	"version": "1.1.1",
+	"version": "1.2.0",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
@@ -30,7 +30,7 @@
 		"!dist/**/*.spec.*"
 	],
 	"devDependencies": {
-		"remixicon": "^3.3.0",
+		"remixicon": "^4.0.1",
 		"@steeze-ui/icons": "workspace:^",
 		"@steeze-ui/svelte-icon": "workspace:^",
 		"@sveltejs/adapter-auto": "^2.1.0",

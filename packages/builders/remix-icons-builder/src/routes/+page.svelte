@@ -1,30 +1,32 @@
 <script lang="ts">
 	import { Icon } from '@steeze-ui/svelte-icon'
-	// import * as Icons from '$lib/index.js'
-	import { Aliens } from '$lib/index.js'
+	import * as Icons from '$lib/index.js'
+
+	const icons: any = Icons
+
+	const themes = Object.keys(icons[Object.keys(icons)[0]])
 
 	let theme = 'default'
-
-	// let count = Object.keys(Icons).length - 1
 </script>
 
-<!-- count: {count} -->
+<h1>@steeze-ui/simple-icons</h1>
+
+<label for="theme-select">Theme</label>
+<select id="theme-select" bind:value={theme}>
+	{#each themes as th}
+		<option value={th}>{th}</option>
+	{/each}
+</select>
 <div>
-	<label for="default">default</label>
-	<input id="default" type="radio" bind:group={theme} value="default" />
-	<label for="solid">solid</label>
-	<input type="radio" bind:group={theme} value="solid" />
-</div>
-<div>
-	<!-- {#each Object.keys(Icons) as icon}
-		{/each} -->
-	<Icon src={Aliens} size="20" {theme} />
+	{#each Object.keys(icons) as Src}
+		<Icon src={icons[Src]} size="24px" {theme} />
+	{/each}
 </div>
 
 <style>
 	div {
 		display: flex;
-		gap: 0.5rem;
 		flex-wrap: wrap;
+		gap: 1rem;
 	}
 </style>

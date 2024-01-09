@@ -1,7 +1,7 @@
 {
 	"name": "@steeze-ui/simple-icons",
 	"description": "Icon Sources (based on Simple Icons) built for @steeze-ui/icons",
-	"version": "1.7.0",
+	"version": "1.7.1",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
