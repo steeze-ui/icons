@@ -30,7 +30,7 @@
 		"!dist/**/*.spec.*"
 	],
 	"devDependencies": {
-		"simple-icons": "^9.17.0",
+		"simple-icons": "^10.3.0",
 		"@steeze-ui/icons": "workspace:^",
 		"@steeze-ui/svelte-icon": "workspace:^",
 		"@sveltejs/adapter-auto": "^2.1.0",
