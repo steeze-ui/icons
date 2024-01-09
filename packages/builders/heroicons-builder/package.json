@@ -1,7 +1,7 @@
 {
 	"name": "@steeze-ui/heroicons",
 	"description": "Icon Sources (based on heroicons 2.0) built for @steeze-ui/icons",
-	"version": "2.2.3",
+	"version": "2.3.0",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
@@ -30,7 +30,7 @@
 		"!dist/**/*.spec.*"
 	],
 	"devDependencies": {
-		"heroicons": "^2.0.18",
+		"heroicons": "^2.1.1",
 		"@steeze-ui/icons": "workspace:^",
 		"@steeze-ui/svelte-icon": "workspace:^",
 		"@sveltejs/adapter-auto": "^2.1.0",

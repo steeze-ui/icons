@@ -1,5 +1,11 @@
 # @steeze-ui/heroicons
 
+## 2.3.0
+
+### Changes
+
+- update to heroicons@2.1.1 sources
+
 ## 2.2.3
 
 ### Path Changes
