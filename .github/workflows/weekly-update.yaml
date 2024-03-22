@@ -1,0 +1,47 @@
+name: Weekly Update Workflow
+
+on:
+  schedule:
+    - cron: '0 0 * * 0'
+
+jobs:
+  update-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '21'
+
+      - name: Install dependencies with pnpm
+        run: |
+          npm install -g pnpm
+          pnpm install
+
+      - name: Run update script
+        run: |
+          python update.py
+
+      - name: Check for README.md changes
+        id: check_changes
+        run: |
+          git diff --name-only | grep 'README.md' && echo "::set-output name=README_CHANGED::true" || echo "::set-output name=README_CHANGED::false"
+
+      - name: Package with pnpm
+        if: steps.check_changes.outputs.README_CHANGED == 'true'
+        run: |
+          pnpm package
+
+      # TODO: Publish to npm
+
+      - name: Commit changes
+        if: steps.check_changes.outputs.README_CHANGED == 'true'
+        uses: stefanzweifel/git-auto-commit-action@v5
