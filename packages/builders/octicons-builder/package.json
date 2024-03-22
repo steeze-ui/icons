@@ -30,7 +30,7 @@
 		"!dist/**/*.spec.*"
 	],
 	"devDependencies": {
-		"@primer/octicons": "^19.3.0",
+		"@primer/octicons": "^19.9.0",
 		"@steeze-ui/icons": "workspace:^",
 		"@steeze-ui/svelte-icon": "workspace:^",
 		"@sveltejs/adapter-auto": "^2.1.0",
