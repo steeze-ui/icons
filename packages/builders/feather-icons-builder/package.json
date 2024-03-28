@@ -30,12 +30,12 @@
 		"!dist/**/*.spec.*"
 	],
 	"devDependencies": {
-		"feather-icons": "^4.29.0",
 		"@steeze-ui/icons": "workspace:^",
 		"@steeze-ui/svelte-icon": "workspace:^",
 		"@sveltejs/adapter-auto": "^2.1.0",
 		"@sveltejs/kit": "^1.20.4",
 		"@sveltejs/package": "^2.0.2",
+		"feather-icons": "^4.29.1",
 		"prettier": "^2.8.8",
 		"prettier-plugin-svelte": "^2.10.1",
 		"publint": "^0.1.12",
