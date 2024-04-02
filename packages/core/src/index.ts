@@ -163,7 +163,9 @@ export class ThemeBuilder {
 		let usedAttrsDict: { [key: string]: string[] } = {}
 		readdirSync(join(this.props.sources.outputThemes!, theme)).forEach((fileName) => {
 			const key = fileName.replace('.svg', '')
-			const data = readFileSync(join(this.props.sources.outputThemes!, theme, fileName)).toString()
+			const data = readFileSync(join(this.props.sources.outputThemes!, theme, fileName))
+				.toString()
+				.replace(/<!--.*?-->/g, '')
 			const svgAst: any = parse(data)[0] as any
 
 			if (!this.sourceDict[key]) {
