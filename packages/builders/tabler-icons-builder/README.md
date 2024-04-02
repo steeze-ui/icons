@@ -29,6 +29,7 @@ import { Icon } from '@steeze-ui/svelte-icon'
 | Value   | Description                    | Prefered Size |
 | ------- | ------------------------------ | ------------- |
 | default | A outline version of the Icons | 24px          |
+| filled  | A filled version of the Icons  | 24px          |
 
 ### Other Icon Packs
 

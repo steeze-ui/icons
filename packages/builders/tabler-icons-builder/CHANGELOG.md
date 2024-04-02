@@ -1,5 +1,11 @@
 # @steeze-ui/tabler-icons
 
+## 3.0.0
+
+### Breaking Changes
+
+- update @tabler/icons to version 3.1.0 (Outline and Filled Versions which default to outline)
+
 ## 2.1.1
 
 ### Path Changes

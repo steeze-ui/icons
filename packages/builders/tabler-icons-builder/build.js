@@ -5,9 +5,9 @@ const builder = new ThemeBuilder({
 		inputRaw: './node_modules/@tabler/icons/icons',
 		collectFromDir: {
 			filled: 'filled',
-			outline: 'outline'
+			outline: 'default'
 		},
-		fallbackTheme: 'outline'
+		fallbackTheme: 'default'
 	},
 	lib: {
 		excludeSvgAttributes: ['xmlns']
