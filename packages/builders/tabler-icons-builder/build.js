@@ -3,10 +3,11 @@ import { ThemeBuilder } from '@steeze-ui/icons'
 const builder = new ThemeBuilder({
 	sources: {
 		inputRaw: './node_modules/@tabler/icons/icons',
-		collectFromSuffix: {
-			'-filled': 'filled'
+		collectFromDir: {
+			filled: 'filled',
+			outline: 'outline'
 		},
-		fallbackTheme: 'default'
+		fallbackTheme: 'outline'
 	},
 	lib: {
 		excludeSvgAttributes: ['xmlns']
