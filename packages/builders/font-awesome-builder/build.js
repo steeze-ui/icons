@@ -8,7 +8,9 @@ const builder = new ThemeBuilder({
 	},
 	lib: {
 		excludeSvgAttributes: ['xmlns', 'width', 'height', 'class'],
-		extendSvgAttributes: {}
+		extendSvgAttributes: {
+			fill: 'currentColor'
+		}
 	}
 })
 
