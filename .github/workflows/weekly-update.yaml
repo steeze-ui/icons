@@ -1,6 +1,9 @@
 name: Weekly Update Workflow
 
 on:
+  push:
+    branches: weekly-update
+  workflow_dispatch:
   schedule:
     - cron: '0 0 * * 0'
 
