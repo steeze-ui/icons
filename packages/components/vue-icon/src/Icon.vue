@@ -13,7 +13,7 @@ const props = withDefaults(defineProps<Props>(), {
 	theme: 'default'
 })
 
-const data = ref(props.src?.[props.theme] ?? props.src.default)
+const data = ref(props.src?.[props.theme] ?? props.src.default ?? Object.values(props.src)?.[0])
 </script>
 
 <template>

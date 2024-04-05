@@ -6,7 +6,7 @@
 	export let theme = 'default'
 	export let title: string | undefined = undefined
 
-	$: icon = src?.[theme] ?? src?.['default']
+	$: icon = src?.[theme] ?? src?.['default'] ?? Object.values(src)?.[0]
 
 	if (size !== '100%') {
 		if (size.slice(-1) != 'x' && size.slice(-1) != 'm' && size.slice(-1) != '%') {
