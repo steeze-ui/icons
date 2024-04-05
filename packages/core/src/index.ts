@@ -166,6 +166,7 @@ export class ThemeBuilder {
 			const data = readFileSync(join(this.props.sources.outputThemes!, theme, fileName))
 				.toString()
 				.replace(/<!--.*?-->/g, '')
+				.trim()
 			const svgAst: any = parse(data)[0] as any
 
 			if (!this.sourceDict[key]) {
