@@ -1,7 +1,7 @@
 {
 	"name": "@steeze-ui/lucide-icons",
 	"description": "Icon Sources (based on Lucide Icons) built for @steeze-ui/icons",
-	"version": "1.2.0",
+	"version": "1.2.1",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
@@ -35,7 +35,7 @@
 		"@sveltejs/adapter-auto": "^2.1.0",
 		"@sveltejs/kit": "^1.20.4",
 		"@sveltejs/package": "^2.0.2",
-		"lucide-static": "^0.323.0",
+		"lucide-static": "^0.364.0",
 		"prettier": "^2.8.8",
 		"prettier-plugin-svelte": "^2.10.1",
 		"publint": "^0.1.12",

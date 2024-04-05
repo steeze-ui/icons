@@ -9,7 +9,7 @@
 	let theme = 'default'
 </script>
 
-<h1>Your Custom Iconpack</h1>
+<h1>@steeze-ui/font-awesome</h1>
 
 <label for="theme-select">Theme</label>
 <select id="theme-select" bind:value={theme}>

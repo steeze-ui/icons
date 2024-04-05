@@ -16,7 +16,7 @@
   "scripts": {
     "dev": "pnpm build --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "esbuild --bundle src/index.ts --outdir=dist --platform=node --format=esm --external:html-parse-stringify --external:pascalcase --minify",
+    "build": "esbuild --bundle src/index.ts --outdir=dist --platform=node --format=esm --external:html-parse-stringify --external:pascalcase --minify --sourcemap",
     "prepublishOnly": "pnpm build"
   },
   "devDependencies": {

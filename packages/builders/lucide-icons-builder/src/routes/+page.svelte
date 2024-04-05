@@ -9,7 +9,7 @@
 	let theme = 'default'
 </script>
 
-<h1>@steeze-ui/feather-icons</h1>
+<h1>@steeze-ui/lucide-icons</h1>
 
 <label for="theme-select">Theme</label>
 <select id="theme-select" bind:value={theme}>
