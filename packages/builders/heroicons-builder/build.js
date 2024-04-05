@@ -11,7 +11,7 @@ const builder = new ThemeBuilder({
 		}
 	},
 	lib: {
-		excludeSvgAttributes: ['xmlns']
+		excludeSvgAttributes: ['xmlns', 'data-slot']
 	}
 })
 

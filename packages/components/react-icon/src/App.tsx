@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import { Icon } from './react-icon'
+import Icon from '.'
 import * as HeroIcons from '@steeze-ui/heroicons'
 import * as RadixIcons from '@steeze-ui/radix-icons'
 import * as IconicFreeIcons from '@steeze-ui/iconic-free'

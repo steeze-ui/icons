@@ -10,78 +10,35 @@ export interface IconSource {
 	[key: string]: any
 }
 
-export default function Icon(props: IconProps) {
-	const { src, size, theme, ...rest } = props
-
-	if (src[theme]) {
-		return (
-			<svg
-				{...src[theme].a}
-				xmlns="http://www.w3.org/2000/svg"
-				width={size}
-				height={size}
-				{...rest}
-				// ref={forwardedRef}
-			>
-				{src[theme]?.path?.map((a) => (
-					<path {...a}></path>
-				))}
-				{src[theme]?.rect?.map((a) => (
-					<rect {...a}></rect>
-				))}
-				{src[theme]?.circle?.map((a) => (
-					<circle {...a}></circle>
-				))}
-				{src[theme]?.polyline?.map((a) => (
-					<polyline {...a}></polyline>
-				))}
-				{src[theme]?.polygon?.map((a) => (
-					<polygon {...a}></polygon>
-				))}
-				{src[theme]?.line?.map((a) => (
-					<line {...a}></line>
-				))}
-			</svg>
-		)
-	} else {
-		return <></>
+const reactifyProps = (props: any) => {
+	const newProps: any = {}
+	for (const key in props) {
+		const newKey = key.replace(/-(\w)/g, (m, p1) => p1.toUpperCase())
+		newProps[newKey] = props[key]
 	}
+	return newProps
 }
 
-// export const Icon = forwardRef<SVGSVGElement, IconProps>(
-// 	({ src, size = '100%', theme = 'default', ...rest }: IconProps, forwardedRef) => {
-// 		if (src[theme]) {
-// 			return (
-// 				<svg
-// 					{...src[theme].a}
-// 					xmlns="http://www.w3.org/2000/svg"
-// 					width={size}
-// 					height={size}
-// 					{...rest}
-// 					ref={forwardedRef}
-// 				>
-// 					{src[theme]?.path?.map((a) => (
-// 						<path {...a}></path>
-// 					))}
-// 					{src[theme]?.rect?.map((a) => (
-// 						<rect {...a}></rect>
-// 					))}
-// 					{src[theme]?.circle?.map((a) => (
-// 						<circle {...a}></circle>
-// 					))}
-// 					{src[theme]?.polyline?.map((a) => (
-// 						<polyline {...a}></polyline>
-// 					))}
-// 					{src[theme]?.polygon?.map((a) => (
-// 						<polygon {...a}></polygon>
-// 					))}
-// 					{src[theme]?.line?.map((a) => (
-// 						<line {...a}></line>
-// 					))}
-// 				</svg>
-// 			)
-// 		} else {
-// 			return <></>
-// 		}
-// 	}
-// )
+export default function Icon(props: IconProps) {
+	const { src, size, theme, ...rest } = props
+	const icon = src[theme] || src.default || Object.values(src)[0]
+
+	if (!icon) return <></>
+
+	return (
+		<svg
+			{...reactifyProps(icon.a)}
+			xmlns="http://www.w3.org/2000/svg"
+			width={size}
+			height={size}
+			{...rest}
+		>
+			{icon.path?.map((a) => <path {...reactifyProps(a)}></path>)}
+			{icon.rect?.map((a) => <rect {...reactifyProps(a)}></rect>)}
+			{icon.circle?.map((a) => <circle {...reactifyProps(a)}></circle>)}
+			{icon.polyline?.map((a) => <polyline {...reactifyProps(a)}></polyline>)}
+			{icon.polygon?.map((a) => <polygon {...reactifyProps(a)}></polygon>)}
+			{icon.line?.map((a) => <line {...reactifyProps(a)}></line>)}
+		</svg>
+	)
+}
