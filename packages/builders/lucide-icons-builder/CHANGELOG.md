@@ -1,5 +1,11 @@
 # @steeze-ui/lucide-icons
 
+## 1.3.0
+
+### Features
+
+- update lucide icons to version 0.408.0
+
 ## 1.2.1
 
 ### Features
