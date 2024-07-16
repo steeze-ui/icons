@@ -169,7 +169,7 @@ importers:
         version: 2.1.0(svelte@3.59.1)(typescript@5.1.3)
       font-awesome:
         specifier: github:FortAwesome/Font-Awesome#6.x
-        version: Font-Awesome#6.x@https://codeload.github.com/FortAwesome/Font-Awesome/tar.gz/a1232e34553634c5363aa62c8d1b02161a4438e1
+        version: Font-Awesome#6.x@https://codeload.github.com/FortAwesome/Font-Awesome/tar.gz/138f8c3971a7b6059ed12ebcc436602ee72327d5
       prettier:
         specifier: ^2.8.8
         version: 2.8.8
@@ -420,8 +420,8 @@ importers:
   packages/builders/phosphor-icons:
     devDependencies:
       '@phosphor-icons/core':
-        specifier: ^2.0.8
-        version: 2.0.8
+        specifier: ^2.1.1
+        version: 2.1.1
       '@steeze-ui/icons':
         specifier: workspace:^
         version: link:../../core
@@ -429,38 +429,38 @@ importers:
         specifier: workspace:^
         version: link:../../components/svelte-icon
       '@sveltejs/adapter-auto':
-        specifier: ^2.1.0
-        version: 2.1.0(@sveltejs/kit@1.20.4(svelte@3.59.1)(vite@4.3.9(@types/node@17.0.45)(terser@5.18.0)))
+        specifier: ^2.1.1
+        version: 2.1.1(@sveltejs/kit@1.30.4(svelte@3.59.2)(vite@4.5.3(@types/node@17.0.45)(terser@5.18.0)))
       '@sveltejs/kit':
-        specifier: ^1.20.4
-        version: 1.20.4(svelte@3.59.1)(vite@4.3.9(@types/node@17.0.45)(terser@5.18.0))
+        specifier: ^1.30.4
+        version: 1.30.4(svelte@3.59.2)(vite@4.5.3(@types/node@17.0.45)(terser@5.18.0))
       '@sveltejs/package':
-        specifier: ^2.0.2
-        version: 2.0.2(svelte@3.59.1)(typescript@5.1.3)
+        specifier: ^2.3.2
+        version: 2.3.2(svelte@3.59.2)(typescript@5.5.3)
       prettier:
         specifier: ^2.8.8
         version: 2.8.8
       prettier-plugin-svelte:
         specifier: ^2.10.1
-        version: 2.10.1(prettier@2.8.8)(svelte@3.59.1)
+        version: 2.10.1(prettier@2.8.8)(svelte@3.59.2)
       publint:
-        specifier: ^0.1.12
-        version: 0.1.12
+        specifier: ^0.1.16
+        version: 0.1.16
       svelte:
-        specifier: ^3.59.1
-        version: 3.59.1
+        specifier: ^3.59.2
+        version: 3.59.2
       svelte-check:
-        specifier: ^3.4.3
-        version: 3.4.3(@babel/core@7.22.5)(postcss@8.4.39)(svelte@3.59.1)
+        specifier: ^3.8.4
+        version: 3.8.4(@babel/core@7.22.5)(postcss@8.4.39)(svelte@3.59.2)
       tslib:
-        specifier: ^2.5.3
-        version: 2.5.3
+        specifier: ^2.6.3
+        version: 2.6.3
       typescript:
-        specifier: ^5.1.3
-        version: 5.1.3
+        specifier: ^5.5.3
+        version: 5.5.3
       vite:
-        specifier: ^4.3.9
-        version: 4.3.9(@types/node@17.0.45)(terser@5.18.0)
+        specifier: ^4.5.3
+        version: 4.5.3(@types/node@17.0.45)(terser@5.18.0)
 
   packages/builders/radix-icons-builder:
     devDependencies:
@@ -1000,6 +1000,7 @@ packages:
   '@babel/plugin-proposal-unicode-property-regex@7.18.6':
     resolution: {integrity: sha512-2BShG/d5yoZyXZfVePH91urL5wTG6ASZU9M4o03lKK8u8UW1y08OMttBSOADTcJrnPMpvDXRG3G8fyLh4ovs8w==}
     engines: {node: '>=4'}
+    deprecated: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-unicode-property-regex instead.
     peerDependencies:
       '@babel/core': ^7.0.0-0
 
@@ -1895,8 +1896,8 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
-  '@phosphor-icons/core@2.0.8':
-    resolution: {integrity: sha512-I9MdTtqjqZDXwo6bbG5lRWZUJMWgXc70hZAVG1OVNVmb6j7039slVXLDH4VEok3U3h1Yhotxe8G5l4sPHJBDzQ==}
+  '@phosphor-icons/core@2.1.1':
+    resolution: {integrity: sha512-v4ARvrip4qBCImOE5rmPUylOEK4iiED9ZyKjcvzuezqMaiRASCHKcRIuvvxL/twvLpkfnEODCOJp5dM4eZilxQ==}
 
   '@polka/url@1.0.0-next.21':
     resolution: {integrity: sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==}
@@ -2166,6 +2167,7 @@ packages:
 
   '@volar/vue-typescript@0.40.1':
     resolution: {integrity: sha512-58nW/Xwy7VBkeIPmbyEmi/j1Ta2HxGl/5aFiEEpWxoas7vI1AM+txz8+MhWho4ZMw0w0eCqPtGgugD2rr+/v7w==}
+    deprecated: 'WARNING: This project has been renamed to @vue/typescript. Install using @vue/typescript instead.'
 
   '@vue/compiler-core@3.2.37':
     resolution: {integrity: sha512-81KhEjo7YAOh0vQJoSmAD68wLfYqJvoiD4ulyedzF+OEk/bk6/hx3fTNVfuzugIIaTrOx4PGx6pAiBRe5e9Zmg==}
@@ -2231,8 +2233,8 @@ packages:
   '@vue/typescript@1.8.8':
     resolution: {integrity: sha512-jUnmMB6egu5wl342eaUH236v8tdcEPXXkPgj+eI/F6JwW/lb+yAU6U07ZbQ3MVabZRlupIlPESB7ajgAGixhow==}
 
-  Font-Awesome#6.x@https://codeload.github.com/FortAwesome/Font-Awesome/tar.gz/a1232e34553634c5363aa62c8d1b02161a4438e1:
-    resolution: {tarball: https://codeload.github.com/FortAwesome/Font-Awesome/tar.gz/a1232e34553634c5363aa62c8d1b02161a4438e1}
+  Font-Awesome#6.x@https://codeload.github.com/FortAwesome/Font-Awesome/tar.gz/138f8c3971a7b6059ed12ebcc436602ee72327d5:
+    resolution: {tarball: https://codeload.github.com/FortAwesome/Font-Awesome/tar.gz/138f8c3971a7b6059ed12ebcc436602ee72327d5}
     version: 0.0.0
 
   acorn-walk@8.2.0:
@@ -2330,8 +2332,8 @@ packages:
     resolution: {integrity: sha512-pbnl5XzGBdrFU/wT4jqmJVPn2B6UHPBOhzMQkY/SPUPB6QtUXtmBHBIwCbXJol93mOpGMnQyP/+BB19q04xj7g==}
     engines: {node: '>=4'}
 
-  binary-extensions@2.2.0:
-    resolution: {integrity: sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==}
+  binary-extensions@2.3.0:
+    resolution: {integrity: sha512-Ceh+7ox5qe7LJuLHoY0feh3pHuUDHAcRUeyL2VYghZwfpkNIy/+8Ocg0a3UuSoYzavmylwuLWQOf3hl0jjMMIw==}
     engines: {node: '>=8'}
 
   brace-expansion@1.1.11:
@@ -2460,7 +2462,7 @@ packages:
     engines: {node: ^12.20.0 || >=14}
 
   concat-map@0.0.1:
-    resolution: {integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=}
+    resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
 
   convert-source-map@1.9.0:
     resolution: {integrity: sha512-ASFBup0Mz1uyiIjANan1jzLQami9z1PoYSZCiiYW2FczPbenXc45FZdBZLzOT+r6+iciuEModtmCti+hjaAk0A==}
@@ -3165,10 +3167,12 @@ packages:
 
   glob@7.2.3:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
+    deprecated: Glob versions prior to v9 are no longer supported
 
   glob@8.1.0:
     resolution: {integrity: sha512-r8hpEjiQEYlF2QU0df3dS+nxxSIreXQS1qRhMJM0Q5NDdR386C7jb7Hwwod8Fgiuex+k0GFjgft18yvxm5XoCQ==}
     engines: {node: '>=12'}
+    deprecated: Glob versions prior to v9 are no longer supported
 
   globals@11.12.0:
     resolution: {integrity: sha512-WOBp/EEGUiIsJSp7wcv/y6MO+lV9UoncWqxuFfm8eBwzWNgyfBd6Gz+IeKQ9jCmyhoH99g15M3T+QaVHFjizVA==}
@@ -3282,6 +3286,7 @@ packages:
 
   inflight@1.0.6:
     resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
+    deprecated: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
 
   inherits@2.0.4:
     resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
@@ -3891,6 +3896,7 @@ packages:
 
   rimraf@2.7.1:
     resolution: {integrity: sha512-uWjbaKIK3T1OSVptzX7Nl6PvQ3qAGtKEtVRjRuazjfL3Bx5eI409VZSqgND+4UNnmzLVdPj9FqFJNPqBZFve4w==}
+    deprecated: Rimraf versions prior to v4 are no longer supported
     hasBin: true
 
   rollup-plugin-terser@7.0.2:
@@ -4643,7 +4649,7 @@ snapshots:
     dependencies:
       '@babel/types': 7.22.5
       '@jridgewell/gen-mapping': 0.3.3
-      '@jridgewell/trace-mapping': 0.3.18
+      '@jridgewell/trace-mapping': 0.3.25
       jsesc: 2.5.2
 
   '@babel/helper-annotate-as-pure@7.22.5':
@@ -5743,7 +5749,7 @@ snapshots:
   '@jridgewell/source-map@0.3.3':
     dependencies:
       '@jridgewell/gen-mapping': 0.3.3
-      '@jridgewell/trace-mapping': 0.3.18
+      '@jridgewell/trace-mapping': 0.3.25
 
   '@jridgewell/sourcemap-codec@1.4.14': {}
 
@@ -5831,7 +5837,7 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.15.0
 
-  '@phosphor-icons/core@2.0.8': {}
+  '@phosphor-icons/core@2.1.1': {}
 
   '@polka/url@1.0.0-next.21': {}
 
@@ -6294,7 +6300,7 @@ snapshots:
       '@vue/reactivity-transform': 3.3.4
       '@vue/shared': 3.3.4
       estree-walker: 2.0.2
-      magic-string: 0.30.0
+      magic-string: 0.30.10
       postcss: 8.4.24
       source-map-js: 1.0.2
 
@@ -6335,7 +6341,7 @@ snapshots:
       '@vue/compiler-core': 3.3.4
       '@vue/shared': 3.3.4
       estree-walker: 2.0.2
-      magic-string: 0.30.0
+      magic-string: 0.30.10
 
   '@vue/reactivity@3.2.37':
     dependencies:
@@ -6373,7 +6379,7 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
-  Font-Awesome#6.x@https://codeload.github.com/FortAwesome/Font-Awesome/tar.gz/a1232e34553634c5363aa62c8d1b02161a4438e1: {}
+  Font-Awesome#6.x@https://codeload.github.com/FortAwesome/Font-Awesome/tar.gz/138f8c3971a7b6059ed12ebcc436602ee72327d5: {}
 
   acorn-walk@8.2.0: {}
 
@@ -6479,7 +6485,7 @@ snapshots:
     dependencies:
       is-windows: 1.0.2
 
-  binary-extensions@2.2.0: {}
+  binary-extensions@2.3.0: {}
 
   brace-expansion@1.1.11:
     dependencies:
@@ -7394,7 +7400,7 @@ snapshots:
 
   is-binary-path@2.1.0:
     dependencies:
-      binary-extensions: 2.2.0
+      binary-extensions: 2.3.0
 
   is-boolean-object@1.1.2:
     dependencies:
@@ -7568,7 +7574,7 @@ snapshots:
 
   lower-case@2.0.2:
     dependencies:
-      tslib: 2.5.3
+      tslib: 2.6.3
 
   lru-cache@4.1.5:
     dependencies:
@@ -7591,7 +7597,7 @@ snapshots:
 
   magic-string@0.27.0:
     dependencies:
-      '@jridgewell/sourcemap-codec': 1.4.15
+      '@jridgewell/sourcemap-codec': 1.5.0
 
   magic-string@0.30.0:
     dependencies:
@@ -7633,7 +7639,7 @@ snapshots:
 
   micromatch@4.0.5:
     dependencies:
-      braces: 3.0.2
+      braces: 3.0.3
       picomatch: 2.3.1
 
   mime@3.0.0: {}
@@ -7683,7 +7689,7 @@ snapshots:
   no-case@3.0.4:
     dependencies:
       lower-case: 2.0.2
-      tslib: 2.5.3
+      tslib: 2.6.3
 
   node-fetch@2.6.11:
     dependencies:
@@ -7772,7 +7778,7 @@ snapshots:
   pascal-case@3.1.2:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.5.3
+      tslib: 2.6.3
 
   path-exists@4.0.0: {}
 
@@ -7803,7 +7809,7 @@ snapshots:
   postcss@8.4.24:
     dependencies:
       nanoid: 3.3.6
-      picocolors: 1.0.0
+      picocolors: 1.0.1
       source-map-js: 1.0.2
 
   postcss@8.4.39:
@@ -8096,7 +8102,7 @@ snapshots:
 
   sorcery@0.11.0:
     dependencies:
-      '@jridgewell/sourcemap-codec': 1.4.15
+      '@jridgewell/sourcemap-codec': 1.5.0
       buffer-crc32: 0.2.13
       minimist: 1.2.8
       sander: 0.5.1
@@ -8487,7 +8493,7 @@ snapshots:
     dependencies:
       browserslist: 4.21.9
       escalade: 3.1.1
-      picocolors: 1.0.0
+      picocolors: 1.0.1
 
   uri-js@4.4.1:
     dependencies:

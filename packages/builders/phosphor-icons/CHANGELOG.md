@@ -1,5 +1,11 @@
 # @steeze-ui/phosphor-icons
 
+## 2.1.0
+
+### Changes
+
+- update @phosphor-icons/core to version 2.1.0
+
 ## 2.0.3
 
 ### Changes
