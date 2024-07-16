@@ -1,7 +1,7 @@
 {
 	"name": "@steeze-ui/simple-icons",
 	"description": "Icon Sources (based on Simple Icons) built for @steeze-ui/icons",
-	"version": "1.7.1",
+	"version": "1.8.0",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
@@ -38,7 +38,7 @@
 		"prettier": "^2.8.8",
 		"prettier-plugin-svelte": "^2.10.1",
 		"publint": "^0.1.12",
-		"simple-icons": "^11.9.0",
+		"simple-icons": "^13.1.0",
 		"svelte": "^3.59.1",
 		"svelte-check": "^3.4.3",
 		"tslib": "^2.5.3",

@@ -1,7 +1,7 @@
 {
 	"name": "@steeze-ui/phosphor-icons",
 	"description": "Icon Sources (based on template) built for @steeze-ui/icons",
-	"version": "2.1.0",
+	"version": "2.1.1",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
