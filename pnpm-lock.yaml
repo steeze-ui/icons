@@ -576,8 +576,8 @@ importers:
         specifier: ^0.1.12
         version: 0.1.12
       simple-icons:
-        specifier: ^13.1.0
-        version: 13.1.0
+        specifier: ^13.5.0
+        version: 13.5.0
       svelte:
         specifier: ^3.59.1
         version: 3.59.1
@@ -3991,8 +3991,8 @@ packages:
   signal-exit@3.0.7:
     resolution: {integrity: sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==}
 
-  simple-icons@13.1.0:
-    resolution: {integrity: sha512-UUQ5ThpD4J9qkkwnLfloj+mIbJXRHJnMS24lcW+j9ROLpKXysJt2p42iJz/tRi3gEckYaR5+LA5Kb7CZ8Wq8rw==}
+  simple-icons@13.5.0:
+    resolution: {integrity: sha512-6VrM4xSty8EesmQbjI++Lk8FkV+gl3Ve+DnTQVc7ovZryKpc9JZSuZA8NNc7lC3Mqbh0GLlX3WXdITZlDu7bSQ==}
     engines: {node: '>=0.12.18'}
 
   sirv@2.0.3:
@@ -8071,7 +8071,7 @@ snapshots:
 
   signal-exit@3.0.7: {}
 
-  simple-icons@13.1.0: {}
+  simple-icons@13.5.0: {}
 
   sirv@2.0.3:
     dependencies:
