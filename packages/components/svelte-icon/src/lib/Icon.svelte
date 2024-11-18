@@ -1,12 +1,15 @@
 <script lang="ts">
 	import type { IconSource } from './index.js'
 
-	export let src: IconSource
-	export let size = '100%'
-	export let theme = 'default'
-	export let title: string | undefined = undefined
+	let { src, size = '100%', theme = 'default', title = undefined, ...restProps } : {
+		src: IconSource,
+		size: string,
+		theme: string,
+		title: string | undefined,
+		[key: string]: any
+	} = $props()
 
-	$: icon = src?.[theme] ?? src?.['default'] ?? Object.values(src)?.[0]
+	const icon = $derived(src?.[theme] ?? src?.['default'] ?? Object.values(src)?.[0])
 
 	if (size !== '100%') {
 		if (size.slice(-1) != 'x' && size.slice(-1) != 'm' && size.slice(-1) != '%') {
@@ -19,7 +22,7 @@
 	}
 </script>
 
-<svg {...icon?.a} xmlns="http://www.w3.org/2000/svg" width={size} height={size} {...$$restProps}>
+<svg {...icon?.a} xmlns="http://www.w3.org/2000/svg" width={size} height={size} {...restProps}>
 	{#if title}
 		<title>{title}</title>
 	{/if}
