@@ -59,7 +59,7 @@
 								name="{iconpack}-theme"
 								value={theme}
 								{checked}
-								on:change={(e) => (iconpacks[iconpack].activeTheme = theme)}
+								onchange={(e) => (iconpacks[iconpack].activeTheme = theme)}
 							/>
 							<label for={theme} style="color:white">{theme}</label>
 						</div>

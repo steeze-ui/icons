@@ -1,5 +1,9 @@
 # @steeze-ui/svelte-icon
 
+## 1.6.0
+
+- add svelte 5 support
+
 ## 1.5.0
 
 ### Minor Changes
