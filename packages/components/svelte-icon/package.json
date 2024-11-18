@@ -19,7 +19,7 @@
 		".": {
 			"types": "./dist/index.d.ts",
 			"import": "./dist/index.js",
-			"svelte": "./dist/index.js"
+			"default": "./dist/index.js"
 		}
 	},
 	"files": [
@@ -34,7 +34,7 @@
 		"@steeze-ui/heroicons": "^2.4.0",
 		"@sveltejs/adapter-auto": "^2.1.0",
 		"@sveltejs/kit": "^2.0.0",
-		"@sveltejs/package": "^2.1.0",
+		"@sveltejs/package": "^2.3.4",
 		"@sveltejs/vite-plugin-svelte": "^4.0.1",
 		"prettier": "^3.2.2",
 		"prettier-plugin-svelte": "^3.2.8",
