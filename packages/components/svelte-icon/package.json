@@ -1,6 +1,6 @@
 {
 	"name": "@steeze-ui/svelte-icon",
-	"version": "1.6.0",
+	"version": "1.6.1",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "npm run package",
@@ -18,8 +18,8 @@
 		".": {
 			"types": "./dist/index.d.ts",
 			"import": "./dist/index.js",
-			"default": "./dist/index.js",
-			"svelte": "./dist/index.js"
+			"svelte": "./dist/index.js",
+			"default": "./dist/index.js"
 		}
 	},
 	"files": [
