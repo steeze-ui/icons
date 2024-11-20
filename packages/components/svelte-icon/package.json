@@ -12,14 +12,14 @@
 		"lint": "prettier --plugin-search-dir . --check .",
 		"format": "prettier --plugin-search-dir . --write ."
 	},
-	"svelte": "./dist/index.js",
 	"types": "./dist/index.d.ts",
 	"type": "module",
 	"exports": {
 		".": {
 			"types": "./dist/index.d.ts",
 			"import": "./dist/index.js",
-			"default": "./dist/index.js"
+			"default": "./dist/index.js",
+			"svelte": "./dist/index.js"
 		}
 	},
 	"files": [
