@@ -1,5 +1,11 @@
 # @steeze-ui/simple-icons
 
+## 1.10.0
+
+### Changes
+
+- update icon sources to [v13.17.0](https://github.com/simple-icons/simple-icons/releases/tag/13.17.0)
+
 ## 1.9.0
 
 ### Changes
