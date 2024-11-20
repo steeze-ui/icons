@@ -1,5 +1,11 @@
 # @steeze-ui/heroicons
 
+## 2.4.1
+
+### Changes
+
+- update to [heroicons@2.2.2](https://github.com/tailwindlabs/heroicons/blob/master/CHANGELOG.md)
+
 ## 2.4.0
 
 ### Changes

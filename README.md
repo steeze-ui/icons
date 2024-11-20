@@ -1,5 +1,3 @@
-> Need Accessible components for your next SvelteKit project ? Check out [@steeze-ui/components](https://github.com/steeze-ui/components)!
-
 ## Overview
 
 Effortless Icons
