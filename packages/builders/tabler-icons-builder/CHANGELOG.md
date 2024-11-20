@@ -1,5 +1,11 @@
 # @steeze-ui/tabler-icons
 
+## 3.3.0
+
+### Changes
+
+- update @tabler/icons to version 3.22.0
+
 ## 3.2.0
 
 ### Changes
