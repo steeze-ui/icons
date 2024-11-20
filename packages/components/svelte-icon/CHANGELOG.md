@@ -1,5 +1,11 @@
 # @steeze-ui/svelte-icon
 
+## 1.6.2
+
+### Fixes
+
+- export types correctly (size,theme and title should be optional)
+
 ## 1.6.1
 
 ### Minor Changes

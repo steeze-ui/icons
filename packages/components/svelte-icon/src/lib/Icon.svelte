@@ -3,9 +3,9 @@
 
 	let { src, size = '100%', theme = 'default', title = undefined, ...restProps } : {
 		src: IconSource,
-		size: string,
-		theme: string,
-		title: string | undefined,
+		size?: string,
+		theme?: string,
+		title?: string,
 		[key: string]: any
 	} = $props()
 

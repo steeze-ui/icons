@@ -1,5 +1,11 @@
 # @steeze-ui/heroicons
 
+## 2.4.2
+
+### Fixes
+
+- correctly export `IconSource`
+
 ## 2.4.1
 
 ### Changes
