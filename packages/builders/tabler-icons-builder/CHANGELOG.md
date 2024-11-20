@@ -1,5 +1,11 @@
 # @steeze-ui/tabler-icons
 
+## 3.3.1
+
+### Fixes
+
+- correctly export `IconSource`
+
 ## 3.3.0
 
 ### Changes

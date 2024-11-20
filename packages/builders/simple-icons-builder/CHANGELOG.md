@@ -1,5 +1,11 @@
 # @steeze-ui/simple-icons
 
+## 1.10.1
+
+### Fixes
+
+- correctly export `IconSource`
+
 ## 1.10.0
 
 ### Changes

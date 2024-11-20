@@ -1,7 +1,7 @@
 {
 	"name": "@steeze-ui/tabler-icons",
 	"description": "Icon Sources (based on @tabler/icons) built for @steeze-ui/icons",
-	"version": "3.3.0",
+	"version": "3.3.1",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",

@@ -1,5 +1,11 @@
 # @steeze-ui/lucide-icons
 
+## 1.4.1
+
+### Fixes
+
+- correctly export `IconSource`
+
 ## 1.4.0
 
 ### Changes
